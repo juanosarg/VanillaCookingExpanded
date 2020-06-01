@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawOnion</defName>
+		<label>onions</label>
+		<description>An edible bulb of pungent, savory taste and smell with almost as many varieties as cooking applications.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Onions</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawPumpkin</defName>
+		<label>pumpkins</label>
+		<description>Technically a giant berry, pumpkins are renowned for being trivial to both sow and harvest.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Pumpkins</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawPepper</defName>
+		<label>peppers</label>
+		<description>Tiny, spicy, crimson pods often used in sauces, relishes, or powders. While the flavor itself is mild the capsaicin contained inside means humans find them oddly addicting, if painful when consumed in mass. Animals are known to avoid eating them entirely.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Peppers</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>OmnivoreHuman</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawPeas</defName>
+		<label>peas</label>
+		<description>Spherical green seeds tucked safely away in a fleshy pod. Peas are notable for having potentially long shelf-lives when dried properly.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Peas</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>80</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawEggplant</defName>
+		<label>eggplants</label>
+		<description>A bulbous purple fruit of the nightshade family. Eggplant is rarely served as a side, generally filling the role of the main component of the dish as a meat substitute.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Eggplants</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawCabbage</defName>
+		<label>cabbages</label>
+		<description>A somewhat hardy, leafy green vegetable, often chopped and then fermented or stewed.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Cabbages</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBeets</defName>
+		<label>beets</label>
+		<description>An herb-like vegetable widely cultivated for humans and livestock alike, notably nutritious and sometimes milled into sugar.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Beets</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+
+
+
+
+
+
+</Defs>

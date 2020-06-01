@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaPlantsExpanded\VanillaPlantsExpanded\bin\Debug\VanillaPlantsExpanded.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaPlantsExpanded\VanillaPlantsExpanded\bin\Debug\VanillaPlantsExpanded.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaPlantsExpanded\VanillaPlantsExpanded\obj\Debug\VanillaPlantsExpanded.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaPlantsExpanded\VanillaPlantsExpanded\obj\Debug\VanillaPlantsExpanded.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaPlantsExpanded\VanillaPlantsExpanded\obj\Debug\VanillaPlantsExpanded.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaPlantsExpanded\VanillaPlantsExpanded\obj\Debug\VanillaPlantsExpanded.pdb
