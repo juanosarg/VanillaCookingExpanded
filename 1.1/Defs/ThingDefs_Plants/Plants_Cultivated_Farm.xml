@@ -109,7 +109,6 @@
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
-
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>5.2</growDays>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_PepperPlantImmature</immatureGraphicPath>
@@ -118,7 +117,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Peas</defName>
 		<label>peas</label>
@@ -135,7 +134,6 @@
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
 		<ingestible />
-			
 		<plant>
 			<fertilityMin>0.70</fertilityMin>
 			<fertilitySensitivity>0.85</fertilitySensitivity>
@@ -149,7 +147,6 @@
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
-
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6.5</growDays>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_PeaPlantImmature</immatureGraphicPath>
@@ -158,7 +155,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Eggplant</defName>
 		<label>eggplant</label>
@@ -175,7 +172,6 @@
 		<selectable>true</selectable>
 		<pathCost>15</pathCost>
 		<ingestible />
-			
 		<plant>
 			<fertilityMin>0.71</fertilityMin>
 			<fertilitySensitivity>1</fertilitySensitivity>
@@ -198,7 +194,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Cabbage</defName>
 		<label>cabbage</label>
@@ -215,7 +211,6 @@
 		<selectable>true</selectable>
 		<pathCost>20</pathCost>
 		<ingestible />
-			
 		<plant>
 			<fertilityMin>0.7</fertilityMin>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
@@ -238,14 +233,14 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Beet</defName>
 		<label>beet</label>
 		<thingClass>VanillaPlantsExpanded.Plant_WinterResistant</thingClass>
-		<description>An herb-like vegetable widely cultivated for humans and livestock alike, notably nutritious and sometimes milled into sugar. While beets do require rich soil they are quite hearty, and will continue to grow very slowly through winter.</description>
+		<description>An herb-like vegetable widely cultivated for humans and livestock alike, notably nutritious and historically used in dye making. While beets do require rich soil they are quite hearty, and will continue to grow very slowly through winter. They need to be planted during growing season, though.</description>
 		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
+			<MaxHitPoints>75</MaxHitPoints>
 			<Nutrition>0.18</Nutrition>
 		</statBases>
 		<graphicData>
@@ -253,9 +248,8 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
-		<pathCost>20</pathCost>
+		<pathCost>10</pathCost>
 		<ingestible />
-			
 		<plant>
 			<fertilityMin>1.1</fertilityMin>
 			<fertilitySensitivity>1</fertilitySensitivity>
@@ -269,10 +263,84 @@
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
-			 <sowMinSkill>8</sowMinSkill>
+			<sowMinSkill>8</sowMinSkill>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>5.7</growDays>			
 			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Tomato</defName>
+		<label>tomato</label>
+		<description>A series of juicy, glossy red fruits attached by vine, used commonly as a vegetable. Strong stewing releases natural sugars and mellows out acids contained within. Tomatoes are easily removed from the vine without having to uproot the plant.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_TomatoPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>20</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1.1</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawTomatoes</harvestedThingDef>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestYield>10</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.7</growDays>			
+			<visualSizeRange>0.3~1</visualSizeRange>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_TomatoPlantImmature</immatureGraphicPath>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Wheat</defName>
+		<label>wheat</label>
+		<description>An amber cereal plant that takes almost an entire growing season to come to fruition. While fragile and time-consuming, this wheat has been genetically engineered to gentle break into flour with a mere touch.</description>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Nutrition>0.18</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Wheat</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>40</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_Flour</harvestedThingDef>
+			<sowMinSkill>6</sowMinSkill>
+			<harvestYield>24</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.2</topWindExposure>
+			<growDays>13</growDays>			
+			<visualSizeRange>0.3~1.2</visualSizeRange>
+			
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 		</plant>

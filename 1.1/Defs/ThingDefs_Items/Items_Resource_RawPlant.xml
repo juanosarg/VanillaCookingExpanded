@@ -47,7 +47,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
+				<daysToRotStart>50</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
@@ -131,7 +131,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
+				<daysToRotStart>30</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
@@ -159,7 +159,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
+				<daysToRotStart>30</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
@@ -172,7 +172,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawBeets</defName>
 		<label>beets</label>
-		<description>An herb-like vegetable widely cultivated for humans and livestock alike, notably nutritious and sometimes milled into sugar.</description>
+		<description>An herb-like vegetable widely cultivated for humans and livestock alike, notably nutritious and historically used in dye making.</description>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>	
 
@@ -187,7 +187,64 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawTomatoes</defName>
+		<label>tomatoes</label>
+		<description>A series of juicy, glossy red fruits attached by vine, used commonly as a vegetable. Strong stewing releases natural sugars and mellows out acids contained within.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Tomatoes</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_Flour</defName>
+		<label>wheat</label>
+		<description>Wheat flour, used in baking. Wheat flour takes a very long time to go bad, if stored in a dry environment. It was produced by wheat that has been genetically engineered to gentle break into flour with a mere touch.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Flour</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>200</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>

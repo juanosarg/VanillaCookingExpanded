@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================== Fruit Trees ==============================-->
+
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_AppleTree</defName>
+		<label>apple tree</label>
+		<description>A tree bearing glossy, red apples, while a myriad of different varieties exist this particular type favors warm summers and mild winters. Apples have been used as snacking food, a dessert ingredient, and brewed into cider since early mankind.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/VCE_TreeApple</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.71</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_TreeApple_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees/VCE_TreeApple_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>20</harvestYield>
+			<harvestedThingDef>VCE_RawApple</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_PeachTree</defName>
+		<label>peach tree</label>
+		<description>A deciduous tree bearing fuzzy, stone fruit known as peaches, peach trees often require full sunlight and warm temperatures. Ancient oriental cultures cultivated these trees groves at a time, noting its ability to survive in drought conditions.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/VCE_TreePeach</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_TreePeach_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees/VCE_TreePeach_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>20</harvestYield>
+			<harvestedThingDef>VCE_RawPeach</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>VCE_CherryTree</defName>
+		<label>cherry tree</label>
+		<description>A tree bearing tiny purple-red sweet cherries. Cherry trees are notable for requiring a brief freezing season, as such their fruit quickly became a favorite among northern occidental cultures. This particular genus also blooms into a pleasing array of pink flowers each winter.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/VCE_TreeCherry</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/Trees/VCE_TreePeach_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees/VCE_TreePeach_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>20</harvestYield>
+			<harvestedThingDef>VCE_RawPeach</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+		</plant>
+	</ThingDef>
+
+
+
+
+
+</Defs>
