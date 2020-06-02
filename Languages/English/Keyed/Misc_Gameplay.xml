@@ -3,10 +3,6 @@
 
 	<!-- Various -->
 
-	<VCE_PlumsDrying>Plums drying</VCE_PlumsDrying>
-	<VCE_PlumsCurrentlyFrozen>These plums are frozen and will not dry into prunes</VCE_PlumsCurrentlyFrozen>
-	<VCE_PlumsCurrentlyRefrigerated>These plums are refrigerated and will not dry into prunes as fast as they could (dries in {0})</VCE_PlumsCurrentlyRefrigerated>
-	<VCE_PlumsDryingCorrectly>These plums are drying into prunes correctly (dries in {0})</VCE_PlumsDryingCorrectly>
 
 
 
