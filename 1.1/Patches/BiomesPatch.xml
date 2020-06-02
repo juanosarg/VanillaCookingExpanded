@@ -6,7 +6,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
 		<value>
-			<VCE_AppleTree>0.0001</VCE_AppleTree>
+			<VCE_AppleTree>0.01</VCE_AppleTree>
 			
 		</value>
 	</Operation>
@@ -14,45 +14,77 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
 		<value>
-			<VCE_PeachTree>0.0001</VCE_PeachTree>
+			<VCE_PeachTree>0.01</VCE_PeachTree>
 			
 		</value>
 	</Operation>
-
-<!--	<Operation Class="PatchOperationAdd">
+	
+		<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
+		<value>
+			<VCE_CherryTree>0.01</VCE_CherryTree>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/wildPlants</xpath>
 		<value>
-			<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
-			<RB_Plant_Hive_Mild>0.01</RB_Plant_Hive_Mild>
+			<VCE_PlumTree>0.01</VCE_PlumTree>
+			
 		</value>
 	</Operation>
-
-	
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+		<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
 		<value>
-			<RB_Plant_Hive_Jungle>0.01</RB_Plant_Hive_Jungle>
-			<RB_Plant_Hive_Swamp>0.01</RB_Plant_Hive_Swamp>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
-		<value>
-			<RB_Plant_Hive_Jungle>0.01</RB_Plant_Hive_Jungle>
-			<RB_Plant_Hive_Swamp>0.01</RB_Plant_Hive_Swamp>
+			<VCE_PearTree>0.01</VCE_PearTree>
+			
 		</value>
 	</Operation>	
-	
-
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants</xpath>
 		<value>
-			<RB_Plant_Hive_Desert>1</RB_Plant_Hive_Desert>
-			<RB_Plant_Hive_Arid>1</RB_Plant_Hive_Arid>
+			<VCE_Opuntia>1</VCE_Opuntia>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
+		<value>
+			<VCE_BearBerryBush>0.01</VCE_BearBerryBush>
+		
 		</value>
 	</Operation>	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+		<value>
+			<VCE_BananaTree>0.01</VCE_BananaTree>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+		<value>
+			<VCE_OrangeTree>0.01</VCE_OrangeTree>
+			
+		</value>
+	</Operation>	
+
+<!--	
+
+	
+	
+	
+	
+	
+
+	
+		
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
 		<value>
@@ -62,27 +94,9 @@
 	</Operation>
 	
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
-		<value>
-			<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
-			<RB_Plant_Hive_Icy>0.01</RB_Plant_Hive_Icy>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
-		<value>
-			<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
-			<RB_Plant_Hive_Icy>0.01</RB_Plant_Hive_Icy>
-		</value>
-	</Operation>	
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
-		<value>
-			<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
-			<RB_Plant_Hive_Icy>0.01</RB_Plant_Hive_Icy>
-		</value>
-	</Operation>	
+
+	
+
 
 -->
 

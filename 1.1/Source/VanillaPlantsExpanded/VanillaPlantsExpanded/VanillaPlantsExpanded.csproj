@@ -298,7 +298,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompProperties_Prunes.cs" />
+    <Compile Include="Comps\CompPrunes.cs" />
     <Compile Include="Harmony Patches\HarmonyInstance.cs" />
+    <Compile Include="Plant Classes\Plant_ChecksRiver.cs" />
+    <Compile Include="Plant Classes\Plant_WinterBlooming.cs" />
     <Compile Include="Plant Classes\Plant_WinterResistant.cs" />
     <Compile Include="Plant Classes\Plant_StopsGrowingInToxins.cs" />
     <Compile Include="Plant Classes\Plant_HighTempAffected.cs" />
