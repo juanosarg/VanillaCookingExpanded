@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>VCE_CondimentsResearch</defName>
+    <label>food condiments</label>
+    <tab>VCE_Cooking</tab>
+    <techLevel>Industrial</techLevel>
+    <description>A condiment is a spice, sauce, or preparation that is added to food, either after or during cooking, to impart a specific flavor, to enhance the flavor, or to complement the dish. All condiments are created at cooking stoves.</description>
+    <baseCost>500</baseCost>
+    
+    
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+ 
+
+</Defs>

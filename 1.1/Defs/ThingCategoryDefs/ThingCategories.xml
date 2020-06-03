@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+    <ThingCategoryDef>
+      <defName>VCE_Condiments</defName>
+      <label>condiments</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Items/Condiments/VCE_Spices</iconPath>
+    </ThingCategoryDef>
+
+
+</Defs>
