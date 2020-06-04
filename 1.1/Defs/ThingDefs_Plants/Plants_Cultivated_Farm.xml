@@ -61,7 +61,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>1</maxMeshCount>
-			<harvestedThingDef>VCE_Spices</harvestedThingDef>
+			<harvestedThingDef>VCE_RawSpices</harvestedThingDef>
 			<harvestYield>12</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>

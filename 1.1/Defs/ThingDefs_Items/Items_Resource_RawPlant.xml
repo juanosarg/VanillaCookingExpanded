@@ -11,6 +11,7 @@
     </graphicData>
     <statBases>
       <MarketValue>1.9</MarketValue>
+	  <Nutrition>1</Nutrition>
       <Flammability>1.3</Flammability>
     </statBases>
     <comps>
@@ -24,6 +25,7 @@
     </thingCategories>
     <ingestible>
       <preferability>NeverForNutrition</preferability>
+	  <specialThoughtAsIngredient>VCE_ConsumedSugar</specialThoughtAsIngredient>
     </ingestible>
   </ThingDef>
   
@@ -49,9 +51,90 @@
     </thingCategories>
     <ingestible>
       <preferability>NeverForNutrition</preferability>
+	   <specialThoughtAsIngredient>VCE_ConsumedSpices</specialThoughtAsIngredient>
     </ingestible>
   </ThingDef>
-	
+  
+    <ThingDef ParentName="RoughPlantBase">
+    <defName>VCE_CornOil</defName>
+    <label>corn oil</label>
+    <description>A perfect oil for frying, adds an almost buttery flavor, and is a welcomed addition to pan-frying due to its roasty undertones.</description>
+    <graphicData>
+      <texPath>Things/Items/Condiments/VCE_CornOil</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>120</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>VCE_Condiments</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+    </ingestible>
+  </ThingDef>
+		
+	    <ThingDef ParentName="RoughPlantBase">
+    <defName>VCE_Salt</defName>
+    <label>salt</label>
+    <description>Rock salt, like common salt, enhances the flavor profile of other ingredients it is cooked with.</description>
+    <graphicData>
+      <texPath>Things/Items/Condiments/VCE_Salt</texPath>
+	 
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <deepCommonality>0.25</deepCommonality>
+    <deepCountPerPortion>10</deepCountPerPortion>
+    <deepLumpSizeRange>2~5</deepLumpSizeRange>
+    <thingCategories>
+      <li>VCE_Condiments</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  	  <specialThoughtAsIngredient>VCE_ConsumedSalt</specialThoughtAsIngredient>
+
+    </ingestible>
+  </ThingDef>
+  
+      <ThingDef ParentName="RoughPlantBase">
+    <defName>VCE_Mayo</defName>
+    <label>mayo</label>
+    <description>A thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense.</description>
+    <graphicData>
+      <texPath>Things/Items/Condiments/VCE_Mayo</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>VCE_Condiments</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <specialThoughtAsIngredient>VCE_ConsumedMayo</specialThoughtAsIngredient>
+
+    </ingestible>
+  </ThingDef>
+  
+
 	
 	
 

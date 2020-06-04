@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======= Basic quality thoughts ========= -->
+
+
+
+	<ThoughtDef>	
+		<defName>VCE_ConsumedSugar</defName>
+		<durationDays>0.25</durationDays>
+		<stages>
+			<li>
+				<label>consumed sugar</label>
+				<description>Sugar is not love. But it can feel like it.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<defName>VCE_ConsumedSalt</defName>
+		<durationDays>0.25</durationDays>
+		<stages>
+			<li>
+				<label>consumed salt</label>
+				<description>A pinch of salt really enhances the flavours of a meal.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedMayo</hediff>
+		<defName>VCE_ConsumedMayo</defName>
+		<durationDays>0.25</durationDays>
+		<stages>
+			<li>
+				<label>consumed mayo</label>
+				<description>I ate some delicious mayo. Very filling!</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+	
+		<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedSpices</hediff>
+		<defName>VCE_ConsumedSpices</defName>
+		<durationDays>0.25</durationDays>
+		<stages>
+			<li>
+				<label>consumed spices</label>
+				<description>That meal was spicy!</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+	
+	  <ThoughtDef>
+    <defName>VCE_AteGourmetMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate gourmet meal</label>
+        <description>A mindbending culinary experience. My palate has been gifted with sensations that are beyond this world.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+
+
+</Defs>
