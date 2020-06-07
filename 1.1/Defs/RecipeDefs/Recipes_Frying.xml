@@ -46,6 +46,8 @@
 				<li>Meat_Megaspider</li>
 				
 			</disallowedThingDefs>
+			<disallowedCategories>							
+			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
 			<VCE_DeepFriedBigMeat>20</VCE_DeepFriedBigMeat>
