@@ -16,5 +16,7 @@ namespace VanillaCookingExpanded
         public BodyPartDef secondPartToAffect = null;
         public float secondPercentage = 1f;
 
+       
+
     }
 }

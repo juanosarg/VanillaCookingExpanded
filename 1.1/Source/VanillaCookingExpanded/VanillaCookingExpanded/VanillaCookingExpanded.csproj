@@ -303,8 +303,10 @@
     <Compile Include="Building\SoupListSetupUtility.cs" />
     <Compile Include="Comps\CompProperties_SoupConverts.cs" />
     <Compile Include="Comps\CompProperties_StackByIngredients.cs" />
+    <Compile Include="Comps\CompProperties_TempTransforms.cs" />
     <Compile Include="Comps\CompSoupConverts.cs" />
     <Compile Include="Comps\CompStackByIngredients.cs" />
+    <Compile Include="Comps\CompTempTransforms.cs" />
     <Compile Include="Defs\AcceptedSoupsDef.cs" />
     <Compile Include="Hediffs\HediffCompProperties_WhileHavingThoughts.cs" />
     <Compile Include="Hediffs\HediffComp_WhileHavingThoughts.cs" />

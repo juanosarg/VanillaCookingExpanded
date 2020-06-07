@@ -27,6 +27,22 @@
     </requiredCapacities>
   </WorkGiverDef>
   
+ <WorkGiverDef>
+    <defName>VCE_DoBillsGrill</defName>
+    <label>cook at grill</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>VCE_Grill</li>   
+    </fixedBillGiverDefs>
+    <verb>grill</verb>
+    <gerund>grilling at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
 
   
  

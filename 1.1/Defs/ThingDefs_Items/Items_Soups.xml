@@ -50,7 +50,7 @@
 		<ingestible>
 			<preferability>MealSimple</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
+			<ingestSound>Ingest_Drink</ingestSound>
 		</ingestible>
 
 	</ThingDef>
@@ -103,7 +103,7 @@
 			<preferability>MealFine</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<tasteThought>AteFineMeal</tasteThought>
-			<ingestSound>Meal_Eat</ingestSound>
+			<ingestSound>Ingest_Drink</ingestSound>
 		</ingestible>
 
 	</ThingDef>
@@ -158,7 +158,7 @@
 			<preferability>MealLavish</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<tasteThought>AteLavishMeal</tasteThought>
-			<ingestSound>Meal_Eat</ingestSound>
+			<ingestSound>Ingest_Drink</ingestSound>
 		</ingestible>
 
 	</ThingDef>
@@ -213,7 +213,7 @@
 			<preferability>MealLavish</preferability>
 			<tasteThought>VCE_AteGourmetMeal</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
+			<ingestSound>Ingest_Drink</ingestSound>
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_StackByIngredients" />

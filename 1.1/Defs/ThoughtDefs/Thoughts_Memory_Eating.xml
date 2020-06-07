@@ -241,6 +241,68 @@
 			</li>
 		</modExtensions>
 	</ThoughtDef>
+	
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteSimpleGrill</defName>
+		<hediff>VCE_WellFed</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate simple grill</label>
+				<description>A simple grill. Meh.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFineGrill</defName>
+		<hediff>VCE_WellFed</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate fine grill</label>
+				<description>I ate a very fine grilled meat with some vegetables. Super tasty.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteLavishGrill</defName>
+		<hediff>VCE_WellFed</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate lavish grill</label>
+				<description>I ate an incredible dish with expertly cooked grilled meat and some veggies. Delicious!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteGourmetGrill</defName>
+		<hediff>VCE_WellFed</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate gourmet grill</label>
+				<description>That... that was out of this world. The meat melted in my mouth. Just incredible.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+
 
 
 
