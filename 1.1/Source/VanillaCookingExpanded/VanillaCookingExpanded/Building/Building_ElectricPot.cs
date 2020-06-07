@@ -11,38 +11,46 @@ using Verse.Sound;
 
 namespace VanillaCookingExpanded
 {
- 
+
     public class Building_ElectricPot : Building, IThingHolder
     {
         private System.Random rand = new System.Random();
         public ThingOwner innerContainerSoup = null;
-       
+
         public Map map;
 
         public bool ExpectingSoup = false;
-      
+
+        public bool SoupReadyAndWaitingForPickup = false;
+    
         public bool StartInsertionJobs = false;
 
         public string theSoupIAmGoingToInsert = "";
 
         public string theSoupCooking = "";
 
+        public List<ThingDef> ingredients = null;
+
         public bool SoupStarted = false;
 
         protected bool contentsKnown = false;
 
         public int SoupCounter = 0;
-     
+
         public const int rareTicksPerDay = 240;
         public const int ticksPerDay = 60000;
         public CompPowerTrader compPowerTrader;
+
+        public string soupToTurnInto = "";
+        public int amount = 0;
+        public int days = 0;
 
 
 
         public Building_ElectricPot()
         {
             this.innerContainerSoup = new ThingOwner<Thing>(this, false, LookMode.Deep);
-          
+
 
         }
 
@@ -58,15 +66,22 @@ namespace VanillaCookingExpanded
             Scribe_Deep.Look<ThingOwner>(ref this.innerContainerSoup, "innerContainerSoup", new object[]
             {
                 this
-            });       
+            });
             Scribe_Values.Look<string>(ref this.theSoupIAmGoingToInsert, "theSoupIAmGoingToInsert", "", false);
             Scribe_Values.Look<string>(ref this.theSoupCooking, "theSoupCooking", "", false);
 
-            Scribe_Values.Look<bool>(ref this.ExpectingSoup, "ExpectingSoup", false, false);           
+            Scribe_Values.Look<bool>(ref this.ExpectingSoup, "ExpectingSoup", false, false);
             Scribe_Values.Look<bool>(ref this.StartInsertionJobs, "StartInsertionJobs", false, false);
             Scribe_Values.Look<bool>(ref this.contentsKnown, "contentsKnown", false, false);
             Scribe_Values.Look<bool>(ref this.SoupStarted, "SoupStarted", false, false);
+            Scribe_Values.Look<bool>(ref this.SoupReadyAndWaitingForPickup, "SoupReadyAndWaitingForPickup", false, false);
+
             Scribe_Values.Look<int>(ref this.SoupCounter, "SoupCounter", 0, false);
+            Scribe_Values.Look<string>(ref this.soupToTurnInto, "soupToTurnInto", "", false);
+            Scribe_Values.Look<int>(ref this.amount, "amount", 0, false);
+            Scribe_Values.Look<int>(ref this.days, "days", 0, false);
+
+            Scribe_Collections.Look<ThingDef>(ref this.ingredients, true, "ingredients");
 
 
 
@@ -92,7 +107,7 @@ namespace VanillaCookingExpanded
             this.TickRare();
         }
 
-      
+
 
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
@@ -138,7 +153,7 @@ namespace VanillaCookingExpanded
             return result;
         }
 
-       
+
 
 
 
@@ -150,10 +165,10 @@ namespace VanillaCookingExpanded
             {
                 yield return g;
             }
-            if (!SoupStarted)
+            if (!SoupStarted && !SoupReadyAndWaitingForPickup)
             {
                 yield return SoupListSetupUtility.SetUnfinishedSoupListCommand(this, map);
-               
+
                 if (!this.StartInsertionJobs)
                 {
                     Command_Action RB_Gizmo_StartInsertion = new Command_Action();
@@ -216,15 +231,17 @@ namespace VanillaCookingExpanded
                         }
                         else
                         {
-                           
-                           
-                                this.innerContainerSoup.ClearAndDestroyContents();
-                                this.contentsKnown = false;
-                                theSoupCooking = theSoupIAmGoingToInsert;
-                                theSoupIAmGoingToInsert = "";
-                                
-                                StartInsertionJobs = false;
-                                SoupStarted = true;
+                            this.soupToTurnInto = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.soupToTurnInto;
+                            this.amount = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.amount;
+                            this.days = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.days;
+                            this.ingredients = this.innerContainerSoup.First().TryGetComp<CompIngredients>().ingredients;
+                            this.innerContainerSoup.ClearAndDestroyContents();
+                            this.contentsKnown = false;
+                            theSoupCooking = theSoupIAmGoingToInsert;
+                            theSoupIAmGoingToInsert = "";
+
+                            StartInsertionJobs = false;
+                            SoupStarted = true;
                             base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
 
 
@@ -244,14 +261,14 @@ namespace VanillaCookingExpanded
 
         }
 
-       
+
 
         public override void TickRare()
         {
             base.TickRare();
             if (SoupStarted)
             {
-                
+
                 SoupCounter++;
                 if (!compPowerTrader.PowerOn)
                 {
@@ -262,19 +279,19 @@ namespace VanillaCookingExpanded
 
                 }
 
-                if (SoupCounter > rareTicksPerDay * 3)
+                if (SoupCounter > rareTicksPerDay * this.days)
                 {
 
 
                     Messages.Message("VCE_SoupFinished".Translate(), this, MessageTypeDefOf.PositiveEvent, true);
 
 
-                    base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+                    SoupReadyAndWaitingForPickup = true;
                     theSoupCooking = "";
                     SoupCounter = 0;
 
                     SoupStarted = false;
-                    
+
                 }
 
             }
@@ -290,7 +307,12 @@ namespace VanillaCookingExpanded
 
             if (SoupStarted)
             {
-                incubationTxt = "\n" + "VCE_SoupInProgress".Translate(ThingDef.Named(this.theSoupCooking).LabelCap, ((int)(ticksPerDay * 3) - (SoupCounter * 250)).ToStringTicksToPeriod(true, false, true, true));
+                incubationTxt = "\n" + "VCE_SoupInProgress".Translate(ThingDef.Named(this.theSoupCooking).LabelCap, ((int)(ticksPerDay * this.days) - (SoupCounter * 250)).ToStringTicksToPeriod(true, false, true, true));
+            }
+
+            if (SoupReadyAndWaitingForPickup)
+            {
+                incubationTxt = "\n" + "VCE_SoupReady".Translate();
             }
 
 
@@ -303,7 +325,7 @@ namespace VanillaCookingExpanded
             {
                 if (contentsKnown || SoupStarted)
                 {
-                   
+
                     Graphic newgraphic = GraphicDatabase.Get(typeof(Graphic_Multi), "Things/Buildings/VCE_PotFull", this.def.graphicData.shaderType.Shader, this.def.graphicData.drawSize, this.DrawColor, this.DrawColorTwo);
 
                     return newgraphic;

@@ -14,6 +14,19 @@
     </requiredCapacities>
   </WorkGiverDef>
   
+   <WorkGiverDef>
+    <defName>VCE_RemoveSoup</defName>
+    <label>getting cooked soup from electric pot</label>
+    <giverClass>VanillaCookingExpanded.WorkGiver_RemoveSoup</giverClass>
+    <workType>Hauling</workType>
+    <verb>get cooked soup from electric pot</verb>
+    <gerund>getting cooked soup from electric pot</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
 
   
  

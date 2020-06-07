@@ -42,4 +42,6 @@
 
 <VCE_SoupInProgress>An {0} is cooking. It will be ready in {1}</VCE_SoupInProgress>
 
+<VCE_SoupReady>A soup has finished cooking and is waiting for pickup</VCE_SoupReady>
+
 </LanguageData>

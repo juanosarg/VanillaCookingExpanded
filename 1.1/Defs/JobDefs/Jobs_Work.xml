@@ -9,6 +9,12 @@
     <reportString>inserting soup.</reportString>
   </JobDef>
   
+      <JobDef>
+    <defName>VCE_RemoveSoup</defName>
+    <driverClass>VanillaCookingExpanded.JobDriver_RemoveSoup</driverClass>
+    <reportString>removing soup.</reportString>
+  </JobDef>
+  
 
  
   
