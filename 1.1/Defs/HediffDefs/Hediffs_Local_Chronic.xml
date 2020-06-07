@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <HediffDef ParentName="ChronicDiseaseBase">
+    <defName>VCE_Cholesterol</defName>
+	<initialSeverity>0.01</initialSeverity>
+    <label>cholesterol</label>
+    <description>The human body needs cholesterol to build healthy cells, but high levels of cholesterol can increase your risk of heart disease. With high cholesterol, fatty deposits develop inside blood vessels. Eventually, these deposits grow, making it difficult for enough blood to flow through arteries.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.01</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
+        
+      </li>
+     
+      <li>
+        <label>major</label>
+        <minSeverity>0.5</minSeverity>
+		<hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartAttack</hediff>
+            <allowOnLodgers>false</allowOnLodgers>
+            <mtbDays>200</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.8</minSeverity>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartAttack</hediff>
+            <allowOnLodgers>false</allowOnLodgers>
+            <mtbDays>100</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+    <HediffDef ParentName="ChronicDiseaseBase">
+    <defName>VCE_Diabetes</defName>
+	<initialSeverity>0.01</initialSeverity>
+    <label>diabetes</label>
+    <description>The human body needs cholesterol to build healthy cells, but high levels of cholesterol can increase your risk of heart disease. With high cholesterol, fatty deposits develop inside blood vessels. Eventually, these deposits grow, making it difficult for enough blood to flow through arteries.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.01</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
+        
+      </li>
+     
+      <li>
+        <label>major</label>
+        <minSeverity>0.5</minSeverity>
+		<hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartAttack</hediff>
+            <allowOnLodgers>false</allowOnLodgers>
+            <mtbDays>200</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.8</minSeverity>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartAttack</hediff>
+            <allowOnLodgers>false</allowOnLodgers>
+            <mtbDays>100</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+ 
+</Defs>

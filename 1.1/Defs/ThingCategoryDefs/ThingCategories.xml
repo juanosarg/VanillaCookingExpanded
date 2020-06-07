@@ -9,6 +9,14 @@
       <resourceReadoutRoot>true</resourceReadoutRoot>
       <iconPath>Things/Items/Condiments/VCE_Spices</iconPath>
     </ThingCategoryDef>
+	
+	 <ThingCategoryDef>
+      <defName>VCE_UncookedSoups</defName>
+      <label>uncooked soups</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Items/Uncookedsoup/VCE_UncookedSoupSimple</iconPath>
+    </ThingCategoryDef>
 
 
 </Defs>

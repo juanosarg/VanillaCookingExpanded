@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_AgaveNectar</defName>
+		<label>agave nectar</label>
+		<description>A thin and semi-sweet nectar, known for its healing and anti-inflammatory properties.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_AgaveSyrup</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedAgave</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_RawSugar</defName>
+		<label>sugar</label>
+		<description>Simple crystalline cane sugar, adds a much desired sweetness. While sugar is good on the tongue, it is not so good on the kidneys and can quickly cause diabetes when eaten in mass. Sugar is easily converted into energy by the body, which may result in a nice burst of energy.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_Sugar</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedSugar</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_RawSpices</defName>
+		<label>spices</label>
+		<description>A variety of aromatic and pungent spices, adds several sharp notes on the tongue and puts a bit of a pep in your step.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_Spices</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedSpices</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_CornOil</defName>
+		<label>corn oil</label>
+		<description>A perfect oil for frying, adds an almost buttery flavor, and is a welcomed addition to pan-frying due to its roasty undertones.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_CornOil</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_Salt</defName>
+		<label>salt</label>
+		<description>Rock salt, like common salt, enhances the flavor profile of other ingredients it is cooked with. Constant intake is prone to cause a rise in cholesterol.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_Salt</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<deepCommonality>0.25</deepCommonality>
+		<deepCountPerPortion>10</deepCountPerPortion>
+		<deepLumpSizeRange>2~5</deepLumpSizeRange>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedSalt</specialThoughtAsIngredient>
+
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_Mayo</defName>
+		<label>mayo</label>
+		<description>A thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_Mayo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedMayo</specialThoughtAsIngredient>
+
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_InsectJellyPreserves</defName>
+		<label>insect jelly preserves</label>
+		<description>Insect jelly cut with sweetener then sealed as a preserve. Very rich and sweet, while being surprisingly healthy.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_InsectJellyPreserves</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedInsectJelly</specialThoughtAsIngredient>
+
+		</ingestible>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_SmokeleafButter</defName>
+		<label>smokeleaf butter</label>
+		<description>A thickened, fatty substance made by churning milk into very thick cream, combining with smokeleaf oil and allowing it to set. Very unhealthy and hits quite a bit harder than a joint.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_SmokeleafButter</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_SmokeleafButterHigh</specialThoughtAsIngredient>
+
+		</ingestible>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_ChocolateSyrup</defName>
+		<label>chocolate syrup</label>
+		<description>A mixture of cocoa, water and sugar, forming a bitter-sweet pourable syrup, perfect for coating desserts. While still not good for you, chocolate syrup is not quite as bad as straight sugar.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_ChocolateSyrup</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedChocolateSyrup</specialThoughtAsIngredient>
+
+		</ingestible>
+	</ThingDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

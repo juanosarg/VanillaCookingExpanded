@@ -3,8 +3,43 @@
 
 	<!-- Various -->
 
+<VCE_InsertSoupDesc>Soup to Cook</VCE_InsertSoupDesc>
 
+<VCE_NoSoupsFound>No soups of that kind found in this map.</VCE_NoSoupsFound>
 
+<VCE_UncookedSoupSimple>simple soup</VCE_UncookedSoupSimple>
+<VCE_UncookedSoupFine>fine soup</VCE_UncookedSoupFine>
+<VCE_UncookedSoupLavish>lavish soup</VCE_UncookedSoupLavish>
+<VCE_UncookedSoupGourmet>gourmet soup</VCE_UncookedSoupGourmet>
 
+<VCE_InsertSoup>insert soup</VCE_InsertSoup>
+<VCE_UncookedSoupSimple_InsertSoup>insert simple soup</VCE_UncookedSoupSimple_InsertSoup>
+<VCE_UncookedSoupFine_InsertSoup>insert fine soup</VCE_UncookedSoupFine_InsertSoup>
+<VCE_UncookedSoupLavish_InsertSoup>insert lavish soup</VCE_UncookedSoupLavish_InsertSoup>
+<VCE_UncookedSoupGourmet_InsertSoup>insert gourmet soup</VCE_UncookedSoupGourmet_InsertSoup>
+
+<VCE_SelectSoup>Select a type of soup to be cooked</VCE_SelectSoup>
+
+<VCE_StartInsertion>Bring Soup</VCE_StartInsertion>
+<VCE_StartInsertionDesc>Bring a soup to the electric pot to start cooking</VCE_StartInsertionDesc>
+
+<VCE_RemoveSoup>Remove Soup</VCE_RemoveSoup>
+<VCE_RemoveSoupDesc>Remove the soup from the pot. This can only be done before you start cooking it.</VCE_RemoveSoupDesc>
+
+<VCE_CancelBringingSoup>Cancel Bringing Soup</VCE_CancelBringingSoup>
+<VCE_CancelBringingSoupDesc>Cancel bringing soup to the electric pot.</VCE_CancelBringingSoupDesc>
+
+<VCE_WaitTillJobsEnd>Wait until the soup has been brought to the electric pot, or cancel the job.</VCE_WaitTillJobsEnd>
+
+<VCE_NotPowered>The electric pot is not powered</VCE_NotPowered>
+
+<VCE_Engage>Cook Soup</VCE_Engage>
+<VCE_EngageDesc>Start cooking soup. This process takes 3 days and can't be interrupted, or the soup will be destroyed.</VCE_EngageDesc>
+
+<VCE_SoupFailurePower>The soup has spoiled due to a power failure in the electric pot</VCE_SoupFailurePower>
+
+<VCE_SoupFinished>A soup has finished cooking in the electric pot</VCE_SoupFinished>
+
+<VCE_SoupInProgress>An {0} is cooking. It will be ready in {1}</VCE_SoupInProgress>
 
 </LanguageData>

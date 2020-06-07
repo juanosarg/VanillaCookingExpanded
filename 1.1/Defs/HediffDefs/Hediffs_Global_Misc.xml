@@ -6,7 +6,7 @@
 		<defName>VCE_ConsumedMayo</defName>
 		<label>consumed mayo (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Mayo is a thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense. It lowers hunger rate by 10% for 6 hours.</description>
+		<description>Mayo is a thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense. It lowers hunger rate by 15% for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(255,95,95)</defaultLabelColor>
@@ -14,7 +14,6 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-
 			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
 
@@ -23,23 +22,19 @@
 			</li>
 		</comps>
 		<stages>
-
 			<li>   
 				<statOffsets>
-					<HungerRateMultiplier>-0.1</HungerRateMultiplier>					
+					<HungerRateMultiplier>-0.15</HungerRateMultiplier>					
 				</statOffsets>
 			</li>
-
-
-
 		</stages>
 	</HediffDef>
 	
-		<HediffDef>
-		<defName>VCE_ConsumedSpices</defName>
-		<label>consumed spices (from meal)</label>
+	<HediffDef>
+		<defName>VCE_ConsumedAgave</defName>
+		<label>consumed agave nectar (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Consumed a variety of aromatic and pungent spices. It increases manipulation stat for 6 hours.</description>
+		<description>Agave nectar is a thin and semi-sweet nectar, known for its healing and anti-inflammatory properties. Gives a 15% immunity gain speed boost for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(255,95,95)</defaultLabelColor>
@@ -47,7 +42,33 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_ConsumedAgave</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<ImmunityGainSpeed>1.15</ImmunityGainSpeed>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VCE_ConsumedSpices</defName>
+		<label>consumed spices (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Consumed a variety of aromatic and pungent spices. It increases manipulation stat for 24 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(255,95,95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
 			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
 
@@ -56,7 +77,6 @@
 			</li>
 		</comps>
 		<stages>
-
 			<li>   
 				<capMods>
 					<li>
@@ -65,9 +85,6 @@
 					</li>
 				</capMods>
 			</li>
-
-
-
 		</stages>
 	</HediffDef>
 

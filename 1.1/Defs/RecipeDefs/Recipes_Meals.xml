@@ -82,56 +82,7 @@
   
   
 
-  <RecipeDef ParentName="VCE_CookGourmetMealBase">
-    <defName>VCE_CookMealGourmetBulk</defName>
-    <label>cook gourmet meal x4</label>
-    <description>Cook 4 culinary works of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity meal.</description>
-    <jobString>Cooking 4 gourmet meals.</jobString>
-    <workAmount>3200</workAmount>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-	<recipeUsers>
-		<li>ElectricStove</li>	
-		<li>FueledStove</li>			
-	</recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>MeatRaw</li>
-            <li>AnimalProductRaw</li>
-			 
-          </categories>
-        </filter>
-        <count>2.0</count>
-      </li>
-      <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>2.0</count>
-      </li>
-	   <li>
-        <filter>
-          <categories>
-            <li>VCE_Condiments</li>
-          </categories>
-        </filter>
-        <count>4</count>
-      </li>
-    </ingredients>
-    <products>
-      <VCE_MealGourmet>4</VCE_MealGourmet>
-    </products>
-    <skillRequirements>
-      <Cooking>10</Cooking>
-    </skillRequirements>
-  </RecipeDef>
+ 
 
  
 

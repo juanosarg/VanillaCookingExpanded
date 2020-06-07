@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ResearchProjectDef>
-    <defName>VCE_CondimentsResearch</defName>
-    <label>food condiments</label>
-    <tab>VCE_Cooking</tab>
-    <techLevel>Industrial</techLevel>
-    <description>A condiment is a spice, sauce, or preparation that is added to food, either after or during cooking, to impart a specific flavor, to enhance the flavor, or to complement the dish. All condiments are created at cooking stoves.</description>
-    <baseCost>500</baseCost>
-    
-    
+	<ResearchProjectDef>
+		<defName>VCE_CondimentsResearch</defName>
+		<label>food condiments</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<description>A condiment is a spice, sauce, or preparation that is added to food, either after or during cooking, to impart a specific flavor, to enhance the flavor, or to complement the dish. All condiments are created at cooking stoves.</description>
+		<baseCost>500</baseCost>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
-  </ResearchProjectDef>
+	</ResearchProjectDef>
 
- 
+	<ResearchProjectDef>
+		<defName>VCE_SoupCooking</defName>
+		<label>soup cooking</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Soup is a primarily liquid food, generally served warm or hot, that is made by combining ingredients of meat or vegetables with stock, or water. Hot soups are additionally characterized by boiling solid ingredients in liquids in a pot until the flavors are extracted. This research also gives access to the electric pot necessary to cook soups.</description>
+		<baseCost>400</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+
 
 </Defs>

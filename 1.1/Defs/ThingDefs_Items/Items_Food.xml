@@ -24,6 +24,10 @@
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
+	<comps>
+      <li Class="VanillaCookingExpanded.CompProperties_StackByIngredients" />
+     
+    </comps>
   </ThingDef>
 
  

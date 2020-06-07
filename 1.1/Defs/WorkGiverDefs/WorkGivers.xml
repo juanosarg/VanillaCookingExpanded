@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <WorkGiverDef>
+    <defName>VCE_InsertSoup</defName>
+    <label>bringing soup to electric pot</label>
+    <giverClass>VanillaCookingExpanded.WorkGiver_InsertSoup</giverClass>
+    <workType>Hauling</workType>
+    <verb>bring soup to electric pot</verb>
+    <gerund>bringing soup to electric pot</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+
+  
+ 
+	
+	
+
+
+
+</Defs>
