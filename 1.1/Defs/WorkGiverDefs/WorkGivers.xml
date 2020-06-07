@@ -43,6 +43,23 @@
     </requiredCapacities>
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
+  
+   <WorkGiverDef>
+    <defName>VCE_DoBillsFryer</defName>
+    <label>cook at deep fryer</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>101</priorityInType>
+    <fixedBillGiverDefs>
+      <li>VCE_DeepFrier</li>   
+    </fixedBillGiverDefs>
+    <verb>deep fry</verb>
+    <gerund>deep frying at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
 
   
  

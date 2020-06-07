@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Fishing Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<RecipeDef>
+							<defName>VCE_DeepFryFish</defName>
+							<label>deep fry fish x20</label>
+							<description>Deep fry fish. Deep fried food is very tasty, but not very good for your health.</description>
+							<jobString>Deep frying fish.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_CookMeal</soundWorking>
+							<allowMixingIngredients>true</allowMixingIngredients>
+
+							<recipeUsers>
+								<li>VCE_DeepFrier</li>					
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>VCEF_RawFishCategory</li>
+
+										</categories>
+									</filter>
+									<count>20</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>VCEF_RawFishCategory</li>				
+								</categories>			
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+								<categories>
+									<li>VCEF_RawFishCategory</li>				
+								</categories>
+
+							</defaultIngredientFilter>
+							<products>
+								<VCE_DeepFriedFish>20</VCE_DeepFriedFish>
+							</products>
+
+						</RecipeDef>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="VCE_DeepFryMeats"]/defaultIngredientFilter</xpath>
+					<value>
+
+						 <disallowedCategories>
+							<li>VCEF_RawFishCategory</li>
+						  </disallowedCategories>
+
+					</value>
+				</li>
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

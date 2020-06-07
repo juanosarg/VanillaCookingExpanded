@@ -303,7 +303,25 @@
 		
 	</ThoughtDef>
 
-
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFriedGoods</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate deep fried food</label>
+				<description>Greasy food. So delicious.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
+				<partToAffect>Heart</partToAffect>
+				<percentage>0.01</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
 
 
 

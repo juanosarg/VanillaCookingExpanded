@@ -23,7 +23,7 @@
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
-			<maxMeshCount>2</maxMeshCount>
+			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>VCE_RawSugar</harvestedThingDef>
 			<harvestYield>21</harvestYield>
 			<harvestWork>200</harvestWork>
@@ -34,7 +34,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>12</growDays>
 			
-			<visualSizeRange>0.4~1</visualSizeRange>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
@@ -97,7 +97,7 @@
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
-			<maxMeshCount>1</maxMeshCount>
+			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>VCE_Flour</harvestedThingDef>
 			<sowMinSkill>6</sowMinSkill>
 			<harvestYield>24</harvestYield>
@@ -107,7 +107,7 @@
 			</sowTags>
 			<topWindExposure>0.2</topWindExposure>
 			<growDays>13</growDays>			
-			<visualSizeRange>0.3~1.2</visualSizeRange>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
 			
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
