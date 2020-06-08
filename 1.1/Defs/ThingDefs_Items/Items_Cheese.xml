@@ -28,6 +28,7 @@
 			<preferability>MealSimple</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">

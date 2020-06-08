@@ -29,6 +29,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
 		</ingestible>
 		
 	</ThingDef>
@@ -56,6 +57,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
+			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
 		</ingestible>
 		
 	</ThingDef>
@@ -82,6 +84,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
 		</ingestible>
 		
 	</ThingDef>
@@ -108,6 +111,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
 		</ingestible>
 		
 	</ThingDef>
