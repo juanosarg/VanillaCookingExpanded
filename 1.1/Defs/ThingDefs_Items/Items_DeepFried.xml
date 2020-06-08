@@ -26,6 +26,7 @@
 			<li>MeatRaw</li>
 		</thingCategories>
 		<ingestible>
+			<foodType>Meal</foodType>
 			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
@@ -60,6 +61,7 @@
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
+			<foodType>Meal</foodType>
 			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
@@ -94,6 +96,7 @@
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
+			<foodType>Meal</foodType>
 			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
