@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Milk"]</xpath>
+		<value>
+
+			<modExtensions>
+				<li Class="VanillaCookingExpanded.Milk_Extension">
+					<mustCapacity>10</mustCapacity>
+					<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
+					
+					<cheeseToTurnInto>VCE_Cheese</cheeseToTurnInto>
+					<amount>10</amount>
+
+				</li>
+			</modExtensions>
+
+
+		</value>
+	</Operation>
+
+
+
+
+
+</Patch>

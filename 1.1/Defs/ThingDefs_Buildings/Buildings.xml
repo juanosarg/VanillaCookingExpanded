@@ -25,7 +25,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<uiIconScale>0.5</uiIconScale>
+		<uiIconScale>1</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -58,7 +58,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>VCE_Grill</defName>
 		<label>grill</label>
-		<description>A grill is a device that cooks food by applying heat from below.</description>
+		<description>A grill is a device that cooks food by applying heat from below. This is an electric grill and the heating comes from an electric heating element, therefore neither coal nor briquettes are needed.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Buildings/VCE_Grill</texPath>
@@ -79,7 +79,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<uiIconScale>0.5</uiIconScale>
+		<uiIconScale>1</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -126,6 +126,14 @@
 			<li>
 				<compClass>CompReportWorkSpeed</compClass>
 			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>6</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(244, 112, 42,0)</glowColor>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -153,12 +161,12 @@
 		</graphicData>
 		<costList>
 			<Steel>75</Steel>
-
+			<Chemfuel>15</Chemfuel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<uiIconScale>0.5</uiIconScale>
+		<uiIconScale>1</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -212,8 +220,202 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 	</ThingDef>
+	
+		<ThingDef ParentName="BuildingBase">
+		<defName>VCE_CanningMachine</defName>
+		<label>canning machine</label>
+		<description>A canning machine is an appliance to store preserved food inside metallic cans. Each canning operation needs a certain amount of Steel.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VCE_CanningMachine</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>100</Steel>
+			
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>1</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
 
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VCE_Canning</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>85</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
 
+	<ThingDef ParentName="BuildingBase">
+		<defName>VCE_CondimentPrepTable</defName>
+		<label>condiment prep table</label>
+		<description>A working table to cut, slice and prepare condiments used in gourmet recipes.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VCE_PrepTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<WoodLog>50</WoodLog>
+			
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>1</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<size>(1,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VCE_CondimentsResearch</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	   <ThingDef ParentName="BuildingBase">
+        <defName>VCE_CheesePress</defName>
+        <label>cheese press</label>
+        <description>A cheese press is a device for pressing whey from curds when making cheese. Pressing influences the cheese's hardness and texture and will also determine the shape of the block or wheel of cheese. This press also works as a ripening chamber, so the longer the cheese is left ripening, the higher its quality will be.</description>
+		<thingClass>VanillaCookingExpanded.Building_CheesePress</thingClass>
+        <graphicData>
+            <texPath>Things/Buildings/VCE_CheesePress</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <rect>(0.05,0.1,0.9,0.9)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.75, 0.35, 0.33)</volume>
+            </shadowData>
+        </graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.45</fillPercent>
+        <pathCost>60</pathCost>
+        <thingCategories>
+            <li>BuildingsProduction</li>
+        </thingCategories>
+        <statBases>
+            <WorkToBuild>600</WorkToBuild>
+            <Mass>10</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>10</Steel>
+            <WoodLog>30</WoodLog>
+        </costList>
+       
+        <tickerType>Rare</tickerType>
+        <rotatable>true</rotatable>
+        <designationCategory>Production</designationCategory>
+        <constructEffect>ConstructWood</constructEffect>
+        <researchPrerequisites>
+            <li>VCE_CheeseMaking</li>
+        </researchPrerequisites>
+    </ThingDef>
 
 
 

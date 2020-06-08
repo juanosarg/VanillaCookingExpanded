@@ -68,7 +68,7 @@
 			<li>
 				<label>high on smokeleaf butter</label>
 				<description>I'm, like, stoned, man.</description>
-				<baseMoodEffect>13</baseMoodEffect>
+				<baseMoodEffect>0</baseMoodEffect>
 			</li>
 		</stages>
 		<modExtensions>
@@ -229,7 +229,7 @@
 		<stages>
 			<li>
 				<label>ate gourmet dessert</label>
-				<description>Oh my God! My palate had never experienced such an explosion of orgasmic tastes. That was PURE food porn. I NEED more!</description>
+				<description>Oh my God! My palate had never experienced such an explosion of orgasmic tastes. That was pure food porn. I need more!</description>
 				<baseMoodEffect>15</baseMoodEffect>
 			</li>
 		</stages>
@@ -311,7 +311,7 @@
 			<li>
 				<label>ate deep fried food</label>
 				<description>Greasy food. So delicious.</description>
-				<baseMoodEffect>5</baseMoodEffect>
+				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 		</stages>	
 		<modExtensions>

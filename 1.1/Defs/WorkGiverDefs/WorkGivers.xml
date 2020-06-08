@@ -1,70 +1,130 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <WorkGiverDef>
-    <defName>VCE_InsertSoup</defName>
-    <label>bringing soup to electric pot</label>
-    <giverClass>VanillaCookingExpanded.WorkGiver_InsertSoup</giverClass>
-    <workType>Hauling</workType>
-    <verb>bring soup to electric pot</verb>
-    <gerund>bringing soup to electric pot</gerund>
-    <priorityInType>20</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
-   <WorkGiverDef>
-    <defName>VCE_RemoveSoup</defName>
-    <label>getting cooked soup from electric pot</label>
-    <giverClass>VanillaCookingExpanded.WorkGiver_RemoveSoup</giverClass>
-    <workType>Hauling</workType>
-    <verb>get cooked soup from electric pot</verb>
-    <gerund>getting cooked soup from electric pot</gerund>
-    <priorityInType>20</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
- <WorkGiverDef>
-    <defName>VCE_DoBillsGrill</defName>
-    <label>cook at grill</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Cooking</workType>
-    <priorityInType>100</priorityInType>
-    <fixedBillGiverDefs>
-      <li>VCE_Grill</li>   
-    </fixedBillGiverDefs>
-    <verb>grill</verb>
-    <gerund>grilling at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-  
-   <WorkGiverDef>
-    <defName>VCE_DoBillsFryer</defName>
-    <label>cook at deep fryer</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Cooking</workType>
-    <priorityInType>101</priorityInType>
-    <fixedBillGiverDefs>
-      <li>VCE_DeepFrier</li>   
-    </fixedBillGiverDefs>
-    <verb>deep fry</verb>
-    <gerund>deep frying at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
+	<WorkGiverDef>
+		<defName>VCE_InsertSoup</defName>
+		<label>bringing soup to electric pot</label>
+		<giverClass>VanillaCookingExpanded.WorkGiver_InsertSoup</giverClass>
+		<workType>Hauling</workType>
+		<verb>bring soup to</verb>
+		<gerund>bringing soup to</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 
-  
- 
+	<WorkGiverDef>
+		<defName>VCE_RemoveSoup</defName>
+		<label>getting cooked soup from electric pot</label>
+		<giverClass>VanillaCookingExpanded.WorkGiver_RemoveSoup</giverClass>
+		<workType>Hauling</workType>
+		<verb>get cooked soup from</verb>
+		<gerund>getting cooked soup from</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 	
-	
+	<WorkGiverDef>
+		<defName>VCE_InsertMilk</defName>
+		<label>bringing milk to cheese press</label>
+		<giverClass>VanillaCookingExpanded.WorkGiver_InsertMilk</giverClass>
+		<workType>Hauling</workType>
+		<verb>bring milk to</verb>
+		<gerund>bringing milk to</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>VCE_RemoveCheese</defName>
+		<label>getting ripened cheese from cheese press</label>
+		<giverClass>VanillaCookingExpanded.WorkGiver_RemoveCheese</giverClass>
+		<workType>Hauling</workType>
+		<verb>get ripened cheese from</verb>
+		<gerund>getting ripened cheese from</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>VCE_DoBillsGrill</defName>
+		<label>cook at grill</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>VCE_Grill</li>   
+		</fixedBillGiverDefs>
+		<verb>grill</verb>
+		<gerund>grilling at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>VCE_DoBillsFryer</defName>
+		<label>cook at deep fryer</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>101</priorityInType>
+		<fixedBillGiverDefs>
+			<li>VCE_DeepFrier</li>   
+		</fixedBillGiverDefs>
+		<verb>deep fry</verb>
+		<gerund>deep frying at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>VCE_DoBillsCanning</defName>
+		<label>work at canning machine</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>101</priorityInType>
+		<fixedBillGiverDefs>
+			<li>VCE_CanningMachine</li>   
+		</fixedBillGiverDefs>
+		<verb>can food</verb>
+		<gerund>canning food at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>VCE_DoBillsPrep</defName>
+		<label>work on condiments at prep table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>101</priorityInType>
+		<fixedBillGiverDefs>
+			<li>VCE_CondimentPrepTable</li>   
+		</fixedBillGiverDefs>
+		<verb>prep condiments</verb>
+		<gerund>working on condiments at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+
+
+
+
 
 
 

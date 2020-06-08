@@ -15,7 +15,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>15</MarketValue>
-			<WorkToMake>500</WorkToMake>
+			<WorkToMake>450</WorkToMake>
 			<Nutrition>0.7</Nutrition>
 		</statBases>
 		<ingestible>
@@ -36,7 +36,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<WorkToMake>800</WorkToMake>
+			<WorkToMake>675</WorkToMake>
 			<Nutrition>0.8</Nutrition>
 		</statBases>
 		<ingestible>
@@ -58,7 +58,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>40</MarketValue>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>1200</WorkToMake>
 			<Nutrition>0.9</Nutrition>
 		</statBases>
 		<ingestible>
@@ -80,7 +80,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>75</MarketValue>
-			<WorkToMake>1800</WorkToMake>
+			<WorkToMake>2250</WorkToMake>
 			<Nutrition>0.8</Nutrition>
 		</statBases>
 		<ingestible>

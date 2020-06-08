@@ -15,6 +15,18 @@
     <reportString>removing soup.</reportString>
   </JobDef>
   
+      <JobDef>
+    <defName>VCE_InsertMilk</defName>
+    <driverClass>VanillaCookingExpanded.JobDriver_InsertMilk</driverClass>
+    <reportString>inserting milk.</reportString>
+  </JobDef>
+  
+   <JobDef>
+    <defName>VCE_RemoveCheese</defName>
+    <driverClass>VanillaCookingExpanded.JobDriver_RemoveCheese</driverClass>
+    <reportString>removing ripened cheese.</reportString>
+  </JobDef>
+  
 
  
   

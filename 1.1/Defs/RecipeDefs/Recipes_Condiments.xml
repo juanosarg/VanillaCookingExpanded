@@ -12,7 +12,7 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>200</workAmount>
 		<recipeUsers>
-			<li>BiofuelRefinery</li>	  
+			<li>VCE_CondimentPrepTable</li>	  
 		</recipeUsers>	
 		<ingredients>
 			<li>
@@ -45,7 +45,7 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>200</workAmount>
 		<recipeUsers>
-			<li>BiofuelRefinery</li>	  
+			<li>VCE_CondimentPrepTable</li>	  
 		</recipeUsers>	
 		<ingredients>
 			<li>
@@ -78,7 +78,7 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>200</workAmount>
 		<recipeUsers>
-			<li>BiofuelRefinery</li>	  
+			<li>VCE_CondimentPrepTable</li>	  
 		</recipeUsers>	
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -114,7 +114,7 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>200</workAmount>
 		<recipeUsers>
-			<li>BiofuelRefinery</li>	  
+			<li>VCE_CondimentPrepTable</li>	  
 		</recipeUsers>	
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -157,7 +157,7 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>200</workAmount>
 		<recipeUsers>
-			<li>BiofuelRefinery</li>	  
+			<li>VCE_CondimentPrepTable</li>	  
 		</recipeUsers>	
 		<ingredients>
 			<li>

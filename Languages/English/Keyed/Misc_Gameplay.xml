@@ -1,47 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<!-- Various -->
+	<!-- Soups -->
+	
+	<VCE_InsertSoup>insert soup</VCE_InsertSoup>
+	<VCE_InsertSoupDesc>Soup to Cook</VCE_InsertSoupDesc>
+	<VCE_NoSoupsFound>No soups of that kind found in this map.</VCE_NoSoupsFound>
+	<VCE_UncookedSoupSimple>simple soup</VCE_UncookedSoupSimple>
+	<VCE_UncookedSoupFine>fine soup</VCE_UncookedSoupFine>
+	<VCE_UncookedSoupLavish>lavish soup</VCE_UncookedSoupLavish>
+	<VCE_UncookedSoupGourmet>gourmet soup</VCE_UncookedSoupGourmet>	
+	<VCE_UncookedSoupSimple_InsertSoup>insert simple soup</VCE_UncookedSoupSimple_InsertSoup>
+	<VCE_UncookedSoupFine_InsertSoup>insert fine soup</VCE_UncookedSoupFine_InsertSoup>
+	<VCE_UncookedSoupLavish_InsertSoup>insert lavish soup</VCE_UncookedSoupLavish_InsertSoup>
+	<VCE_UncookedSoupGourmet_InsertSoup>insert gourmet soup</VCE_UncookedSoupGourmet_InsertSoup>
+	<VCE_SelectSoup>Select a type of soup to be cooked</VCE_SelectSoup>
+	<VCE_StartInsertion>Bring Soup</VCE_StartInsertion>
+	<VCE_StartInsertionDesc>Bring a soup to the electric pot to start cooking</VCE_StartInsertionDesc>
+	<VCE_RemoveSoup>Remove Soup</VCE_RemoveSoup>
+	<VCE_RemoveSoupDesc>Remove the soup from the pot. This can only be done before you start cooking it.</VCE_RemoveSoupDesc>
+	<VCE_CancelBringingSoup>Cancel Bringing Soup</VCE_CancelBringingSoup>
+	<VCE_CancelBringingSoupDesc>Cancel bringing soup to the electric pot.</VCE_CancelBringingSoupDesc>
+	<VCE_WaitTillJobsEnd>Wait until the soup has been brought to the electric pot, or cancel the job.</VCE_WaitTillJobsEnd>
+	<VCE_NotPowered>The electric pot is not powered</VCE_NotPowered>
+	<VCE_Engage>Cook Soup</VCE_Engage>
+	<VCE_EngageDesc>Start cooking soup. This process takes 3 days and can't be interrupted, or the soup will be destroyed.</VCE_EngageDesc>
+	<VCE_SoupFailurePower>The soup has spoiled due to a power failure in the electric pot</VCE_SoupFailurePower>
+	<VCE_SoupFinished>A soup has finished cooking in the electric pot</VCE_SoupFinished>
+	<VCE_SoupInProgress>An {0} is cooking. It will be ready in {1}</VCE_SoupInProgress>
+	<VCE_SoupReady>A soup has finished cooking and is waiting for pickup</VCE_SoupReady>
 
-<VCE_InsertSoupDesc>Soup to Cook</VCE_InsertSoupDesc>
-
-<VCE_NoSoupsFound>No soups of that kind found in this map.</VCE_NoSoupsFound>
-
-<VCE_UncookedSoupSimple>simple soup</VCE_UncookedSoupSimple>
-<VCE_UncookedSoupFine>fine soup</VCE_UncookedSoupFine>
-<VCE_UncookedSoupLavish>lavish soup</VCE_UncookedSoupLavish>
-<VCE_UncookedSoupGourmet>gourmet soup</VCE_UncookedSoupGourmet>
-
-<VCE_InsertSoup>insert soup</VCE_InsertSoup>
-<VCE_UncookedSoupSimple_InsertSoup>insert simple soup</VCE_UncookedSoupSimple_InsertSoup>
-<VCE_UncookedSoupFine_InsertSoup>insert fine soup</VCE_UncookedSoupFine_InsertSoup>
-<VCE_UncookedSoupLavish_InsertSoup>insert lavish soup</VCE_UncookedSoupLavish_InsertSoup>
-<VCE_UncookedSoupGourmet_InsertSoup>insert gourmet soup</VCE_UncookedSoupGourmet_InsertSoup>
-
-<VCE_SelectSoup>Select a type of soup to be cooked</VCE_SelectSoup>
-
-<VCE_StartInsertion>Bring Soup</VCE_StartInsertion>
-<VCE_StartInsertionDesc>Bring a soup to the electric pot to start cooking</VCE_StartInsertionDesc>
-
-<VCE_RemoveSoup>Remove Soup</VCE_RemoveSoup>
-<VCE_RemoveSoupDesc>Remove the soup from the pot. This can only be done before you start cooking it.</VCE_RemoveSoupDesc>
-
-<VCE_CancelBringingSoup>Cancel Bringing Soup</VCE_CancelBringingSoup>
-<VCE_CancelBringingSoupDesc>Cancel bringing soup to the electric pot.</VCE_CancelBringingSoupDesc>
-
-<VCE_WaitTillJobsEnd>Wait until the soup has been brought to the electric pot, or cancel the job.</VCE_WaitTillJobsEnd>
-
-<VCE_NotPowered>The electric pot is not powered</VCE_NotPowered>
-
-<VCE_Engage>Cook Soup</VCE_Engage>
-<VCE_EngageDesc>Start cooking soup. This process takes 3 days and can't be interrupted, or the soup will be destroyed.</VCE_EngageDesc>
-
-<VCE_SoupFailurePower>The soup has spoiled due to a power failure in the electric pot</VCE_SoupFailurePower>
-
-<VCE_SoupFinished>A soup has finished cooking in the electric pot</VCE_SoupFinished>
-
-<VCE_SoupInProgress>An {0} is cooking. It will be ready in {1}</VCE_SoupInProgress>
-
-<VCE_SoupReady>A soup has finished cooking and is waiting for pickup</VCE_SoupReady>
+	<!-- Cheese making -->
+	
+	<VCE_InsertMilkDesc>Select Milk to press in the cheese press. Different milks might produce different types of cheese.</VCE_InsertMilkDesc>
+	<VCE_InsertMilk>Select Milk</VCE_InsertMilk>
+	<VCE_InsertMilkVariable>Insert {0}</VCE_InsertMilkVariable>
+	<VCE_NoMilksFound>No milks of that kind found in this map.</VCE_NoMilksFound>
+	<VCE_SelectMilk>Select a type of milk to be pressed</VCE_SelectMilk>
+	<VCE_StartInsertionMilk>Bring Milk</VCE_StartInsertionMilk>
+	<VCE_StartInsertionMilkDesc>Bring milk to the cheese press to start pressing</VCE_StartInsertionMilkDesc>
+	<VCE_RemoveMilk>Remove Milk</VCE_RemoveMilk>
+	<VCE_RemoveMilkDesc>Remove the milk from the press. This can only be done before you start pressing it.</VCE_RemoveMilkDesc>	
+	<VCE_CancelBringingMilk>Cancel Bringing Milk</VCE_CancelBringingMilk>
+	<VCE_CancelBringingMilkDesc>Cancel bringing milk to the cheese press.</VCE_CancelBringingMilkDesc>
+	<VCE_WaitTillJobsEndMilk>Wait until the milk has been brought to the cheese press, or cancel the job.</VCE_WaitTillJobsEndMilk>
+	<VCE_EngageMilk>Press Into Cheese</VCE_EngageMilk>
+	<VCE_EngageMilkDesc>Start pressing milk into cheese. This process takes a variable time and cheese will increase in quality with ripening. You can remove it at any time after the initial period of 1 day.</VCE_EngageMilkDesc>
+	<VCE_CheeseFinished>A cheese has finished ripening in the cheese press</VCE_CheeseFinished>
+	<VCE_CheeseInProgress>Cheese press is pressing {0}. It will be ready with {1} quality in {2}</VCE_CheeseInProgress>
+	<VCE_CheeseReady>This cheese has reached its desired degree of ripening and is waiting for pickup</VCE_CheeseReady>
+	<VCE_MilkImproperlyDefined>This milk has been improperly defined to work with the cheese press, contact the milk mod's author</VCE_MilkImproperlyDefined>
+	<VCE_RemoveCheese>Remove Cheese ({0})</VCE_RemoveCheese>
+	<VCE_RemoveCheeseDesc>Remove cheese from the cheese press. The cheese will be ready at the present quality level ({0})</VCE_RemoveCheeseDesc>
 
 </LanguageData>

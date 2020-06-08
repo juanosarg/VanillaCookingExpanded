@@ -26,7 +26,7 @@
 			<li>MeatRaw</li>
 		</thingCategories>
 		<ingestible>
-			<preferability>RawTasty</preferability>
+			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatMeat</ingestEffect>
@@ -60,7 +60,7 @@
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>RawTasty</preferability>
+			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -94,7 +94,7 @@
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>RawTasty</preferability>
+			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatMeat</ingestEffect>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName = "VFEI_InsectMilk"]</xpath>
+					<value>
+
+
+						<modExtensions>
+							<li Class="VanillaCookingExpanded.Milk_Extension">
+								<mustCapacity>10</mustCapacity>
+								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
+								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
+
+								<cheeseToTurnInto>VCE_InsectCheese</cheeseToTurnInto>
+								<amount>10</amount>
+
+							</li>
+						</modExtensions>
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+
+
+						<ThingDef ParentName="MealBase">
+							<defName>VCE_InsectCheese</defName>
+							<label>insect cheese</label>
+							<description>A strong smelling cheese reminiscent of Roquefort. Insect cheese is white, tangy, crumbly and slightly moist.</description>
+							<graphicData>
+								<texPath>Things/Items/Cheese/VCE_InsectCheese</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Buyable</tradeability>
+							<stackLimit>75</stackLimit>
+							<statBases>
+								<MarketValue>50</MarketValue>
+								<Nutrition>0.05</Nutrition>
+							</statBases>
+							<thingCategories>
+								<li>VCE_Cheese</li>
+							</thingCategories>
+							<ingestible>
+								<preferability>MealLavish</preferability>
+								<ingestEffect>EatMeat</ingestEffect>
+								<ingestSound>Meal_Eat</ingestSound>
+							</ingestible>
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>60</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+								<li>
+									<compClass>CompQuality</compClass>
+								</li>
+							</comps>
+						</ThingDef>
+
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs/VanillaCookingExpanded.AcceptedMilksDef[defName = "VCE_AcceptedMilks"]/milks</xpath>
+					<value>
+							<li>VFEI_InsectMilk</li>
+					</value>
+				</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

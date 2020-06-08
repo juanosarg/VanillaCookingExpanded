@@ -6,7 +6,7 @@
 		<label>food condiments</label>
 		<tab>VCE_Cooking</tab>
 		<techLevel>Neolithic</techLevel>
-		<description>A condiment is a spice, sauce, or preparation that is added to food, either after or during cooking, to impart a specific flavor, to enhance the flavor, or to complement the dish. All condiments are created at cooking stoves.</description>
+		<description>A condiment is a spice, sauce, or preparation that is added to food, either after or during cooking, to impart a specific flavor, to enhance the flavor, or to complement the dish. All condiments are created at the condiment prep table.</description>
 		<baseCost>500</baseCost>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
@@ -52,6 +52,34 @@
 		<baseCost>600</baseCost>
 		<researchViewX>1</researchViewX>
 		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+		<ResearchProjectDef>
+		<defName>VCE_Canning</defName>
+		<label>canning</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<description>Canning is a method of preserving food in which the food contents are processed and sealed in an airtight container (jars like Mason jars, and steel and tin cans). Canning provides a shelf life of several years. A freeze-dried canned product, such as canned dried lentils, could last as long as 30 years in an edible state. This research gives access to the canning machine.</description>
+		<baseCost>600</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+		<ResearchProjectDef>
+		<defName>VCE_CheeseMaking</defName>
+		<label>cheese making</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<description>Cheesemaking (or caseiculture) is the craft of making cheese. The production of cheese, like many other food preservation processes, allows the nutritional and economic value of milk to be preserved in concentrated form. Cheesemaking allows the production of the cheese with diverse flavors and consistencies. This research gives access to the cheese press.</description>
+		<baseCost>750</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 

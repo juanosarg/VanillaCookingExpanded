@@ -201,7 +201,7 @@
 		<label>gourmet soup</label>
 		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity soup.</description>
 		<graphicData>
-			<texPath>Things/Meals/VCE_BakeGourmet</texPath>
+			<texPath>Things/Meals/VCE_SoupGourmet</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

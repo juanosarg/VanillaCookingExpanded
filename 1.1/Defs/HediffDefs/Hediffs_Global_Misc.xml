@@ -9,7 +9,7 @@
 		<description>Mayo is a thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense. It lowers hunger rate by 15% for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
-		<defaultLabelColor>(255,95,95)</defaultLabelColor>
+		<defaultLabelColor>(98,36,208)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
@@ -37,7 +37,7 @@
 		<description>Agave nectar is a thin and semi-sweet nectar, known for its healing and anti-inflammatory properties. Gives a 15% immunity gain speed boost for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
-		<defaultLabelColor>(255,95,95)</defaultLabelColor>
+		<defaultLabelColor>(98,36,208)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
@@ -64,7 +64,7 @@
 		<description>Consumed a variety of aromatic and pungent spices. It increases manipulation stat for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
-		<defaultLabelColor>(255,95,95)</defaultLabelColor>
+		<defaultLabelColor>(98,36,208)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
@@ -95,15 +95,17 @@
 		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 20% for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
-		<defaultLabelColor>(255,95,95)</defaultLabelColor>
+		<defaultLabelColor>(98,36,208)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
-
 					<li>VCE_AteSimpleGrill</li>
+					<li>VCE_AteFineGrill</li>
+					<li>VCE_AteLavishGrill</li>
+					<li>VCE_AteGourmetGrill</li>			
 				</thoughtDefs>
 			</li>
 		</comps>

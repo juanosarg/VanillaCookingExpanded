@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaCookingExpanded.AcceptedMilksDef>
+		<defName>VCE_AcceptedMilks</defName>
+		<milks>
+			
+			<li>Milk</li>
+			
+			
+		</milks>							
+	</VanillaCookingExpanded.AcceptedMilksDef>
+	
+	
+
+	
+	
+</Defs>
