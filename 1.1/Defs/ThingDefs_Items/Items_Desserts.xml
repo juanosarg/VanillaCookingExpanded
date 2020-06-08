@@ -30,7 +30,7 @@
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
-			<joy>0.02</joy>
+			<joy>0.3</joy>
 			<tasteThought>VCE_AteSimpleDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -71,7 +71,7 @@
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
-			<joy>0.04</joy>
+			<joy>0.5</joy>
 			<tasteThought>VCE_AteFineDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -87,7 +87,7 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>VCE_LavishDessert</defName>
-		<label>fine dessert</label>
+		<label>lavish dessert</label>
 		<description>A masterpiece of the culinary arts, this dessert nourishes the body, mind, and soul.</description>
 		<graphicData>
 			<texPath>Things/Meals/VCE_DessertLavish</texPath>
@@ -112,7 +112,7 @@
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
-			<joy>0.08</joy>
+			<joy>0.8</joy>
 			<tasteThought>VCE_AteLavishDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -152,7 +152,7 @@
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
-			<joy>0.15</joy>
+			<joy>1</joy>
 			<tasteThought>VCE_AteGourmetDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>

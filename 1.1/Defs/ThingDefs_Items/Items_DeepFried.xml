@@ -33,6 +33,8 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+			<joy>0.03</joy>
+			<joyKind>Gluttonous</joyKind>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -69,6 +71,8 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+			<joy>0.03</joy>
+			<joyKind>Gluttonous</joyKind>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -105,6 +109,8 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+			<joy>0.03</joy>
+			<joyKind>Gluttonous</joyKind>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
