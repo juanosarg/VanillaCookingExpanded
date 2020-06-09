@@ -20,7 +20,7 @@
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
-
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
@@ -74,7 +74,7 @@
 		</graphicData>
 		<costList>
 			<Steel>75</Steel>
-
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
@@ -240,7 +240,7 @@
 		</graphicData>
 		<costList>
 			<Steel>100</Steel>
-			
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>

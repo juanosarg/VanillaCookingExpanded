@@ -38,6 +38,7 @@
 			<li>
                 <compClass>CompQuality</compClass>
             </li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
 		</comps>
 	</ThingDef>
 

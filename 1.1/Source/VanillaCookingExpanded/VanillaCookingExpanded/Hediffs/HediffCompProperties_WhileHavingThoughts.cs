@@ -11,6 +11,7 @@ namespace VanillaCookingExpanded
     {
 
         public List<ThoughtDef> thoughtDefs;
+        public bool resurrectionEffect = false;
 
         public HediffCompProperties_WhileHavingThoughts()
         {

@@ -4,7 +4,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Factions Expanded - Insectoids</li>
+			<li>RimBees</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -12,10 +12,11 @@
 			<operations>
 
 
+				<!-- Bee Milk -->
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "VFEI_InsectMilk"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "RB_BeeMilk"]</xpath>
 					<value>
 
 
@@ -30,7 +31,7 @@
 								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 
-								<cheeseToTurnInto>VCE_InsectCheese</cheeseToTurnInto>
+								<cheeseToTurnInto>VCE_BeeCheese</cheeseToTurnInto>
 								<amount>10</amount>
 
 							</li>
@@ -47,18 +48,19 @@
 
 
 						<ThingDef ParentName="MealBase">
-							<defName>VCE_InsectCheese</defName>
-							<label>insect cheese</label>
-							<description>A strong smelling cheese reminiscent of Roquefort. Insect cheese is white, tangy, crumbly and slightly moist.</description>
+							<defName>VCE_BeeCheese</defName>
+							<label>bee cheese</label>
+							<description>A delicious cheese extracted from milk created by lactic bees. Yeah, best not to think about it.</description>
 							<graphicData>
-								<texPath>Things/Items/Cheese/VCE_InsectCheese</texPath>
+								<texPath>Things/Items/Cheese/VCE_BeeCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
 							<tradeability>Buyable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>50</MarketValue>
+								<MarketValue>32</MarketValue>
 								<Nutrition>0.05</Nutrition>
+
 							</statBases>
 							<thingCategories>
 								<li>VCE_Cheese</li>
@@ -68,10 +70,12 @@
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
 								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+
+								
 							</ingestible>
 							<comps>
 								<li Class="CompProperties_Rottable">
-									<daysToRotStart>60</daysToRotStart>
+									<daysToRotStart>80</daysToRotStart>
 									<rotDestroys>true</rotDestroys>
 								</li>
 								<li>
@@ -84,22 +88,18 @@
 
 					</value>
 				</li>
-				
+
+
+
+
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
 					<xpath>/Defs/VanillaCookingExpanded.AcceptedMilksDef[defName = "VCE_AcceptedMilks"]/milks</xpath>
 					<value>
-							<li>VFEI_InsectMilk</li>
+						<li>RB_BeeMilk</li>
+
 					</value>
 				</li>
-
-
-
-
-
-
-
-
 
 
 

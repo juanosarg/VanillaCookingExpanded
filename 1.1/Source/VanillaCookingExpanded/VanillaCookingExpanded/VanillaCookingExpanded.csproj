@@ -305,13 +305,16 @@
     <Compile Include="Commands\MilkListSetupUtility.cs" />
     <Compile Include="Commands\SoupListSetupUtility.cs" />
     <Compile Include="Comps\CompProperties_SoupConverts.cs" />
+    <Compile Include="Comps\CompProperties_StackByQuality.cs" />
     <Compile Include="Comps\CompProperties_StackByIngredients.cs" />
     <Compile Include="Comps\CompProperties_TempTransforms.cs" />
     <Compile Include="Comps\CompSoupConverts.cs" />
+    <Compile Include="Comps\CompStackByQuality.cs" />
     <Compile Include="Comps\CompStackByIngredients.cs" />
     <Compile Include="Comps\CompTempTransforms.cs" />
     <Compile Include="Defs\AcceptedMilksDef.cs" />
     <Compile Include="Defs\AcceptedSoupsDef.cs" />
+    <Compile Include="Defs\TillableTerrainDef.cs" />
     <Compile Include="Extensions\Milk_Extension.cs" />
     <Compile Include="Hediffs\HediffCompProperties_WhileHavingThoughts.cs" />
     <Compile Include="Hediffs\HediffComp_WhileHavingThoughts.cs" />
@@ -323,6 +326,9 @@
     <Compile Include="Jobs\WorkGiver_RemoveCheese.cs" />
     <Compile Include="Jobs\WorkGiver_RemoveSoup.cs" />
     <Compile Include="Jobs\WorkGiver_InsertSoup.cs" />
+    <Compile Include="Patches\HarmonyInstance.cs" />
+    <Compile Include="Patches\Plant_PlantCollected.cs" />
+    <Compile Include="Placeworkers\PlaceWorker_TilledSoil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Thoughts\Thought_Hediff.cs" />
     <Compile Include="Extensions\Thought_Hediff_Extension.cs" />

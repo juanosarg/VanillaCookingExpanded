@@ -93,8 +93,8 @@
 		</stages>	
 		<modExtensions>
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
-				<partToAffect>Heart</partToAffect>
+				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
+				<partToAffect>Body</partToAffect>
 				<percentage>0.03</percentage>
 			</li>
 		</modExtensions>
@@ -133,6 +133,13 @@
 				<baseMoodEffect>0</baseMoodEffect>
 			</li>
 		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.02</percentage>
+			</li>
+		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>	
@@ -319,6 +326,41 @@
 				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
 				<partToAffect>Heart</partToAffect>
 				<percentage>0.01</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_ConsumedDigestibleResurrectorNanites</defName>
+		<hediff>VCE_ConsumedDigestibleResurrectorNanites</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>resurrector nanites</label>
+				<description>I feel invincible!</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_ConsumedCannedGoods</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate canned food</label>
+				<description>Eating directly from a can is like eating without a table.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.03</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>

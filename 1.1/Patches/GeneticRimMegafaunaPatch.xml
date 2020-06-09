@@ -4,7 +4,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Alpha Animals</li>
+			<li>GeneticRim Megafauna Patch</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -12,11 +12,89 @@
 			<operations>
 
 
+				<!-- Para Milk -->
 
-				
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "AA_BlueMilk"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "GR_ParaMilk"]</xpath>
+					<value>
+
+
+						<modExtensions>
+							<li Class="VanillaCookingExpanded.Milk_Extension">
+								<mustCapacity>20</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>5</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>10</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>25</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>80</masterworkQualityAgeDaysThreshold>
+								<legendaryQualityAgeDaysThreshold>200</legendaryQualityAgeDaysThreshold>
+
+								<cheeseToTurnInto>VCE_ParaceramuffaloBrie</cheeseToTurnInto>
+								<amount>20</amount>
+
+							</li>
+						</modExtensions>
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+
+
+						<ThingDef ParentName="MealBase">
+							<defName>VCE_ParaceramuffaloBrie</defName>
+							<label>paraceramuffalo brie</label>
+							<description>A delicious cheese that takes a VERY long time to ripen. Paraceramuffalo Brie is certainly worth the wait, being one of the most nutritive cheeses in the Rim.</description>
+							<graphicData>
+								<texPath>Things/Items/Cheese/VCE_ParaceramuffaloBrie</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Buyable</tradeability>
+							<stackLimit>75</stackLimit>
+							<statBases>
+								<MarketValue>100</MarketValue>
+								<Nutrition>0.08</Nutrition>
+							</statBases>
+							<thingCategories>
+								<li>VCE_Cheese</li>
+							</thingCategories>
+							<ingestible>
+								<preferability>MealLavish</preferability>
+								<ingestEffect>EatMeat</ingestEffect>
+								<ingestSound>Meal_Eat</ingestSound>
+								<tasteThought>AteLavishMeal</tasteThought>
+								<joy>0.06</joy>
+								<joyKind>Gluttonous</joyKind>
+								<maxNumToIngestAtOnce>15</maxNumToIngestAtOnce>			
+							</ingestible>
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>120</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+								<li>
+									<compClass>CompQuality</compClass>
+								</li>
+								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+							</comps>
+							
+						</ThingDef>
+
+
+					</value>
+				</li>
+				
+				<!-- Green Milk -->
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName = "GR_GreenMilk"]</xpath>
 					<value>
 
 
@@ -31,7 +109,7 @@
 								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 
-								<cheeseToTurnInto>VCE_BlueCheese</cheeseToTurnInto>
+								<cheeseToTurnInto>VCE_GreenCheese</cheeseToTurnInto>
 								<amount>10</amount>
 
 							</li>
@@ -48,18 +126,18 @@
 
 
 						<ThingDef ParentName="MealBase">
-							<defName>VCE_BlueCheese</defName>
-							<label>blue cheese</label>
-							<description>Blue cheese is cheese made with cultures of the mold Penicillium, giving it blue spots or veins. This carries a "distinct" smell.</description>
+							<defName>VCE_GreenCheese</defName>
+							<label>green cheese</label>
+							<description>A green coloured cheese that is actually quite unappetizing.</description>
 							<graphicData>
-								<texPath>Things/Items/Cheese/VCE_BlueCheese</texPath>
+								<texPath>Things/Items/Cheese/VCE_GreenCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
 							<tradeability>Buyable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>75</MarketValue>
-								<Nutrition>0.07</Nutrition>
+								<MarketValue>15</MarketValue>
+								<Nutrition>0.03</Nutrition>
 							</statBases>
 							<thingCategories>
 								<li>VCE_Cheese</li>
@@ -68,11 +146,11 @@
 								<preferability>MealLavish</preferability>
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
-								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+								<maxNumToIngestAtOnce>25</maxNumToIngestAtOnce>	
 							</ingestible>
 							<comps>
 								<li Class="CompProperties_Rottable">
-									<daysToRotStart>60</daysToRotStart>
+									<daysToRotStart>40</daysToRotStart>
 									<rotDestroys>true</rotDestroys>
 								</li>
 								<li>
@@ -85,85 +163,17 @@
 
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "AA_GowMilk"]</xpath>
-					<value>
 
 
-						<modExtensions>
-							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
-
-								<cheeseToTurnInto>VCE_GowCheese</cheeseToTurnInto>
-								<amount>10</amount>
-
-							</li>
-						</modExtensions>
 
 
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd"> 
-					<success>Always</success>
-					<xpath>/Defs</xpath>
-					<value>
-
-
-						<ThingDef ParentName="MealBase">
-							<defName>VCE_GowCheese</defName>
-							<label>gow cheese</label>
-							<description>Gow cheese is greatly appreciated for its smooth, melting texture, and its very soft taste.</description>
-							<graphicData>
-								<texPath>Things/Items/Cheese/VCE_GowCheese</texPath>
-								<graphicClass>Graphic_StackCount</graphicClass>
-							</graphicData>
-							<tradeability>Buyable</tradeability>
-							<stackLimit>75</stackLimit>
-							<statBases>
-								<MarketValue>50</MarketValue>
-								<Nutrition>0.06</Nutrition>
-							</statBases>
-							<thingCategories>
-								<li>VCE_Cheese</li>
-							</thingCategories>
-							<ingestible>
-								<preferability>MealLavish</preferability>
-								<ingestEffect>EatMeat</ingestEffect>
-								<ingestSound>Meal_Eat</ingestSound>
-								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
-							</ingestible>
-							<comps>
-								<li Class="CompProperties_Rottable">
-									<daysToRotStart>60</daysToRotStart>
-									<rotDestroys>true</rotDestroys>
-								</li>
-								<li>
-									<compClass>CompQuality</compClass>
-								</li>
-								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
-							</comps>
-						</ThingDef>
-
-
-					</value>
-				</li>
-				
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
 					<xpath>/Defs/VanillaCookingExpanded.AcceptedMilksDef[defName = "VCE_AcceptedMilks"]/milks</xpath>
 					<value>
-							<li>AA_BlueMilk</li>
-							<li>AA_GowMilk</li>
+						<li>GR_ParaMilk</li>
+						<li>GR_GreenMilk</li>
+
 					</value>
 				</li>
 

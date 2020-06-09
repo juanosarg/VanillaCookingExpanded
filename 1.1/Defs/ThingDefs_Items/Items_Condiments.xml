@@ -5,7 +5,7 @@
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_AgaveNectar</defName>
 		<label>agave nectar</label>
-		<description>A thin and semi-sweet nectar, known for its healing and anti-inflammatory properties.</description>
+		<description>A thin and semi-sweet nectar, known for its healing and anti-inflammatory properties. Although healthier than sugar, its high fructose content may be harmful if taken constantly.</description>
 		<graphicData>
 			<texPath>Things/Items/Condiments/VCE_AgaveSyrup</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -114,7 +114,7 @@
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_Salt</defName>
 		<label>salt</label>
-		<description>Rock salt, like common salt, enhances the flavor profile of other ingredients it is cooked with. Constant intake is prone to cause a rise in cholesterol.</description>
+		<description>Rock salt, like common salt, enhances the flavor profile of other ingredients it is cooked with. Constant intake is prone to cause a rise in blood pressure.</description>
 		<graphicData>
 			<texPath>Things/Items/Condiments/VCE_Salt</texPath>
 
@@ -124,7 +124,7 @@
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
-		<deepCommonality>0.25</deepCommonality>
+		<deepCommonality>0.75</deepCommonality>
 		<deepCountPerPortion>10</deepCountPerPortion>
 		<deepLumpSizeRange>2~5</deepLumpSizeRange>
 		<thingCategories>
@@ -189,7 +189,7 @@
 
 		</ingestible>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_SmokeleafButter</defName>
 		<label>smokeleaf butter</label>
@@ -218,7 +218,7 @@
 
 		</ingestible>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_ChocolateSyrup</defName>
 		<label>chocolate syrup</label>
@@ -248,7 +248,60 @@
 		</ingestible>
 	</ThingDef>
 
+	<ThingDef ParentName="VCE_CondimentArtifactBase">
+		<defName>VCE_DigestibleResurrectorNanites</defName>
+		<label>digestible resurrector nanites</label>
+		<description>These mechanites will revitalize a creature and heal all wounds, avoiding an untimelt death. Their effect is very powerful, though it doesn't last much.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_DigestibleResurrectorNanites</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>10</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<Mass>3</Mass>
+			<Beauty>-2</Beauty>			
+			<Nutrition>1</Nutrition>
+			<Flammability>0.4</Flammability>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		
+		<thingCategories Inherit="False">
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags Inherit="False">
+			<li>RewardSpecial</li>
+			
+		</thingSetMakerTags>
+		<ingestible>
+			<foodType>Plant</foodType>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedDigestibleResurrectorNanites</specialThoughtAsIngredient>
 
+		</ingestible>
+	</ThingDef>
+	
+	 <ThingDef ParentName="ResourceBase" Name="VCE_CondimentArtifactBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Archotech</techLevel>
+    <thingCategories>
+      <li>Artifacts</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Artifact</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+   
+  </ThingDef>
 
 
 

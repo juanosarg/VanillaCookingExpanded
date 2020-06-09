@@ -4,6 +4,8 @@ using RimWorld;
 using System.Collections.Generic;
 using Verse;
 using System.Linq;
+using Verse.Sound;
+using UnityEngine;
 
 namespace VanillaCookingExpanded
 {
@@ -53,6 +55,23 @@ namespace VanillaCookingExpanded
                 checkingCounter = 0;
             }
 
+
+        }
+
+        public override void Notify_PawnDied()
+        {
+           
+            if (Props.resurrectionEffect) {
+                Map map = this.parent.pawn.Corpse.Map;
+                if (map != null)
+                {
+                    SoundDefOf.PsychicPulseGlobal.PlayOneShot(new TargetInfo(this.parent.pawn.Corpse.Position, this.parent.pawn.Corpse.Map, false));
+                    MoteMaker.MakeAttachedOverlay(this.parent.pawn.Corpse, ThingDef.Named("Mote_PsycastPsychicEffect"), Vector3.zero, 1f, -1f);
+                    ResurrectionUtility.Resurrect(this.parent.pawn.Corpse.InnerPawn);
+
+                }
+            }
+            
 
         }
 

@@ -10,7 +10,7 @@
 	<ThingDef ParentName="MealBase">
 		<defName>VCE_CannedMeat</defName>
 		<label>canned meat</label>
-		<description>Meat vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated.</description>
+		<description>Meat vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated. Consuming too many canned goods might cause an increase in blood pressure.</description>
 		<graphicData>
 			<texPath>Things/Items/Cans/VCE_CannedMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -30,6 +30,8 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>
 		
 	</ThingDef>
@@ -38,7 +40,7 @@
 	<ThingDef ParentName="MealBase">
 		<defName>VCE_CannedProduce</defName>
 		<label>canned produce</label>
-		<description>Produce vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated.</description>
+		<description>Produce vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated. Consuming too many canned goods might cause an increase in blood pressure.</description>
 		<graphicData>
 			<texPath>Things/Items/Cans/VCE_CannedProduce</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -58,6 +60,8 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
 			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>
 		
 	</ThingDef>
@@ -65,7 +69,7 @@
 	<ThingDef ParentName="MealBase">
 		<defName>VCE_CannedAP</defName>
 		<label>canned eggs</label>
-		<description>Boiled eggs vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated.</description>
+		<description>Boiled eggs vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated. Consuming too many canned goods might cause an increase in blood pressure.</description>
 		<graphicData>
 			<texPath>Things/Items/Cans/VCE_CannedAP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -85,6 +89,8 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>
 		
 	</ThingDef>
@@ -92,7 +98,7 @@
 		<ThingDef ParentName="MealBase">
 		<defName>VCE_CannedFish</defName>
 		<label>canned fish</label>
-		<description>Fish vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated.</description>
+		<description>Fish vacuum sealed and secured in a steel can effectively extending shelf life indefinitely. While edible cold right out of the can it's far more nourishing mixed into a meal and heated. Consuming too many canned goods might cause an increase in blood pressure.</description>
 		<graphicData>
 			<texPath>Things/Items/Cans/VCE_CannedFish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -112,6 +118,8 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>
 		
 	</ThingDef>
