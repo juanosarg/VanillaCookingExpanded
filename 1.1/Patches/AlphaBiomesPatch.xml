@@ -11,26 +11,7 @@
 			<success>Always</success>
 			<operations>
 
-				<li Class="PatchOperationAdd"> 
-					<success>Always</success>
-					<xpath>/Defs/VanillaCookingExpanded.TillableTerrainDef[defName="VCE_AcceptedTillableTerrains"]/terrains</xpath>
-					<value>
-
-
-						<li>AB_DenseGrass</li>
-						<li>AB_ForsakenSand</li>
-						<li>AB_RichCrackedMud</li>
-						<li>AB_SlimeGrass</li>
-						<li>AB_MycoticSoil</li>
-						<li>AB_MycoticGrass</li>
-						<li>GU_AlienSand</li>
-						<li>GU_RichAlienSand</li>
-						<li>AB_MycoticSoilRich</li>
-						<li>AB_LushGrass</li>
-
-
-					</value>
-				</li>
+			
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
