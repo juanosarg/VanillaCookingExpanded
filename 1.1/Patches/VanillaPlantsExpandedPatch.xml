@@ -208,7 +208,7 @@
 								<li>
 									<label>consumed hot sauce</label>
 									<description>I absolutely hate that super strong hot sauce! Please give me more.</description>
-									<baseMoodEffect>-1</baseMoodEffect>
+									<baseMoodEffect>-3</baseMoodEffect>
 								</li>
 							</stages>	
 						</ThoughtDef>
