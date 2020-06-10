@@ -31,6 +31,7 @@
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<joy>0.3</joy>
+			 <drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteSimpleDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -41,6 +42,10 @@
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
+			 <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
 		</comps>
 	</ThingDef>
 
@@ -72,6 +77,7 @@
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<joy>0.5</joy>
+			 <drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteFineDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -82,6 +88,10 @@
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
+			 <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
 		</comps>
 	</ThingDef>
 
@@ -113,6 +123,7 @@
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<joy>0.8</joy>
+			 <drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteLavishDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -123,6 +134,10 @@
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
+			 <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
@@ -153,6 +168,7 @@
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<joy>1</joy>
+			 <drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteGourmetDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -163,6 +179,10 @@
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
+			 <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
 		</comps>
 	</ThingDef>
 
