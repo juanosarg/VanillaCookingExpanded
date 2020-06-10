@@ -22,17 +22,17 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>130</legendaryQualityAgeDaysThreshold>
 
 								<cheeseToTurnInto>VCE_BlueCheese</cheeseToTurnInto>
-								<amount>10</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -55,10 +55,10 @@
 								<texPath>Things/Items/Cheese/VCE_BlueCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>75</MarketValue>
+								<MarketValue>17</MarketValue>
 								<Nutrition>0.07</Nutrition>
 							</statBases>
 							<thingCategories>
@@ -68,7 +68,7 @@
 								<preferability>MealLavish</preferability>
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
-								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+								<maxNumToIngestAtOnce>15</maxNumToIngestAtOnce>
 							</ingestible>
 							<comps>
 								<li Class="CompProperties_Rottable">
@@ -94,17 +94,17 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>2</awfulQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 
 								<cheeseToTurnInto>VCE_GowCheese</cheeseToTurnInto>
-								<amount>10</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -127,10 +127,10 @@
 								<texPath>Things/Items/Cheese/VCE_GowCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>50</MarketValue>
+								<MarketValue>16</MarketValue>
 								<Nutrition>0.06</Nutrition>
 							</statBases>
 							<thingCategories>
@@ -140,7 +140,7 @@
 								<preferability>MealLavish</preferability>
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
-								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+								<maxNumToIngestAtOnce>17</maxNumToIngestAtOnce>
 							</ingestible>
 							<comps>
 								<li Class="CompProperties_Rottable">

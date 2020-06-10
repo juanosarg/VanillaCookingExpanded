@@ -23,17 +23,17 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 
 								<cheeseToTurnInto>VCE_NightCheese</cheeseToTurnInto>
-								<amount>10</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -56,10 +56,10 @@
 								<texPath>Things/Items/Cheese/VCE_NightCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>50</MarketValue>
+								<MarketValue>17</MarketValue>
 								 <Flammability>0.2</Flammability>
 									<Nutrition>0.065</Nutrition>
 							</statBases>

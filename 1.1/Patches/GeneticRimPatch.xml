@@ -22,17 +22,17 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>15</mustCapacity>
-								<awfulQualityAgeDaysThreshold>2</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 
 								<cheeseToTurnInto>VCE_WeirdCheese</cheeseToTurnInto>
-								<amount>15</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -55,10 +55,10 @@
 								<texPath>Things/Items/Cheese/VCE_WeirdCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>60</MarketValue>
+								<MarketValue>12</MarketValue>
 								<Nutrition>0.04</Nutrition>
 								<FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
 							</statBases>
@@ -99,13 +99,12 @@
 							<li Class="VanillaCookingExpanded.Milk_Extension">
 								<mustCapacity>50</mustCapacity>
 								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>5</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>150</legendaryQualityAgeDaysThreshold>
-
 								<cheeseToTurnInto>VCE_MechaCheese</cheeseToTurnInto>
 								<amount>1</amount>
 
@@ -130,7 +129,7 @@
 								<texPath>Things/Items/Cheese/VCE_MechaCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>10</stackLimit>
 							<statBases>
 								<MarketValue>800</MarketValue>
@@ -248,17 +247,17 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>15</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 
 								<cheeseToTurnInto>VCE_BearffaloCheese</cheeseToTurnInto>
-								<amount>15</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -281,10 +280,10 @@
 								<texPath>Things/Items/Cheese/VCE_BearffaloCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>70</MarketValue>
+								<MarketValue>18</MarketValue>
 								<Nutrition>0.065</Nutrition>
 
 							</statBases>
@@ -296,7 +295,7 @@
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
 								<tasteThought>VCE_AteBearffaloCheese</tasteThought>
-								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+								<maxNumToIngestAtOnce>16</maxNumToIngestAtOnce>
 							</ingestible>
 							<comps>
 								<li Class="CompProperties_Rottable">
@@ -350,17 +349,16 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>25</mustCapacity>
+								<mustCapacity>20</mustCapacity>
 								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>5</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>12</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>25</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>75</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>180</legendaryQualityAgeDaysThreshold>
-
+								<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 								<cheeseToTurnInto>VCE_ThrumffaloGouda</cheeseToTurnInto>
-								<amount>25</amount>
+								<amount>20</amount>
 
 							</li>
 						</modExtensions>
@@ -383,10 +381,10 @@
 								<texPath>Things/Items/Cheese/VCE_ThrumffaloGouda</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>80</MarketValue>
+								<MarketValue>30</MarketValue>
 								<Nutrition>0.20</Nutrition>
 
 							</statBases>
@@ -426,17 +424,16 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>100</legendaryQualityAgeDaysThreshold>
-
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 								<cheeseToTurnInto>VCE_LumpyCheese</cheeseToTurnInto>
-								<amount>10</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -459,10 +456,10 @@
 								<texPath>Things/Items/Cheese/VCE_LumpyCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>20</MarketValue>
+								<MarketValue>17</MarketValue>
 								<Nutrition>0.05</Nutrition>
 
 							</statBases>
@@ -536,10 +533,10 @@
 								<texPath>Things/Items/Cheese/VCE_ChickenffaloCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>15</MarketValue>
+								<MarketValue>10</MarketValue>
 								<Nutrition>0.025</Nutrition>
 
 							</statBases>
@@ -578,17 +575,16 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
-
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 								<cheeseToTurnInto>VCE_BrownCheese</cheeseToTurnInto>
-								<amount>10</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -611,10 +607,10 @@
 								<texPath>Things/Items/Cheese/VCE_BrownCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>38</MarketValue>
+								<MarketValue>15</MarketValue>
 								<Nutrition>0.04</Nutrition>
 
 							</statBases>
@@ -655,17 +651,16 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>3</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>8</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>14</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
-
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 								<cheeseToTurnInto>VCE_HairyCheese</cheeseToTurnInto>
-								<amount>10</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -688,10 +683,10 @@
 								<texPath>Things/Items/Cheese/VCE_HairyCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>20</MarketValue>
+								<MarketValue>12</MarketValue>
 								<Nutrition>0.02</Nutrition>
 								<Flammability>1.5</Flammability>
 							</statBases>
@@ -730,17 +725,16 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>10</mustCapacity>
-								<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>2</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>3</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>10</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>20</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>50</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
-
+								<mustCapacity>30</mustCapacity>
+								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
+					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
+					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
+					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
+					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
+					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 								<cheeseToTurnInto>VCE_RatCheese</cheeseToTurnInto>
-								<amount>10</amount>
+								<amount>30</amount>
 
 							</li>
 						</modExtensions>
@@ -763,10 +757,10 @@
 								<texPath>Things/Items/Cheese/VCE_RatCheese</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
-							<tradeability>Buyable</tradeability>
+							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>40</MarketValue>
+								<MarketValue>16</MarketValue>
 								<Nutrition>0.06</Nutrition>
 
 							</statBases>

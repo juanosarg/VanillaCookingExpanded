@@ -50,6 +50,7 @@ namespace VanillaCookingExpanded
                     {
                         qualityComp.SetQuality(building_press.qualityNow, ArtGenerationContext.Colony);
                     }
+                   
                     building_press.cheeseToTurnInto = "";
                     building_press.ingredients = "";
                     building_press.YouCanNowRemoveAverageQualityCheese = false;

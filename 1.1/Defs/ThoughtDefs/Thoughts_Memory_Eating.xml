@@ -254,7 +254,7 @@
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteSimpleGrill</defName>
 		<hediff>VCE_WellFed</hediff>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate simple grill</label>
@@ -269,7 +269,7 @@
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteFineGrill</defName>
 		<hediff>VCE_WellFed</hediff>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate fine grill</label>
@@ -284,7 +284,7 @@
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteLavishGrill</defName>
 		<hediff>VCE_WellFed</hediff>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate lavish grill</label>
@@ -299,7 +299,7 @@
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteGourmetGrill</defName>
 		<hediff>VCE_WellFed</hediff>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate gourmet grill</label>

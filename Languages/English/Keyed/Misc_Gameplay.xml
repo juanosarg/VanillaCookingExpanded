@@ -45,12 +45,16 @@
 	<VCE_CancelBringingMilkDesc>Cancel bringing milk to the cheese press.</VCE_CancelBringingMilkDesc>
 	<VCE_WaitTillJobsEndMilk>Wait until the milk has been brought to the cheese press, or cancel the job.</VCE_WaitTillJobsEndMilk>
 	<VCE_EngageMilk>Press Into Cheese</VCE_EngageMilk>
-	<VCE_EngageMilkDesc>Start pressing milk into cheese. This process takes a variable time and cheese will increase in quality with ripening. You can remove it at any time after the initial period of 1 day.</VCE_EngageMilkDesc>
+	<VCE_EngageMilkDesc>Start pressing milk into cheese. This process takes a variable time and cheese will increase in quality with ripening. You can remove it at any time after the initial period.</VCE_EngageMilkDesc>
 	<VCE_CheeseFinished>A cheese has finished ripening in the cheese press</VCE_CheeseFinished>
 	<VCE_CheeseInProgress>Cheese press is pressing {0}. It will be ready with {1} quality in {2}</VCE_CheeseInProgress>
 	<VCE_CheeseReady>This cheese has reached its desired degree of ripening and is waiting for pickup</VCE_CheeseReady>
 	<VCE_MilkImproperlyDefined>This milk has been improperly defined to work with the cheese press, contact the milk mod's author</VCE_MilkImproperlyDefined>
 	<VCE_RemoveCheese>Remove Cheese ({0})</VCE_RemoveCheese>
 	<VCE_RemoveCheeseDesc>Remove cheese from the cheese press. The cheese will be ready at the present quality level ({0})</VCE_RemoveCheeseDesc>
+	
+	<VCE_CheesePressEmpty>Cheese press is empty right now</VCE_CheesePressEmpty>
+	<VCE_CheesePressFilled>Cheese press filled with {0}</VCE_CheesePressFilled>
+	<VCE_CheesePressWorking>Cheese press is working:</VCE_CheesePressWorking>
 
 </LanguageData>

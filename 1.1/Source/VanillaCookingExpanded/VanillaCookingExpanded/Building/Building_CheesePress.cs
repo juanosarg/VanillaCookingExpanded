@@ -363,8 +363,22 @@ namespace VanillaCookingExpanded
 
 
             string text = base.GetInspectString();
-            string incubationTxt = "---------";
+            string incubationTxt = "";
+
+            if (!contentsKnown && !CheeseStarted)
+            {
+                incubationTxt += "VCE_CheesePressEmpty".Translate();
+
+            }
+            else if(contentsKnown && !CheeseStarted)
+            {
+                incubationTxt += "VCE_CheesePressFilled".Translate(this.innerContainerMilk.First().def.LabelCap);
+
+            } else
+
+
             if (CheeseStarted) {
+                incubationTxt += "VCE_CheesePressWorking".Translate();
                 if (!YouCanNowRemoveAverageQualityCheese)
                 {
                     incubationTxt += "\n" + "VCE_CheeseInProgress".Translate(ThingDef.Named(this.theMilkCooking).LabelCap, qualityNow.ToString(),((int)(ticksPerDay * this.awfulQualityAgeDaysThreshold) - (CheeseCounter * 250)).ToStringTicksToPeriod(true, false, true, true));

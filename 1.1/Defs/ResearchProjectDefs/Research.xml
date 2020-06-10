@@ -82,7 +82,7 @@
 		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 	
-	<ResearchProjectDef>
+<!--	<ResearchProjectDef>
 		<defName>VCE_Tillage</defName>
 		<label>tillage</label>
 		<tab>VCE_Cooking</tab>
@@ -91,7 +91,7 @@
 		<baseCost>1000</baseCost>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>
-	</ResearchProjectDef>
+	</ResearchProjectDef>-->
 
 
 
