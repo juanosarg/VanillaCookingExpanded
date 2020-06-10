@@ -21,7 +21,7 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>30</mustCapacity>
+								<mustCapacity>50</mustCapacity>
 								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
 					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
 					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
@@ -30,7 +30,7 @@
 					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
 					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 								<cheeseToTurnInto>VCE_InsectCheese</cheeseToTurnInto>
-								<amount>30</amount>
+								<amount>25</amount>
 
 							</li>
 						</modExtensions>

@@ -22,7 +22,7 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>15</mustCapacity>
+								<mustCapacity>40</mustCapacity>
 								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
 					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
 					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
@@ -32,7 +32,7 @@
 					<legendaryQualityAgeDaysThreshold>200</legendaryQualityAgeDaysThreshold>
 
 								<cheeseToTurnInto>VCE_ParaceramuffaloBrie</cheeseToTurnInto>
-								<amount>15</amount>
+								<amount>20</amount>
 
 							</li>
 						</modExtensions>
@@ -100,7 +100,7 @@
 
 						<modExtensions>
 							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>30</mustCapacity>
+								<mustCapacity>50</mustCapacity>
 								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
 					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
 					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
@@ -110,7 +110,7 @@
 					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 
 								<cheeseToTurnInto>VCE_GreenCheese</cheeseToTurnInto>
-								<amount>30</amount>
+								<amount>25</amount>
 
 							</li>
 						</modExtensions>

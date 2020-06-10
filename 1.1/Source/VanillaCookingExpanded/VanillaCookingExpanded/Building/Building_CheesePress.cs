@@ -431,7 +431,7 @@ namespace VanillaCookingExpanded
                 if (contentsKnown || CheeseStarted)
                 {
 
-                    Graphic newgraphic = GraphicDatabase.Get(typeof(Graphic_Single), "Things/Buildings/VCE_CheesePressFull", this.def.graphicData.shaderType.Shader, this.def.graphicData.drawSize, this.DrawColor, this.DrawColorTwo);
+                    Graphic newgraphic = GraphicDatabase.Get(typeof(Graphic_Multi), "Things/Buildings/VCE_CheesePressFull", this.def.graphicData.shaderType.Shader, this.def.graphicData.drawSize, this.DrawColor, this.DrawColorTwo);
 
                     return newgraphic;
                 }

@@ -80,7 +80,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Wheat</defName>
 		<label>wheat plant</label>
-		<description>An amber cereal plant that takes almost an entire growing season to come to fruition. While fragile and time-consuming, this wheat has been genetically engineered to gentle break into flour with a mere touch.</description>
+		<description>An amber cereal plant that takes almost an entire growing season to come to fruition. While fragile and time-consuming, this wheat has been genetically engineered to gently break into flour with a mere touch.</description>
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 			<Nutrition>0.18</Nutrition>

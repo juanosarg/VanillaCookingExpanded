@@ -391,7 +391,7 @@
 		<thingClass>VanillaCookingExpanded.Building_CheesePress</thingClass>
 		<graphicData>
 			<texPath>Things/Buildings/VCE_CheesePress</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>
 			</damageData>
