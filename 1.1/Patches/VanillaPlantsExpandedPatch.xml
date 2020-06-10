@@ -187,9 +187,7 @@
 									<hediffToAffect>VCE_Cholesterol</hediffToAffect>
 									<partToAffect>Heart</partToAffect>
 									<percentage>0.02</percentage>
-									<secondHediffToAffect>VCE_Diabetes</secondHediffToAffect>
-									<secondPartToAffect>Body</secondPartToAffect>
-									<secondPercentage>0.02</secondPercentage>
+									
 								</li>
 							</modExtensions>
 						</ThoughtDef>
