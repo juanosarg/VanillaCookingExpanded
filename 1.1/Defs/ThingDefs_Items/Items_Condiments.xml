@@ -251,7 +251,7 @@
 	<ThingDef ParentName="VCE_CondimentArtifactBase">
 		<defName>VCE_DigestibleResurrectorNanites</defName>
 		<label>digestible resurrector nanites</label>
-		<description>These mechanites will revitalize a creature and heal all wounds, avoiding an untimelt death. Their effect is very powerful, though it doesn't last much.</description>
+		<description>An extremely high tech glitterworld concoction, unsafe to drink directly due to bitter taste and a mild case of intraventricular hemorrhaging. However, when cooked properly into food, these effects inexplicably seem nullified. Any pawns with this present upon death will immediately be revived as if by miracle.</description>
 		<graphicData>
 			<texPath>Things/Items/Condiments/VCE_DigestibleResurrectorNanites</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
