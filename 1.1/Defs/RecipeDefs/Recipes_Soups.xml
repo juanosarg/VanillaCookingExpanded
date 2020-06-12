@@ -30,6 +30,9 @@
 		<products>
 			<VCE_UncookedSoupSimple>1</VCE_UncookedSoupSimple>
 		</products>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
 
 	</RecipeDef>
 
@@ -72,6 +75,9 @@
 		<skillRequirements>
 			<Cooking>6</Cooking>
 		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
 	</RecipeDef>
 
 
@@ -115,6 +121,9 @@
 		<skillRequirements>
 			<Cooking>8</Cooking>
 		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
 	</RecipeDef>
 
 	
@@ -169,6 +178,9 @@
 		<skillRequirements>
 			<Cooking>10</Cooking>
 		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
 	</RecipeDef>
 
 
