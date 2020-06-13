@@ -56,5 +56,6 @@
 	<VCE_CheesePressEmpty>Cheese press is empty right now</VCE_CheesePressEmpty>
 	<VCE_CheesePressFilled>Cheese press filled with {0}</VCE_CheesePressFilled>
 	<VCE_CheesePressWorking>Cheese press is working:</VCE_CheesePressWorking>
+	<VCE_ResourcePercentage> (filled at {0} of {1})</VCE_ResourcePercentage>
 
 </LanguageData>

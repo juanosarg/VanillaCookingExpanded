@@ -282,7 +282,7 @@ namespace VanillaCookingExpanded
             }
             else if(CurrentAmountOfMilk!=0 && !CheeseStarted)
             {
-                incubationTxt += "VCE_CheesePressFilled".Translate(ThingDef.Named(theMilkIAmGoingToInsert)) + " with "+CurrentAmountOfMilk.ToString() +" of " + AmountOfMilkExpected.ToString();
+                incubationTxt += "VCE_CheesePressFilled".Translate(ThingDef.Named(theMilkIAmGoingToInsert).LabelCap) + "VCE_ResourcePercentage".Translate(CurrentAmountOfMilk.ToString(), AmountOfMilkExpected.ToString());
 
             } else
 
