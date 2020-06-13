@@ -32,7 +32,7 @@
 		<tab>VCE_Cooking</tab>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>Electricity</li>
+			<li>Smithing</li>
 		</prerequisites>
 		<description>Grilling is a form of cooking that involves dry heat applied to the surface of food, commonly from above, below or from the side. Grilling usually involves a significant amount of direct, radiant heat, and tends to be used for cooking meat and vegetables quickly. This research gives access to the grill.</description>
 		<baseCost>400</baseCost>

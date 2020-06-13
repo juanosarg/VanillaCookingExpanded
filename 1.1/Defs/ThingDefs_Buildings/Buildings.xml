@@ -386,6 +386,7 @@
 		<description>A cheese press is a device for pressing whey from curds when making cheese. Pressing influences the cheese's hardness and texture and will also determine the shape of the block or wheel of cheese. This press also works as a ripening chamber, so the longer the cheese is left ripening, the higher its quality will be.</description>
 		<thingClass>VanillaCookingExpanded.Building_CheesePress</thingClass>
 		<graphicData>
+		<drawSize>(2,2)</drawSize>
 			<texPath>Things/Buildings/VCE_CheesePress</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
@@ -395,6 +396,8 @@
 				<volume>(0.75, 0.35, 0.33)</volume>
 			</shadowData>
 		</graphicData>
+				<neverMultiSelect>true</neverMultiSelect>
+
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -413,7 +416,7 @@
 			<Steel>10</Steel>
 			<WoodLog>30</WoodLog>
 		</costList>
-
+<size>(2,1)</size>
 		<tickerType>Rare</tickerType>
 		<rotatable>true</rotatable>
 		<designationCategory>Production</designationCategory>

@@ -12,14 +12,17 @@ using Verse.Sound;
 namespace VanillaCookingExpanded
 {
 
-    public class Building_CheesePress : Building, IThingHolder
+    public class Building_CheesePress : Building
     {
         private System.Random rand = new System.Random();
-        public ThingOwner innerContainerMilk = null;
-
+      
         public Map map;
 
         public bool ExpectingMilk = false;
+        public int AmountOfMilkExpected = 0;
+        public int CurrentAmountOfMilk = 0;
+
+
 
         public bool CheeseReadyAndWaitingForPickup = false;
 
@@ -34,8 +37,6 @@ namespace VanillaCookingExpanded
         public string ingredients = "";
 
         public bool CheeseStarted = false;
-
-        protected bool contentsKnown = false;
 
         public int CheeseCounter = 0;
 
@@ -58,12 +59,7 @@ namespace VanillaCookingExpanded
 
 
 
-        public Building_CheesePress()
-        {
-            this.innerContainerMilk = new ThingOwner<Thing>(this, false, LookMode.Deep);
-
-
-        }
+       
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -74,16 +70,14 @@ namespace VanillaCookingExpanded
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Deep.Look<ThingOwner>(ref this.innerContainerMilk, "innerContainerMilk", new object[]
-            {
-                this
-            });
+          
             Scribe_Values.Look(ref qualityNow, "qualityNow", QualityCategory.Awful);
             Scribe_Values.Look<string>(ref this.theMilkIAmGoingToInsert, "theMilkIAmGoingToInsert", "", false);
             Scribe_Values.Look<string>(ref this.theMilkCooking, "theMilkCooking", "", false);
             Scribe_Values.Look<bool>(ref this.ExpectingMilk, "ExpectingMilk", false, false);
+            Scribe_Values.Look<int>(ref this.AmountOfMilkExpected, "AmountOfMilkExpected", 0, false);
+            Scribe_Values.Look<int>(ref this.CurrentAmountOfMilk, "CurrentAmountOfMilk", 0, false);
             Scribe_Values.Look<bool>(ref this.StartInsertionJobs, "StartInsertionJobs", false, false);
-            Scribe_Values.Look<bool>(ref this.contentsKnown, "contentsKnown", false, false);
             Scribe_Values.Look<bool>(ref this.CheeseStarted, "CheeseStarted", false, false);
             Scribe_Values.Look<bool>(ref this.CheeseReadyAndWaitingForPickup, "CheeseReadyAndWaitingForPickup", false, false);
             Scribe_Values.Look<int>(ref this.CheeseCounter, "SoupCounter", 0, false);
@@ -102,72 +96,7 @@ namespace VanillaCookingExpanded
 
         }
 
-        public ThingOwner GetDirectlyHeldThings()
-        {
-            return this.innerContainerMilk;
-        }
-
-        public void GetChildHolders(List<IThingHolder> outChildren)
-        {
-            ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, this.GetDirectlyHeldThings());
-        }
-
-        public virtual void EjectContentsFirst()
-        {
-            this.contentsKnown = false;
-            base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
-            this.innerContainerMilk.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
-            this.TickRare();
-        }
-
-
-
-        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
-        {
-
-            EjectContentsFirst();
-            base.Destroy(mode);
-        }
-
-        public bool TryAcceptMilk(Thing thing, bool allowSpecialEffects = true)
-        {
-            bool result;
-
-            bool flag;
-            if (thing.holdingOwner != null)
-            {
-                thing.holdingOwner.TryTransferToContainer(thing, this.innerContainerMilk, thing.stackCount, true);
-                this.contentsKnown = true;
-                base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
-
-                flag = true;
-            }
-            else
-            {
-                flag = this.innerContainerMilk.TryAdd(thing, true);
-                this.contentsKnown = true;
-                base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
-            }
-            if (flag)
-            {
-                if (thing.Faction != null && thing.Faction.IsPlayer)
-                {
-
-                    this.contentsKnown = true;
-                    base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
-                }
-                result = true;
-            }
-            else
-            {
-                result = false;
-            }
-            this.TickRare();
-            return result;
-        }
-
-
-
+       
 
 
         [DebuggerHidden]
@@ -187,10 +116,15 @@ namespace VanillaCookingExpanded
                     Command_Action RB_Gizmo_StartInsertion = new Command_Action();
                     RB_Gizmo_StartInsertion.action = delegate
                     {
-                        if (ExpectingMilk || (innerContainerMilk.Count > 0))
+                        if (ExpectingMilk)
                         {
                             StartInsertionJobs = true;
-                        }
+                                if (ThingDef.Named(theMilkIAmGoingToInsert).HasModExtension<Milk_Extension>())
+                                {
+                                    this.AmountOfMilkExpected = ThingDef.Named(theMilkIAmGoingToInsert).GetModExtension<Milk_Extension>().mustCapacity;
+                                  
+                                }
+                            }
                         else
                         {
                             Messages.Message("VCE_SelectMilk".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
@@ -200,21 +134,6 @@ namespace VanillaCookingExpanded
                     RB_Gizmo_StartInsertion.defaultDesc = "VCE_StartInsertionMilkDesc".Translate();
                     RB_Gizmo_StartInsertion.icon = ContentFinder<Texture2D>.Get("UI/VCE_InsertMilk", true);
                     yield return RB_Gizmo_StartInsertion;
-
-
-
-                    Command_Action RB_Gizmo_RemoveSoup = new Command_Action();
-                    RB_Gizmo_RemoveSoup.action = delegate
-                    {
-                        EjectContentsFirst();
-                        ExpectingMilk = false;
-                        StartInsertionJobs = false;
-                        theMilkIAmGoingToInsert = "";
-                    };
-                    RB_Gizmo_RemoveSoup.defaultLabel = "VCE_RemoveMilk".Translate();
-                    RB_Gizmo_RemoveSoup.defaultDesc = "VCE_RemoveMilkDesc".Translate();
-                    RB_Gizmo_RemoveSoup.icon = ContentFinder<Texture2D>.Get("UI/VCE_RemoveMilk", true);
-                    yield return RB_Gizmo_RemoveSoup;
 
                 }
                 else
@@ -230,57 +149,7 @@ namespace VanillaCookingExpanded
                     RB_Gizmo_CancelJobs.icon = ContentFinder<Texture2D>.Get("UI/VCE_CancelMilk", true);
                     yield return RB_Gizmo_CancelJobs;
 
-                    Command_Action RB_Gizmo_Engage = new Command_Action();
-                    RB_Gizmo_Engage.action = delegate
-                    {
-                        if (ExpectingMilk)
-                        {
-                            Messages.Message("VCE_WaitTillJobsEndMilk".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
-                        }
-
-                        else
-                        {
-                            if (this.innerContainerMilk.First().def.HasModExtension<Milk_Extension>())
-                            {
-                                Milk_Extension thisExtension = this.innerContainerMilk.First().def.GetModExtension<Milk_Extension>();
-                                this.cheeseToTurnInto = thisExtension.cheeseToTurnInto;
-                                this.amount = thisExtension.amount;
-                               
-                                this.innerContainerMilk.ClearAndDestroyContents();
-                                this.contentsKnown = false;
-                                this.awfulQualityAgeDaysThreshold = thisExtension.awfulQualityAgeDaysThreshold;
-                                this.poorQualityAgeDaysThreshold = thisExtension.poorQualityAgeDaysThreshold;
-                                this.normalQualityAgeDaysThreshold = thisExtension.normalQualityAgeDaysThreshold;
-                                this.goodQualityAgeDaysThreshold = thisExtension.goodQualityAgeDaysThreshold;
-                                this.excellentQualityAgeDaysThreshold = thisExtension.excellentQualityAgeDaysThreshold;
-                                this.masterworkQualityAgeDaysThreshold = thisExtension.masterworkQualityAgeDaysThreshold;
-                                this.legendaryQualityAgeDaysThreshold = thisExtension.legendaryQualityAgeDaysThreshold;
-                               
-
-                                theMilkCooking = theMilkIAmGoingToInsert;
-                                ingredients = theMilkCooking;
-                                theMilkIAmGoingToInsert = "";
-                                StartInsertionJobs = false;
-                                CheeseStarted = true;
-                                base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
-
-                            }
-                            else
-                            {
-                                Messages.Message("VCE_MilkImproperlyDefined".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
-                            }
-
-
-
-
-
-                        }
-
-                    };
-                    RB_Gizmo_Engage.defaultLabel = "VCE_EngageMilk".Translate();
-                    RB_Gizmo_Engage.defaultDesc = "VCE_EngageMilkDesc".Translate();
-                    RB_Gizmo_Engage.icon = ContentFinder<Texture2D>.Get("UI/VCE_EngageMilk", true);
-                    yield return RB_Gizmo_Engage;
+                   
                 }
 
             }
@@ -305,7 +174,46 @@ namespace VanillaCookingExpanded
 
         }
 
-      
+        public void Notify_StartProcessing()
+        {
+            if (this.CurrentAmountOfMilk >= this.AmountOfMilkExpected) {
+                if (ThingDef.Named(theMilkIAmGoingToInsert).HasModExtension<Milk_Extension>())
+                {
+                    Milk_Extension thisExtension = ThingDef.Named(theMilkIAmGoingToInsert).GetModExtension<Milk_Extension>();
+                    this.cheeseToTurnInto = thisExtension.cheeseToTurnInto;
+                    this.amount = thisExtension.amount;
+
+                  
+                   
+                    this.awfulQualityAgeDaysThreshold = thisExtension.awfulQualityAgeDaysThreshold;
+                    this.poorQualityAgeDaysThreshold = thisExtension.poorQualityAgeDaysThreshold;
+                    this.normalQualityAgeDaysThreshold = thisExtension.normalQualityAgeDaysThreshold;
+                    this.goodQualityAgeDaysThreshold = thisExtension.goodQualityAgeDaysThreshold;
+                    this.excellentQualityAgeDaysThreshold = thisExtension.excellentQualityAgeDaysThreshold;
+                    this.masterworkQualityAgeDaysThreshold = thisExtension.masterworkQualityAgeDaysThreshold;
+                    this.legendaryQualityAgeDaysThreshold = thisExtension.legendaryQualityAgeDaysThreshold;
+
+                    ExpectingMilk = false;
+                    CurrentAmountOfMilk = 0;
+                    theMilkCooking = theMilkIAmGoingToInsert;
+                    ingredients = theMilkCooking;
+                    theMilkIAmGoingToInsert = "";
+                    StartInsertionJobs = false;
+                    CheeseStarted = true;
+                    base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+
+                }
+                else
+                {
+                    Messages.Message("VCE_MilkImproperlyDefined".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
+                }
+
+            }
+            
+
+        }
+
+
 
         public override void TickRare()
         {
@@ -365,14 +273,16 @@ namespace VanillaCookingExpanded
             string text = base.GetInspectString();
             string incubationTxt = "";
 
-            if (!contentsKnown && !CheeseStarted)
+            
+
+            if (CurrentAmountOfMilk==0 && !CheeseStarted)
             {
                 incubationTxt += "VCE_CheesePressEmpty".Translate();
 
             }
-            else if(contentsKnown && !CheeseStarted)
+            else if(CurrentAmountOfMilk!=0 && !CheeseStarted)
             {
-                incubationTxt += "VCE_CheesePressFilled".Translate(this.innerContainerMilk.First().def.LabelCap);
+                incubationTxt += "VCE_CheesePressFilled".Translate(ThingDef.Named(theMilkIAmGoingToInsert)) + " with "+CurrentAmountOfMilk.ToString() +" of " + AmountOfMilkExpected.ToString();
 
             } else
 
@@ -428,7 +338,7 @@ namespace VanillaCookingExpanded
         {
             get
             {
-                if (contentsKnown || CheeseStarted)
+                if (CheeseStarted)
                 {
 
                     Graphic newgraphic = GraphicDatabase.Get(typeof(Graphic_Multi), "Things/Buildings/VCE_CheesePressFull", this.def.graphicData.shaderType.Shader, this.def.graphicData.drawSize, this.DrawColor, this.DrawColorTwo);

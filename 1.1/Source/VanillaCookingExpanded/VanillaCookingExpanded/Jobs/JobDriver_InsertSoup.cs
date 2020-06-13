@@ -50,6 +50,7 @@ namespace VanillaCookingExpanded
                     Building_ElectricPot building_pot = (Building_ElectricPot)this.job.GetTarget(TargetIndex.A).Thing;
 
                     building_pot.TryAcceptSoup(this.job.targetB.Thing, true);
+                    building_pot.Notify_StartSoup();
                     building_pot.ExpectingSoup = false;
                     //this.job.targetB.Thing.Destroy(); 
 

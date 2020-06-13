@@ -37,6 +37,10 @@ namespace VanillaCookingExpanded
 
         public int SoupCounter = 0;
 
+        public int SoupDestructionCounter = 0;
+        public const int SoupDestructionRareTicks = 10;
+
+
         public const int rareTicksPerDay = 240;
         public const int ticksPerDay = 60000;
         public CompPowerTrader compPowerTrader;
@@ -69,18 +73,16 @@ namespace VanillaCookingExpanded
             });
             Scribe_Values.Look<string>(ref this.theSoupIAmGoingToInsert, "theSoupIAmGoingToInsert", "", false);
             Scribe_Values.Look<string>(ref this.theSoupCooking, "theSoupCooking", "", false);
-
             Scribe_Values.Look<bool>(ref this.ExpectingSoup, "ExpectingSoup", false, false);
             Scribe_Values.Look<bool>(ref this.StartInsertionJobs, "StartInsertionJobs", false, false);
             Scribe_Values.Look<bool>(ref this.contentsKnown, "contentsKnown", false, false);
             Scribe_Values.Look<bool>(ref this.SoupStarted, "SoupStarted", false, false);
             Scribe_Values.Look<bool>(ref this.SoupReadyAndWaitingForPickup, "SoupReadyAndWaitingForPickup", false, false);
-
+            Scribe_Values.Look<int>(ref this.SoupDestructionCounter, "SoupDestructionCounter", 0, false);
             Scribe_Values.Look<int>(ref this.SoupCounter, "SoupCounter", 0, false);
             Scribe_Values.Look<string>(ref this.soupToTurnInto, "soupToTurnInto", "", false);
             Scribe_Values.Look<int>(ref this.amount, "amount", 0, false);
             Scribe_Values.Look<int>(ref this.days, "days", 0, false);
-
             Scribe_Collections.Look<ThingDef>(ref this.ingredients, true, "ingredients");
 
 
@@ -190,19 +192,6 @@ namespace VanillaCookingExpanded
 
 
 
-                    Command_Action RB_Gizmo_RemoveSoup = new Command_Action();
-                    RB_Gizmo_RemoveSoup.action = delegate
-                    {
-                        EjectContentsFirst();
-                        ExpectingSoup = false;
-                        StartInsertionJobs = false;
-                        theSoupIAmGoingToInsert = "";
-                    };
-                    RB_Gizmo_RemoveSoup.defaultLabel = "VCE_RemoveSoup".Translate();
-                    RB_Gizmo_RemoveSoup.defaultDesc = "VCE_RemoveSoupDesc".Translate();
-                    RB_Gizmo_RemoveSoup.icon = ContentFinder<Texture2D>.Get("UI/VCE_RemoveSoup", true);
-                    yield return RB_Gizmo_RemoveSoup;
-
                 }
                 else
                 {
@@ -217,48 +206,28 @@ namespace VanillaCookingExpanded
                     RB_Gizmo_CancelJobs.icon = ContentFinder<Texture2D>.Get("UI/VCE_CancelSoup", true);
                     yield return RB_Gizmo_CancelJobs;
 
-                    Command_Action RB_Gizmo_Engage = new Command_Action();
-                    RB_Gizmo_Engage.action = delegate
-                    {
-                        if (ExpectingSoup)
-                        {
-                            Messages.Message("VCE_WaitTillJobsEnd".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
-                        }
-                        else if (!compPowerTrader.PowerOn)
-                        {
-                            Messages.Message("VCE_NotPowered".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
-
-                        }
-                        else
-                        {
-                            this.soupToTurnInto = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.soupToTurnInto;
-                            this.amount = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.amount;
-                            this.days = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.days;
-                            this.ingredients = this.innerContainerSoup.First().TryGetComp<CompIngredients>().ingredients;
-                            this.innerContainerSoup.ClearAndDestroyContents();
-                            this.contentsKnown = false;
-                            theSoupCooking = theSoupIAmGoingToInsert;
-                            theSoupIAmGoingToInsert = "";
-
-                            StartInsertionJobs = false;
-                            SoupStarted = true;
-                            base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
-
-
-
-
-                        }
-
-                    };
-                    RB_Gizmo_Engage.defaultLabel = "VCE_Engage".Translate();
-                    RB_Gizmo_Engage.defaultDesc = "VCE_EngageDesc".Translate();
-                    RB_Gizmo_Engage.icon = ContentFinder<Texture2D>.Get("UI/VCE_EngageSoup", true);
-                    yield return RB_Gizmo_Engage;
+                   
                 }
 
             }
 
 
+        }
+
+        public void Notify_StartSoup()
+        {
+            this.soupToTurnInto = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.soupToTurnInto;
+            this.amount = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.amount;
+            this.days = this.innerContainerSoup.First().TryGetComp<CompSoupConverts>().Props.days;
+            this.ingredients = this.innerContainerSoup.First().TryGetComp<CompIngredients>().ingredients;
+            this.innerContainerSoup.ClearAndDestroyContents();
+            this.contentsKnown = false;
+            theSoupCooking = theSoupIAmGoingToInsert;
+            theSoupIAmGoingToInsert = "";
+
+            StartInsertionJobs = false;
+            SoupStarted = true;
+            base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
         }
 
 
@@ -272,10 +241,14 @@ namespace VanillaCookingExpanded
                 SoupCounter++;
                 if (!compPowerTrader.PowerOn)
                 {
-                    Messages.Message("VCE_SoupFailurePower".Translate(), this, MessageTypeDefOf.NegativeEvent, true);
-                    SoupCounter = 0;
-                    SoupStarted = false;
-                    base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+                    SoupDestructionCounter++;
+                    if (SoupDestructionCounter > SoupDestructionRareTicks) {
+                        Messages.Message("VCE_SoupFailurePower".Translate(), this, MessageTypeDefOf.NegativeEvent, true);
+                        SoupCounter = 0;
+                        SoupStarted = false;
+                        base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+                    }
+                    
 
                 }
 
