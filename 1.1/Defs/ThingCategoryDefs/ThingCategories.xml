@@ -23,7 +23,7 @@
       <label>uncooked soups</label>
       <parent>Foods</parent>
       <resourceReadoutRoot>true</resourceReadoutRoot>
-     <iconPath>Things/Items/Condiments/VCE_Spices</iconPath> 
+     <iconPath>UI/VCE_EmptySoupPotIcon</iconPath> 
     </ThingCategoryDef>
 
 

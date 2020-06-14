@@ -23,7 +23,7 @@
 			<li Class="CompProperties_Ingredients" />
 			<li Class="VanillaCookingExpanded.CompProperties_SoupConverts">
 				<soupToTurnInto>VCE_CookedSoupSimple</soupToTurnInto>	
-				<amount>10</amount>		
+				<amount>20</amount>		
 				<days>3</days>				
 			</li>
 		</comps>
@@ -76,7 +76,7 @@
 			<li Class="CompProperties_Ingredients" />
 			<li Class="VanillaCookingExpanded.CompProperties_SoupConverts">
 				<soupToTurnInto>VCE_CookedSoupFine</soupToTurnInto>		
-				<amount>10</amount>						
+				<amount>20</amount>						
 			</li>
 		</comps>
 		<thingCategories>
@@ -130,7 +130,7 @@
 			<li Class="CompProperties_Ingredients" />
 			<li Class="VanillaCookingExpanded.CompProperties_SoupConverts">
 				<soupToTurnInto>VCE_CookedSoupLavish</soupToTurnInto>		
-				<amount>10</amount>						
+				<amount>20</amount>						
 			</li>
 		</comps>
 		<thingCategories>
@@ -185,7 +185,7 @@
 			<li Class="CompProperties_Ingredients" />
 			<li Class="VanillaCookingExpanded.CompProperties_SoupConverts">
 				<soupToTurnInto>VCE_CookedSoupGourmet</soupToTurnInto>		
-				<amount>5</amount>						
+				<amount>10</amount>						
 			</li>
 		</comps>
 		<thingCategories>

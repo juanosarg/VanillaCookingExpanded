@@ -25,7 +25,7 @@
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>VCE_RawSugar</harvestedThingDef>
-			<harvestYield>21</harvestYield>
+			<harvestYield>1</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
@@ -62,7 +62,7 @@
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>1</maxMeshCount>
 			<harvestedThingDef>VCE_RawSpices</harvestedThingDef>
-			<harvestYield>12</harvestYield>
+			<harvestYield>1</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
@@ -100,7 +100,7 @@
 			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>VCE_Flour</harvestedThingDef>
 			<sowMinSkill>6</sowMinSkill>
-			<harvestYield>24</harvestYield>
+			<harvestYield>1</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>

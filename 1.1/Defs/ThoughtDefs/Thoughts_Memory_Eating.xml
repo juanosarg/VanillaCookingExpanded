@@ -8,7 +8,7 @@
 	<ThoughtDef>	
 		<defName>VCE_ConsumedSugar</defName>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
-
+		<hediff>VCE_SugarRush</hediff>
 		<durationDays>1</durationDays>
 		<stages>
 			<li>
@@ -21,7 +21,7 @@
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
 				<hediffToAffect>VCE_Diabetes</hediffToAffect>
 				<partToAffect>Body</partToAffect>
-				<percentage>0.06</percentage>
+				<percentage>0.03</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -42,7 +42,7 @@
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
 				<hediffToAffect>VCE_Diabetes</hediffToAffect>
 				<partToAffect>Body</partToAffect>
-				<percentage>0.04</percentage>
+				<percentage>0.015</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -75,7 +75,7 @@
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
 				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
 				<partToAffect>Heart</partToAffect>
-				<percentage>0.07</percentage>
+				<percentage>0.03</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -88,14 +88,14 @@
 			<li>
 				<label>consumed salt</label>
 				<description>A pinch of salt really enhances the flavours of a meal.</description>
-				<baseMoodEffect>2</baseMoodEffect>
+				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>	
 		<modExtensions>
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
 				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
 				<partToAffect>Body</partToAffect>
-				<percentage>0.03</percentage>
+				<percentage>0.01</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -116,7 +116,7 @@
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
 				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
 				<partToAffect>Heart</partToAffect>
-				<percentage>0.05</percentage>
+				<percentage>0.02</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -137,7 +137,7 @@
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
 				<hediffToAffect>VCE_Diabetes</hediffToAffect>
 				<partToAffect>Body</partToAffect>
-				<percentage>0.02</percentage>
+				<percentage>0.01</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -325,7 +325,7 @@
 			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
 				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
 				<partToAffect>Heart</partToAffect>
-				<percentage>0.01</percentage>
+				<percentage>0.03</percentage>
 			</li>
 		</modExtensions>
 	</ThoughtDef>

@@ -23,7 +23,7 @@
 						<li>FoodRaw</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 
 		</ingredients>
@@ -58,7 +58,7 @@
 						<li>AnimalProductRaw</li>
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -66,7 +66,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
 		</ingredients>
 		<products>
@@ -104,7 +104,7 @@
 						<li>AnimalProductRaw</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>
@@ -112,7 +112,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 		</ingredients>
 		<products>
@@ -152,7 +152,7 @@
 						<li>AnimalProductRaw</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>
@@ -160,7 +160,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>

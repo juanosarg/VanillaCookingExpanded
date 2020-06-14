@@ -296,7 +296,7 @@ namespace VanillaCookingExpanded
         {
             get
             {
-                if (contentsKnown || SoupStarted)
+                if (contentsKnown || SoupStarted || SoupReadyAndWaitingForPickup)
                 {
 
                     Graphic newgraphic = GraphicDatabase.Get(typeof(Graphic_Multi), "Things/Buildings/VCE_PotFull", this.def.graphicData.shaderType.Shader, this.def.graphicData.drawSize, this.DrawColor, this.DrawColorTwo);

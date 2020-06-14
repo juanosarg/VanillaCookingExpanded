@@ -49,7 +49,9 @@
 			</categories>
 			<disallowedThingDefs>
 				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>				
+				<li>Meat_Megaspider</li>	
+				<li>VCE_CannedMeat</li>		
+				<li>VCE_CannedFish</li>
 			</disallowedThingDefs>
 			<disallowedCategories>							
 			</disallowedCategories>
@@ -99,7 +101,10 @@
 			<categories>
 				<li>PlantFoodRaw</li>				
 			</categories>
-
+			<disallowedThingDefs>
+				<li>VCE_CannedProduce</li>
+			
+			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<products>
 			<VCE_CannedProduce>20</VCE_CannedProduce>

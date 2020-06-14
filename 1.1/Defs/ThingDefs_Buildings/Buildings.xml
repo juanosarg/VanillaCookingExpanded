@@ -414,7 +414,7 @@
 		</statBases>
 		<costList>
 			<Steel>10</Steel>
-			<WoodLog>30</WoodLog>
+			<WoodLog>75</WoodLog>
 		</costList>
 <size>(2,1)</size>
 		<tickerType>Rare</tickerType>
