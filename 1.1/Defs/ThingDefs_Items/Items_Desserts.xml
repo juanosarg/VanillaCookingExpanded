@@ -25,7 +25,7 @@
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
 		<thingCategories>
-			<li>Foods</li>
+			<li>FoodMeals</li>
 		</thingCategories>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
@@ -71,7 +71,7 @@
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
 		<thingCategories>
-			<li>Foods</li>
+			<li>FoodMeals</li>
 		</thingCategories>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
@@ -117,7 +117,7 @@
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
 		<thingCategories>
-			<li>Foods</li>
+			<li>FoodMeals</li>
 		</thingCategories>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
@@ -162,7 +162,7 @@
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
 		<thingCategories>
-			<li>Foods</li>
+			<li>FoodMeals</li>
 		</thingCategories>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>

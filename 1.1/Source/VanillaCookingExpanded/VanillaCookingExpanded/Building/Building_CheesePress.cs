@@ -103,72 +103,82 @@ namespace VanillaCookingExpanded
         public override IEnumerable<Gizmo> GetGizmos()
         {
             map = this.Map;
+            bool flagMoreThanOneSelected = false;
+
             foreach (Gizmo g in base.GetGizmos())
             {
                 yield return g;
             }
-            if (!CheeseStarted && !CheeseReadyAndWaitingForPickup)
+            if (Find.Selector.SelectedObjects.Count > 1)
             {
-                yield return MilkListSetupUtility.SetMilkListCommand(this, map);
-
-                if (!this.StartInsertionJobs)
+                flagMoreThanOneSelected = true;
+            }
+            if (!flagMoreThanOneSelected)
+            {
+                if (!CheeseStarted && !CheeseReadyAndWaitingForPickup)
                 {
-                    Command_Action RB_Gizmo_StartInsertion = new Command_Action();
-                    RB_Gizmo_StartInsertion.action = delegate
+                    yield return MilkListSetupUtility.SetMilkListCommand(this, map);
+
+                    if (!this.StartInsertionJobs)
                     {
-                        if (ExpectingMilk)
+                        Command_Action RB_Gizmo_StartInsertion = new Command_Action();
+                        RB_Gizmo_StartInsertion.action = delegate
                         {
-                            StartInsertionJobs = true;
+                            if (ExpectingMilk)
+                            {
+                                StartInsertionJobs = true;
                                 if (ThingDef.Named(theMilkIAmGoingToInsert).HasModExtension<Milk_Extension>())
                                 {
                                     this.AmountOfMilkExpected = ThingDef.Named(theMilkIAmGoingToInsert).GetModExtension<Milk_Extension>().mustCapacity;
-                                  
+
                                 }
                             }
-                        else
-                        {
-                            Messages.Message("VCE_SelectMilk".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
-                        }
-                    };
-                    RB_Gizmo_StartInsertion.defaultLabel = "VCE_StartInsertionMilk".Translate();
-                    RB_Gizmo_StartInsertion.defaultDesc = "VCE_StartInsertionMilkDesc".Translate();
-                    RB_Gizmo_StartInsertion.icon = ContentFinder<Texture2D>.Get("UI/VCE_InsertMilk", true);
-                    yield return RB_Gizmo_StartInsertion;
+                            else
+                            {
+                                Messages.Message("VCE_SelectMilk".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
+                            }
+                        };
+                        RB_Gizmo_StartInsertion.defaultLabel = "VCE_StartInsertionMilk".Translate();
+                        RB_Gizmo_StartInsertion.defaultDesc = "VCE_StartInsertionMilkDesc".Translate();
+                        RB_Gizmo_StartInsertion.icon = ContentFinder<Texture2D>.Get("UI/VCE_InsertMilk", true);
+                        yield return RB_Gizmo_StartInsertion;
 
-                }
-                else
-                {
-                    Command_Action RB_Gizmo_CancelJobs = new Command_Action();
-                    RB_Gizmo_CancelJobs.action = delegate
+                    }
+                    else
                     {
-                        StartInsertionJobs = false;
+                        Command_Action RB_Gizmo_CancelJobs = new Command_Action();
+                        RB_Gizmo_CancelJobs.action = delegate
+                        {
+                            StartInsertionJobs = false;
 
+                        };
+                        RB_Gizmo_CancelJobs.defaultLabel = "VCE_CancelBringingMilk".Translate();
+                        RB_Gizmo_CancelJobs.defaultDesc = "VCE_CancelBringingMilkDesc".Translate();
+                        RB_Gizmo_CancelJobs.icon = ContentFinder<Texture2D>.Get("UI/VCE_CancelMilk", true);
+                        yield return RB_Gizmo_CancelJobs;
+
+
+                    }
+
+                }
+                if (CheeseStarted && YouCanNowRemoveAverageQualityCheese)
+                {
+                    Command_Action RB_Gizmo_RemoveCheese = new Command_Action();
+                    RB_Gizmo_RemoveCheese.action = delegate
+                    {
+
+                        CheeseReadyAndWaitingForPickup = true;
+                        base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+                        theMilkCooking = "";
+                        CheeseCounter = 0;
+                        CheeseStarted = false;
                     };
-                    RB_Gizmo_CancelJobs.defaultLabel = "VCE_CancelBringingMilk".Translate();
-                    RB_Gizmo_CancelJobs.defaultDesc = "VCE_CancelBringingMilkDesc".Translate();
-                    RB_Gizmo_CancelJobs.icon = ContentFinder<Texture2D>.Get("UI/VCE_CancelMilk", true);
-                    yield return RB_Gizmo_CancelJobs;
-
-                   
+                    RB_Gizmo_RemoveCheese.defaultLabel = "VCE_RemoveCheese".Translate(qualityNow.ToString());
+                    RB_Gizmo_RemoveCheese.defaultDesc = "VCE_RemoveCheeseDesc".Translate(qualityNow.ToString());
+                    RB_Gizmo_RemoveCheese.icon = ContentFinder<Texture2D>.Get("UI/VCE_RemoveCheese", true);
+                    yield return RB_Gizmo_RemoveCheese;
                 }
 
-            }
-            if (CheeseStarted && YouCanNowRemoveAverageQualityCheese)
-            {
-                Command_Action RB_Gizmo_RemoveCheese = new Command_Action();
-                RB_Gizmo_RemoveCheese.action = delegate
-                {
-                   
-                    CheeseReadyAndWaitingForPickup = true;
-                    base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
-                    theMilkCooking = "";
-                    CheeseCounter = 0;
-                    CheeseStarted = false;
-                };
-                RB_Gizmo_RemoveCheese.defaultLabel = "VCE_RemoveCheese".Translate(qualityNow.ToString());
-                RB_Gizmo_RemoveCheese.defaultDesc = "VCE_RemoveCheeseDesc".Translate(qualityNow.ToString());
-                RB_Gizmo_RemoveCheese.icon = ContentFinder<Texture2D>.Get("UI/VCE_RemoveCheese", true);
-                yield return RB_Gizmo_RemoveCheese;
             }
 
 

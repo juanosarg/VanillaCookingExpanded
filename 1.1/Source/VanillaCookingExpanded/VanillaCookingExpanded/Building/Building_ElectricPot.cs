@@ -163,53 +163,62 @@ namespace VanillaCookingExpanded
         public override IEnumerable<Gizmo> GetGizmos()
         {
             map = this.Map;
+            bool flagMoreThanOneSelected = false;
             foreach (Gizmo g in base.GetGizmos())
             {
                 yield return g;
             }
-            if (!SoupStarted && !SoupReadyAndWaitingForPickup)
+            if (Find.Selector.SelectedObjects.Count > 1)
             {
-                yield return SoupListSetupUtility.SetUnfinishedSoupListCommand(this, map);
-
-                if (!this.StartInsertionJobs)
-                {
-                    Command_Action RB_Gizmo_StartInsertion = new Command_Action();
-                    RB_Gizmo_StartInsertion.action = delegate
-                    {
-                        if (ExpectingSoup || (innerContainerSoup.Count > 0))
-                        {
-                            StartInsertionJobs = true;
-                        }
-                        else
-                        {
-                            Messages.Message("VCE_SelectSoup".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
-                        }
-                    };
-                    RB_Gizmo_StartInsertion.defaultLabel = "VCE_StartInsertion".Translate();
-                    RB_Gizmo_StartInsertion.defaultDesc = "VCE_StartInsertionDesc".Translate();
-                    RB_Gizmo_StartInsertion.icon = ContentFinder<Texture2D>.Get("UI/VCE_InsertSoup", true);
-                    yield return RB_Gizmo_StartInsertion;
-
-
-
-                }
-                else
-                {
-                    Command_Action RB_Gizmo_CancelJobs = new Command_Action();
-                    RB_Gizmo_CancelJobs.action = delegate
-                    {
-                        StartInsertionJobs = false;
-
-                    };
-                    RB_Gizmo_CancelJobs.defaultLabel = "VCE_CancelBringingSoup".Translate();
-                    RB_Gizmo_CancelJobs.defaultDesc = "VCE_CancelBringingSoupDesc".Translate();
-                    RB_Gizmo_CancelJobs.icon = ContentFinder<Texture2D>.Get("UI/VCE_CancelSoup", true);
-                    yield return RB_Gizmo_CancelJobs;
-
-                   
-                }
-
+                flagMoreThanOneSelected = true;
             }
+            if (!flagMoreThanOneSelected) {
+
+                if (!SoupStarted && !SoupReadyAndWaitingForPickup)
+                {
+                    yield return SoupListSetupUtility.SetUnfinishedSoupListCommand(this, map);
+
+                    if (!this.StartInsertionJobs)
+                    {
+                        Command_Action RB_Gizmo_StartInsertion = new Command_Action();
+                        RB_Gizmo_StartInsertion.action = delegate
+                        {
+                            if (ExpectingSoup || (innerContainerSoup.Count > 0))
+                            {
+                                StartInsertionJobs = true;
+                            }
+                            else
+                            {
+                                Messages.Message("VCE_SelectSoup".Translate(), null, MessageTypeDefOf.NegativeEvent, true);
+                            }
+                        };
+                        RB_Gizmo_StartInsertion.defaultLabel = "VCE_StartInsertion".Translate();
+                        RB_Gizmo_StartInsertion.defaultDesc = "VCE_StartInsertionDesc".Translate();
+                        RB_Gizmo_StartInsertion.icon = ContentFinder<Texture2D>.Get("UI/VCE_InsertSoup", true);
+                        yield return RB_Gizmo_StartInsertion;
+
+
+
+                    }
+                    else
+                    {
+                        Command_Action RB_Gizmo_CancelJobs = new Command_Action();
+                        RB_Gizmo_CancelJobs.action = delegate
+                        {
+                            StartInsertionJobs = false;
+
+                        };
+                        RB_Gizmo_CancelJobs.defaultLabel = "VCE_CancelBringingSoup".Translate();
+                        RB_Gizmo_CancelJobs.defaultDesc = "VCE_CancelBringingSoupDesc".Translate();
+                        RB_Gizmo_CancelJobs.icon = ContentFinder<Texture2D>.Get("UI/VCE_CancelSoup", true);
+                        yield return RB_Gizmo_CancelJobs;
+
+
+                    }
+
+                }
+            }
+            
 
 
         }
