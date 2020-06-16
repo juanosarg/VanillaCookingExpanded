@@ -158,7 +158,7 @@
 		</recipeUsers>
 
 		<ingredients>
-			<li>
+			<li Name="Fruit">
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
@@ -200,7 +200,7 @@
 		</recipeUsers>
 
 		<ingredients>
-			<li>
+			<li Name="Fruit">
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
@@ -241,7 +241,7 @@
 		</recipeUsers>
 
 		<ingredients>
-			<li>
+			<li Name="Fruit">
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
@@ -283,7 +283,7 @@
 		</recipeUsers>
 
 		<ingredients>
-			<li>
+			<li Name="Fruit">
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
@@ -327,7 +327,7 @@
 		</recipeUsers>
 
 		<ingredients>
-			<li>
+			<li Name="Fruit">
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
