@@ -13,33 +13,33 @@
 
 
 				<!-- Weird Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_WeirdMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>8</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_WeirdMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_WeirdMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_WeirdCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>8</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_WeirdCheese</itemToTurnInto>
-								<amount>25</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -88,33 +88,33 @@
 				</li>
 
 				<!-- Mecha Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_MechaMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_MechaMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_MechaMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_MechaCheese</result>	
+							<yield>1</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>100</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_MechaCheese</itemToTurnInto>
-								<amount>1</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -239,34 +239,33 @@
 
 
 				<!-- Bearffalo Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_BearffaloMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_BearMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_BearffaloMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_BearffaloCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-
-								<itemToTurnInto>VCE_BearffaloCheese</itemToTurnInto>
-								<amount>25</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -342,33 +341,33 @@
 				</li>
 
 				<!-- Thrumffalo Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_ThrumffaloMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>40</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_ThrumboMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_ThrumffaloMilk</li>
+							</items>	
+							<amount>
+								<li>40</li>
+							</amount>
+							<result>VCE_ThrumffaloGouda</result>	
+							<yield>20</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_ThrumffaloGouda</itemToTurnInto>
-								<amount>20</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -418,33 +417,33 @@
 				</li>
 
 				<!-- Muffalochicken Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_MuffalochickenMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_ChickenMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_MuffalochickenMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_LumpyCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_LumpyCheese</itemToTurnInto>
-								<amount>25</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -498,31 +497,31 @@
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_ChickenffaloMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>70</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>5</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_ChikenfaloMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_ChickenffaloMilk</li>
+							</items>	
+							<amount>
+								<li>70</li>
+							</amount>
+							<result>VCE_ChickenffaloCheese</result>	
+							<yield>35</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>5</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>10</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>15</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>35</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>40</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>60</legendaryQualityAgeDaysThreshold>
-
-								<itemToTurnInto>VCE_ChickenffaloCheese</itemToTurnInto>
-								<amount>35</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -571,33 +570,33 @@
 				</li>
 
 				<!-- Muffalobear Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_MuffalobearMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_MuffaloBearMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_MuffalobearMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_BrownCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_BrownCheese</itemToTurnInto>
-								<amount>25</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+			
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -648,33 +647,33 @@
 				</li>
 
 				<!-- Wolffalo Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_WolffaloMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_WolfaloMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_WolffaloMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_HairyCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_HairyCheese</itemToTurnInto>
-								<amount>25</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -723,33 +722,33 @@
 				</li>
 
 				<!-- Rat Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "GR_RatMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_RatMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_RatMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_RatCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_RatCheese</itemToTurnInto>
-								<amount>25</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>

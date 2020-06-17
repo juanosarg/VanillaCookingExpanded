@@ -13,34 +13,33 @@
 
 
 				<!-- Bee Milk -->
-
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "RB_BeeMilk"]</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-
-
-						<modExtensions>
-							<li Class="ItemProcessor.Ingredient_Extension">
-								<Capacity>50</Capacity>
-								<useQualityIncreasing>true</useQualityIncreasing>
-								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_BeeMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>RB_BeeMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_BeeCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
 								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
 								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
 								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
 								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
 								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
 								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
-								<itemToTurnInto>VCE_BeeCheese</itemToTurnInto>
-								<amount>25</amount>
-
-							</li>
-						</modExtensions>
-
-
+						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
-
+				
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
 					<xpath>/Defs</xpath>

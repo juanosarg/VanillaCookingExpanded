@@ -28,15 +28,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		<modExtensions>
-			<li Class="ItemProcessor.Ingredient_Extension">
-				<Capacity>1</Capacity>
-				<useQualityIncreasing>false</useQualityIncreasing>
-				<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
-				<itemToTurnInto>VCE_CookedSoupSimple</itemToTurnInto>
-				<amount>20</amount>
-			</li>
-		</modExtensions>
+		
 	</ThingDef>
 	
 	<ThingDef ParentName="MealCooked">
@@ -86,15 +78,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		<modExtensions>
-			<li Class="ItemProcessor.Ingredient_Extension">
-				<Capacity>1</Capacity>
-				<useQualityIncreasing>false</useQualityIncreasing>
-				<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
-				<itemToTurnInto>VCE_CookedSoupFine</itemToTurnInto>
-				<amount>20</amount>
-			</li>
-		</modExtensions>
+		
 	</ThingDef>
 	
 	<ThingDef ParentName="MealCooked">
@@ -146,15 +130,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		<modExtensions>
-			<li Class="ItemProcessor.Ingredient_Extension">
-				<Capacity>1</Capacity>
-				<useQualityIncreasing>false</useQualityIncreasing>
-				<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
-				<itemToTurnInto>VCE_CookedSoupLavish</itemToTurnInto>
-				<amount>20</amount>
-			</li>
-		</modExtensions>
+		
 	</ThingDef>
 	
 	<ThingDef ParentName="MealCooked">
@@ -207,15 +183,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		<modExtensions>
-			<li Class="ItemProcessor.Ingredient_Extension">
-				<Capacity>1</Capacity>
-				<useQualityIncreasing>false</useQualityIncreasing>
-				<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
-				<itemToTurnInto>VCE_CookedSoupGourmet</itemToTurnInto>
-				<amount>10</amount>
-			</li>
-		</modExtensions>
+		
 	</ThingDef>
 
 	
