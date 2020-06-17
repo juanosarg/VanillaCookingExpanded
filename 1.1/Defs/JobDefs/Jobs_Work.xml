@@ -3,28 +3,27 @@
 
 
 
-    <JobDef>
-    <defName>VCE_InsertSoup</defName>
-    <driverClass>VanillaCookingExpanded.JobDriver_InsertSoup</driverClass>
-    <reportString>inserting soup.</reportString>
-  </JobDef>
-  
-      <JobDef>
-    <defName>VCE_RemoveSoup</defName>
-    <driverClass>VanillaCookingExpanded.JobDriver_RemoveSoup</driverClass>
-    <reportString>removing soup.</reportString>
-  </JobDef>
-  
-      <JobDef>
-    <defName>VCE_InsertMilk</defName>
-    <driverClass>VanillaCookingExpanded.JobDriver_InsertMilk</driverClass>
-    <reportString>inserting milk.</reportString>
+  <JobDef>
+    <defName>IP_InsertFirstIngredient</defName>
+    <driverClass>ItemProcessor.JobDriver_InsertProcessorFirst</driverClass>
+    <reportString>inserting ingredient.</reportString>
   </JobDef>
   
    <JobDef>
-    <defName>VCE_RemoveCheese</defName>
-    <driverClass>VanillaCookingExpanded.JobDriver_RemoveCheese</driverClass>
-    <reportString>removing ripened cheese.</reportString>
+    <defName>IP_InsertSecondIngredient</defName>
+    <driverClass>ItemProcessor.JobDriver_InsertProcessorSecond</driverClass>
+    <reportString>inserting ingredient.</reportString>
+  </JobDef>
+  <JobDef>
+    <defName>IP_InsertThirdIngredient</defName>
+    <driverClass>ItemProcessor.JobDriver_InsertProcessorThird</driverClass>
+    <reportString>inserting ingredient.</reportString>
+  </JobDef>  
+  
+  <JobDef>
+    <defName>IP_RemoveProduct</defName>
+    <driverClass>ItemProcessor.JobDriver_RemoveProduct</driverClass>
+    <reportString>removing finished product.</reportString>
   </JobDef>
   
 

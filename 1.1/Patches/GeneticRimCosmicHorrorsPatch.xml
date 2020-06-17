@@ -21,17 +21,18 @@
 
 
 						<modExtensions>
-							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>50</mustCapacity>
-								<awfulQualityAgeDaysThreshold>5</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>140</legendaryQualityAgeDaysThreshold>
+							<li Class="ItemProcessor.Ingredient_Extension">
+								<Capacity>50</Capacity>
+								<useQualityIncreasing>true</useQualityIncreasing>
+								<awfulQualityAgeDaysThreshold>12</awfulQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+								<legendaryQualityAgeDaysThreshold>85</legendaryQualityAgeDaysThreshold>
 
-								<cheeseToTurnInto>VCE_EldritchCheese</cheeseToTurnInto>
+								<itemToTurnInto>VCE_EldritchCheese</itemToTurnInto>
 								<amount>25</amount>
 
 							</li>
@@ -58,8 +59,8 @@
 							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>20</MarketValue>
-								<Nutrition>0.05</Nutrition>
+								<MarketValue>14</MarketValue>
+								<Nutrition>0.15</Nutrition>
 
 							</statBases>
 							<thingCategories>
@@ -69,9 +70,9 @@
 								<preferability>MealLavish</preferability>
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
-								<joy>0.06</joy>
+								<joy>0.08</joy>
 								<joyKind>Gluttonous</joyKind>
-								<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+								<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
 
 								<outcomeDoers>
 									<li Class="IngestionOutcomeDoer_GiveHediff">
@@ -101,7 +102,7 @@
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/VanillaCookingExpanded.AcceptedMilksDef[defName = "VCE_AcceptedMilks"]/milks</xpath>
+					<xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName = "IP_CheesePressFirstItem"]/items</xpath>
 					<value>
 						<li>GR_EldritchMilk</li>
 

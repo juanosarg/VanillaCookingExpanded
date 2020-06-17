@@ -1,26 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<WorkGiverDef>
-		<defName>VCE_InsertSoup</defName>
-		<label>bringing soup to electric pot</label>
-		<giverClass>VanillaCookingExpanded.WorkGiver_InsertSoup</giverClass>
+<WorkGiverDef>
+		<defName>IP_InsertFirstIngredient</defName>
+		<label>bringing ingredient</label>
+		<giverClass>ItemProcessor.WorkGiver_InsertProcessorFirst</giverClass>
 		<workType>Hauling</workType>
-		<verb>bring soup to</verb>
-		<gerund>bringing soup to</gerund>
-		<priorityInType>20</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>VCE_RemoveSoup</defName>
-		<label>getting cooked soup from electric pot</label>
-		<giverClass>VanillaCookingExpanded.WorkGiver_RemoveSoup</giverClass>
-		<workType>Hauling</workType>
-		<verb>get cooked soup from</verb>
-		<gerund>getting cooked soup from</gerund>
+		<verb>bring ingredient to</verb>
+		<gerund>bringing ingredient to</gerund>
 		<priorityInType>20</priorityInType>
 		<requiredCapacities>
 			<li>Manipulation</li>
@@ -28,30 +15,45 @@
 	</WorkGiverDef>
 	
 	<WorkGiverDef>
-		<defName>VCE_InsertMilk</defName>
-		<label>bringing milk to cheese press</label>
-		<giverClass>VanillaCookingExpanded.WorkGiver_InsertMilk</giverClass>
+		<defName>IP_InsertSecondIngredient</defName>
+		<label>bringing ingredient</label>
+		<giverClass>ItemProcessor.WorkGiver_InsertProcessorSecond</giverClass>
 		<workType>Hauling</workType>
-		<verb>bring milk to</verb>
-		<gerund>bringing milk to</gerund>
-		<priorityInType>19</priorityInType>
+		<verb>bring ingredient to</verb>
+		<gerund>bringing ingredient to</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>IP_InsertThirdIngredient</defName>
+		<label>bringing ingredient</label>
+		<giverClass>ItemProcessor.WorkGiver_InsertProcessorThird</giverClass>
+		<workType>Hauling</workType>
+		<verb>bring ingredient to</verb>
+		<gerund>bringing ingredient to</gerund>
+		<priorityInType>20</priorityInType>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</WorkGiverDef>
 
+
 	<WorkGiverDef>
-		<defName>VCE_RemoveCheese</defName>
-		<label>getting ripened cheese from cheese press</label>
-		<giverClass>VanillaCookingExpanded.WorkGiver_RemoveCheese</giverClass>
+		<defName>IP_RemoveProduct</defName>
+		<label>removing finished product</label>
+		<giverClass>ItemProcessor.WorkGiver_RemoveProduct</giverClass>
 		<workType>Hauling</workType>
-		<verb>get ripened cheese from</verb>
-		<gerund>getting ripened cheese from</gerund>
-		<priorityInType>19</priorityInType>
+		<verb>remove finished product from</verb>
+		<gerund>removing finished product from</gerund>
+		<priorityInType>20</priorityInType>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</WorkGiverDef>
+	
 
 	<WorkGiverDef>
 		<defName>VCE_DoBillsGrill</defName>

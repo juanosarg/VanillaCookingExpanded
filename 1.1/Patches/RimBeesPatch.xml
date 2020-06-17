@@ -21,16 +21,17 @@
 
 
 						<modExtensions>
-							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>50</mustCapacity>
-								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
-					<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
-					<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
-					<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
-					<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
-					<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
-					<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
-								<cheeseToTurnInto>VCE_BeeCheese</cheeseToTurnInto>
+							<li Class="ItemProcessor.Ingredient_Extension">
+								<Capacity>50</Capacity>
+								<useQualityIncreasing>true</useQualityIncreasing>
+								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+								<itemToTurnInto>VCE_BeeCheese</itemToTurnInto>
 								<amount>25</amount>
 
 							</li>
@@ -57,8 +58,8 @@
 							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>15</MarketValue>
-								<Nutrition>0.05</Nutrition>
+								<MarketValue>10</MarketValue>
+								<Nutrition>0.15</Nutrition>
 
 							</statBases>
 							<thingCategories>
@@ -68,9 +69,9 @@
 								<preferability>MealLavish</preferability>
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
-								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+								<maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
 
-								
+
 							</ingestible>
 							<comps>
 								<li Class="CompProperties_Rottable">
@@ -93,7 +94,7 @@
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/VanillaCookingExpanded.AcceptedMilksDef[defName = "VCE_AcceptedMilks"]/milks</xpath>
+					<xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName = "IP_CheesePressFirstItem"]/items</xpath>
 					<value>
 						<li>RB_BeeMilk</li>
 

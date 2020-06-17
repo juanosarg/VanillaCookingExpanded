@@ -82,16 +82,7 @@
 		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 	
-<!--	<ResearchProjectDef>
-		<defName>VCE_Tillage</defName>
-		<label>tillage</label>
-		<tab>VCE_Cooking</tab>
-		<techLevel>Neolithic</techLevel>		
-		<description>Tillage is the agricultural preparation of soil by mechanical agitation of various types, such as digging, stirring, and overturning. Examples of human-powered tilling methods using hand tools include shoveling, picking, mattock work, hoeing, and raking. Only a terrain that is already fertile, such as dirt, can be tilled, thus increasing its fertility.</description>
-		<baseCost>1000</baseCost>
-		<researchViewX>2</researchViewX>
-		<researchViewY>0</researchViewY>
-	</ResearchProjectDef>-->
+
 
 
 

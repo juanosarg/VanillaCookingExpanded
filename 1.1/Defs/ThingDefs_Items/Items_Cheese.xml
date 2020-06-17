@@ -19,8 +19,8 @@
 		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		<statBases>
-			<MarketValue>15</MarketValue>
-			<Nutrition>0.05</Nutrition>
+			<MarketValue>10</MarketValue>
+			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<thingCategories>
 			<li>VCE_Cheese</li>
@@ -29,7 +29,7 @@
 			<preferability>MealSimple</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+			<maxNumToIngestAtOnce>7</maxNumToIngestAtOnce>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">

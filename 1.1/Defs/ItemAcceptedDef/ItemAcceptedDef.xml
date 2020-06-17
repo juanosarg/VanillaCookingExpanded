@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_CheesePressFirstItem</defName>
+		<building>VCE_CheesePress</building>
+		<slot>1</slot>
+		<items>			
+			<li>Milk</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_ElectricPotFirstItem</defName>
+		<building>VCE_ElectricPot</building>
+		<slot>1</slot>
+		<items>			
+			<li>VCE_UncookedSoupSimple</li>			
+			<li>VCE_UncookedSoupFine</li>	
+			<li>VCE_UncookedSoupLavish</li>	
+			<li>VCE_UncookedSoupGourmet</li>				
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+
+	
+	
+</Defs>

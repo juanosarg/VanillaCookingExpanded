@@ -12,7 +12,7 @@
 			<operations>
 
 
-				
+
 				<!-- Night Milk -->
 
 				<li Class="PatchOperationAdd"> 
@@ -22,17 +22,18 @@
 
 
 						<modExtensions>
-							<li Class="VanillaCookingExpanded.Milk_Extension">
-								<mustCapacity>50</mustCapacity>
-								<awfulQualityAgeDaysThreshold>3</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>7</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>16</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>50</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>70</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
+							<li Class="ItemProcessor.Ingredient_Extension">
+								<Capacity>50</Capacity>
+								<useQualityIncreasing>true</useQualityIncreasing>
+								<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+								<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
 
-								<cheeseToTurnInto>VCE_NightCheese</cheeseToTurnInto>
+								<itemToTurnInto>VCE_NightCheese</itemToTurnInto>
 								<amount>25</amount>
 
 							</li>
@@ -59,9 +60,9 @@
 							<tradeability>Sellable</tradeability>
 							<stackLimit>75</stackLimit>
 							<statBases>
-								<MarketValue>17</MarketValue>
-								 <Flammability>0.2</Flammability>
-									<Nutrition>0.065</Nutrition>
+								<MarketValue>12</MarketValue>
+								<Flammability>0.2</Flammability>
+								<Nutrition>0.16</Nutrition>
 							</statBases>
 							<thingCategories>
 								<li>VCE_Cheese</li>
@@ -70,7 +71,7 @@
 								<preferability>MealLavish</preferability>
 								<ingestEffect>EatMeat</ingestEffect>
 								<ingestSound>Meal_Eat</ingestSound>
-								<maxNumToIngestAtOnce>15</maxNumToIngestAtOnce>	
+								<maxNumToIngestAtOnce>6</maxNumToIngestAtOnce>	
 							</ingestible>
 							<comps>
 								<li Class="CompProperties_Rottable">
@@ -93,10 +94,10 @@
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
-					<xpath>/Defs/VanillaCookingExpanded.AcceptedMilksDef[defName = "VCE_AcceptedMilks"]/milks</xpath>
+					<xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName = "IP_CheesePressFirstItem"]/items</xpath>
 					<value>
 						<li>FO_NightMilk</li>
-						
+
 
 					</value>
 				</li>
