@@ -21,6 +21,7 @@
 	<IP_IngredientImproperlyDefined>One of the ingredients has been improperly defined to work with the item processor, contact the mod's author</IP_IngredientImproperlyDefined>
 	<IP_NoPowerDestroysMessage>The result has spoiled due to a power failure in the item processor</IP_NoPowerDestroysMessage>
 	<IP_NoFuelDestroysWarning>{0} needs to be fueled to start working</IP_NoFuelDestroysWarning>
+	<IP_NoPowerDestroysInitialWarning>The result is spoiling due to a power failure in the item processor</IP_NoPowerDestroysInitialWarning>
 	<IP_NoPowerDestroysWarning>{0} needs to be powered to start working</IP_NoPowerDestroysWarning>
 	<IP_GenericProductFinished>A product has finished processing and is waiting for pickup</IP_GenericProductFinished>
 	<IP_IsEmpty>{0} is empty</IP_IsEmpty>

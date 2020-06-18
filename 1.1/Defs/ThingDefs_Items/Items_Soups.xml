@@ -28,13 +28,14 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		
+
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupSimple</defName>
 		<label>simple soup</label>
 		<description>A simple soup slow cooked from a few ingredients.</description>
+		<stackLimit>20</stackLimit>
 		<graphicData>
 			<texPath>Things/Meals/VCE_SoupSimple</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -50,7 +51,7 @@
 		</ingestible>
 
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupFine</defName>
 		<label>uncooked fine soup</label>
@@ -78,12 +79,14 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		
+
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupFine</defName>
 		<label>fine soup</label>
+		<stackLimit>20</stackLimit>
+
 		<description>A complex soup assembled with care from a wide selection of ingredients.</description>
 		<graphicData>
 			<texPath>Things/Meals/VCE_SoupFine</texPath>
@@ -101,7 +104,7 @@
 		</ingestible>
 
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupLavish</defName>
 		<label>uncooked lavish soup</label>
@@ -130,20 +133,22 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		
+
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupLavish</defName>
 		<label>lavish soup</label>
 		<description>A masterpiece of the culinary arts, this soup nourishes the body, mind, and soul.</description>
+		<stackLimit>20</stackLimit>
+
 		<graphicData>
 			<texPath>Things/Meals/VCE_SoupLavish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
 			<MarketValue>40</MarketValue>
-			
+
 			<Nutrition>1</Nutrition>
 		</statBases>
 		<ingestible>
@@ -154,7 +159,7 @@
 		</ingestible>
 
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupGourmet</defName>
 		<label>uncooked gourmet soup</label>
@@ -183,10 +188,10 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>			
 		</ingestible>
-		
+
 	</ThingDef>
 
-	
+
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupGourmet</defName>
 		<label>gourmet soup</label>
@@ -195,9 +200,11 @@
 			<texPath>Things/Meals/VCE_SoupGourmet</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+		<stackLimit>20</stackLimit>
+
 		<statBases>
 			<MarketValue>75</MarketValue>
-			
+
 			<Nutrition>0.5</Nutrition>
 		</statBases>
 		<ingestible>
@@ -212,7 +219,7 @@
 		</comps>
 	</ThingDef>
 
-	
+
 
 
 
