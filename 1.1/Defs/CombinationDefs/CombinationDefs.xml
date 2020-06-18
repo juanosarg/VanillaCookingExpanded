@@ -77,7 +77,7 @@
 			<li>1</li>
 		</amount>
 		<result>VCE_CookedSoupGourmet</result>	
-		<yield>10</yield>
+		<yield>5</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>

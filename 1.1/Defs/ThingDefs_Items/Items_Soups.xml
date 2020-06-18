@@ -11,10 +11,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>120</MarketValue>
 			<Flammability>1.3</Flammability>
 			<WorkToMake>300</WorkToMake>
 		</statBases>
+		<tradeability>Never</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>20</daysToRotStart>
@@ -41,7 +42,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>15</MarketValue>
+			<MarketValue>12</MarketValue>
 			<Nutrition>0.7</Nutrition>
 		</statBases>
 		<ingestible>
@@ -61,10 +62,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>240</MarketValue>
 			<Flammability>1.3</Flammability>
 			<WorkToMake>450</WorkToMake>
 		</statBases>
+		<tradeability>Never</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>20</daysToRotStart>
@@ -93,8 +95,8 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>20</MarketValue>
-			<Nutrition>0.8</Nutrition>
+			<MarketValue>24</MarketValue>
+			<Nutrition>0.7</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealFine</preferability>
@@ -114,11 +116,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>300</MarketValue>
 			<Flammability>1.3</Flammability>
 			<WorkToMake>800</WorkToMake>
 
 		</statBases>
+		<tradeability>Never</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>20</daysToRotStart>
@@ -147,7 +150,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>40</MarketValue>
+			<MarketValue>30</MarketValue>
 
 			<Nutrition>0.9</Nutrition>
 		</statBases>
@@ -169,11 +172,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>375</MarketValue>
 			<Flammability>1.3</Flammability>
 			<WorkToMake>1500</WorkToMake>
 
 		</statBases>
+		<tradeability>Never</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>20</daysToRotStart>
