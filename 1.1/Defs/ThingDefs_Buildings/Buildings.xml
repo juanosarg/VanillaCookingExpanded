@@ -56,6 +56,7 @@
 				<numberOfInputs>1</numberOfInputs>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<InsertFirstItemDesc>VCE_InsertSoupDesc</InsertFirstItemDesc>
+				<transfersIngredientLists>true</transfersIngredientLists>
 				
 				<chooseIngredientsIcon>UI/VCE_EmptySoupPotIcon</chooseIngredientsIcon>
 

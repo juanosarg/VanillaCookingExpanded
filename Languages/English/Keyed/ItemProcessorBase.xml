@@ -42,7 +42,7 @@
 	<IP_QualityAutoEstablished>Auto Quality, product will be extracted at quality level: {0}</IP_QualityAutoEstablished>
 	<IP_ToggleAuto>Auto Ingredient Acquiring</IP_ToggleAuto>
 	<IP_ToggleAutoDesc>If set to active, this building will automatically grab ingredients from adjacent hoppers, and automatically start working again once the product is removed. If not, colonists will haul the ingredients to the building, and it will need to be activated manually once refilled</IP_ToggleAutoDesc>
-
+	<IP_ProductWaiting>Waiting for pickup</IP_ProductWaiting>
 
 
 </LanguageData>
