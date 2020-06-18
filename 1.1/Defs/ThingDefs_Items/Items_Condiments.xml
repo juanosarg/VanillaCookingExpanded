@@ -11,7 +11,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>3</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
@@ -38,7 +38,7 @@
 			<texPath>Things/Items/Condiments/VCE_Sugar</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>4</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
@@ -65,7 +65,7 @@
 			<texPath>Things/Items/Condiments/VCE_Spices</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>6</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
@@ -93,7 +93,7 @@
 
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>2</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
@@ -119,7 +119,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>3</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
@@ -148,7 +148,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>5</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
@@ -172,7 +172,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>6</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
@@ -201,7 +201,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>4</MarketValue>
 			<Nutrition>1</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>

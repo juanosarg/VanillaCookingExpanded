@@ -5,16 +5,15 @@
 	<supportedVersions>
      
       <li>1.1</li>
-   </supportedVersions>
-  
+	</supportedVersions>
+	<packageId>VanillaExpanded.VCookE</packageId>
 	
-		<packageId>VanillaExpanded.VCookE</packageId>
-	
-	<description>
-		Vanilla Cooking Expanded
-		Beta 12/06/2020
-		
-		Redistributing and publishing this mod is a violation of intellectual property laws.
+	<description>Vanilla Cooking Expanded is a core module in a brand new mod series “Vanilla Cuisine Expanded” from the Vanilla Expanded team, notably Sarg Bjornson, Oskar Potocki and Chowder. Whilst other mods work very well without it, Vanilla Cooking Expanded makes use of fish from Vanilla Fishing Expanded as well as plants from Vanilla Plants Expanded in order to provide users with a more in-depth cooking experience.
 
+Mechanics are simple and intuitive - keeping within the vanilla spirit without the unnecessary fluff and production chains. Your colonists will be able to cook up a variety of new meal types, make mood boosting desserts out of fruits, make filling grilled meals that lose the effect when frozen, create large bakes using flour or produce large quantities of soup through boiling ingredients for several days at a time. Using our new system, you can now transform animal milk into cheese inside a cheese press - and it gains quality, and with that - value, the longer it’s inside! Yes, alongside Vanilla Factions Expanded - Medieval you can now create a cheese and wine empire! Hopefully this will provide one more reason to keep livestock!
+
+Our systems are heavily moddable and support a variety of pre-existing mods. With Vanilla Factions Expanded - Insectoids you can now transform insectoid milk into insectoid cheese, and thanks to Sarg Bjornson, you can now utilise 19 (!) types of milk from Alpha Animals, Genetic Rim (plus patches), RimBees and Forsakens: Fauna to create your cheese empire!
+
+New ways of preserving food in the form of canning and deep frying, as well as a brand new condiment system will allow you to create not-so-filling gourmet meals that apply long term effects to people who consume them.
 </description>
 </ModMetaData>
