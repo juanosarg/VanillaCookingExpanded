@@ -34,6 +34,8 @@
 	<IP_ProcessingInProgressNoQuality>{0} is processing {1}. {2} will be ready in {3}</IP_ProcessingInProgressNoQuality>
 	<IP_RemoveProduct>Remove {0} ({1})</IP_RemoveProduct>
 	<IP_RemoveProductDesc>Remove {0} from the {1}. The product will be ready at the present quality level ({2})</IP_RemoveProductDesc>
+	<IP_ResetSemiautomatic>Reset Recipes</IP_ResetSemiautomatic>
+	<IP_ResetSemiautomaticDesc>This will reset the building after the current product is finished, so a new input ingredient can be chosen</IP_ResetSemiautomaticDesc>
 	<IP_NoCombination>No combination found for these ingredients</IP_NoCombination>
 	<IP_SetAutoQuality>Set quality for product extraction. When the product reaches this quality, a colonist will automatically retrieve it and carry it to an stockpile if available. If not set, products will be extracted manually, or at Legendary quality.</IP_SetAutoQuality>
 	<IP_ChooseQualityAuto>Choose Auto Quality</IP_ChooseQualityAuto>

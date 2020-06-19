@@ -115,7 +115,7 @@
 		<defName>VCE_CanEggs</defName>
 		<label>can eggs x20</label>
 		<description>Safely store boiled eggs in a steel can. Canning food extends its shelf life almost indefinitely.</description>
-		<jobString>Canning produce.</jobString>
+		<jobString>Canning eggs.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
