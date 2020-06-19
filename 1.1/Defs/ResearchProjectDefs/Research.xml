@@ -72,10 +72,7 @@
 		<defName>VCE_CheeseMaking</defName>
 		<label>cheese making</label>
 		<tab>VCE_Cooking</tab>
-		<techLevel>Industrial</techLevel>
-		<prerequisites>
-			<li>Electricity</li>
-		</prerequisites>
+		<techLevel>Medieval</techLevel>		
 		<description>Cheesemaking (or caseiculture) is the craft of making cheese. The production of cheese, like many other food preservation processes, allows the nutritional and economic value of milk to be preserved in concentrated form. Cheesemaking allows the production of the cheese with diverse flavors and consistencies. This research gives access to the cheese press.</description>
 		<baseCost>750</baseCost>
 		<researchViewX>1</researchViewX>
