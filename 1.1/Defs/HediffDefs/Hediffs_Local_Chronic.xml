@@ -112,7 +112,7 @@
 	<HediffDef ParentName="ChronicDiseaseBase">
 		<defName>VCE_HighBloodPressure</defName>
 		<initialSeverity>0.01</initialSeverity>
-		<label>diabetes</label>
+		<label>high blood pressure</label>
 		<description>High blood pressure, also called hypertension, is a common condition in which the long-term force of the blood against your artery walls is high enough that it may eventually cause health problems, such as heart disease.</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
