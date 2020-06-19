@@ -13,13 +13,15 @@ namespace VanillaCookingExpanded
     {
         public bool flagAmIThinking = false;
 
+      
         public int checkingInterval = 600;
 
-        public int checkingCounter = 0;
+        public int checkingCounter = 600;
 
         public override void CompExposeData()
         {
             Scribe_Values.Look<bool>(ref this.flagAmIThinking, "flagAmIThinking", false, false);
+          
         }
 
         public HediffCompProperties_WhileHavingThoughts Props
@@ -45,6 +47,14 @@ namespace VanillaCookingExpanded
                     {
                         flagAmIThinking = true;
                         break;
+                    }
+                }
+
+                foreach (ThoughtDef thoughtDefToRemove in this.Props.removeThoughtDefs)
+                {
+                    if (this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDefToRemove) != null)
+                    {
+                        this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDefToRemove).moodPowerFactor = 0;
                     }
                 }
 

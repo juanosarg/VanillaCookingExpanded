@@ -37,9 +37,13 @@ namespace VanillaCookingExpanded
                         pawn.health.hediffSet.GetFirstHediffOfDef(extension.secondHediffToAffect, false).Severity += extension.secondPercentage;
                     }
 
+                   
+
                 }
                 added = true;
             }
+
+
             return base.MoodOffset();
         }
 
