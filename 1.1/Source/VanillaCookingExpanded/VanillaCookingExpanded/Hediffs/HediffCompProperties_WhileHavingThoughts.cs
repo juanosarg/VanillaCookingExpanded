@@ -10,8 +10,8 @@ namespace VanillaCookingExpanded
     class HediffCompProperties_WhileHavingThoughts : HediffCompProperties
     {
 
-        public List<ThoughtDef> thoughtDefs;
-        public List<ThoughtDef> removeThoughtDefs;
+        public List<ThoughtDef> thoughtDefs = new List<ThoughtDef>();
+        public List<ThoughtDef> removeThoughtDefs = new List<ThoughtDef>();
         public bool resurrectionEffect = false;
 
         public HediffCompProperties_WhileHavingThoughts()

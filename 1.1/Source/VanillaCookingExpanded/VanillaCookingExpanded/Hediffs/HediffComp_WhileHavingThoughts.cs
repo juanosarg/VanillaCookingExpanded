@@ -40,23 +40,29 @@ namespace VanillaCookingExpanded
 
             if (checkingCounter > checkingInterval)
             {
-                foreach (ThoughtDef thoughtDef in this.Props.thoughtDefs)
+                if (Props.thoughtDefs.Count > 0)
                 {
-                    flagAmIThinking = false;
-                    if (this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDef) != null)
+                    foreach (ThoughtDef thoughtDef in this.Props.thoughtDefs)
                     {
-                        flagAmIThinking = true;
-                        break;
+                        flagAmIThinking = false;
+                        if (this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDef) != null)
+                        {
+                            flagAmIThinking = true;
+                            break;
+                        }
                     }
                 }
+                if (Props.removeThoughtDefs.Count > 0) {
+                    foreach (ThoughtDef thoughtDefToRemove in this.Props.removeThoughtDefs)
+                    {
+                        if (this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDefToRemove) != null)
+                        {
+                            this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDefToRemove).moodPowerFactor = 0;
+                        }
+                    }
 
-                foreach (ThoughtDef thoughtDefToRemove in this.Props.removeThoughtDefs)
-                {
-                    if (this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDefToRemove) != null)
-                    {
-                        this.Pawn.needs.mood.thoughts.memories.GetFirstMemoryOfDef(thoughtDefToRemove).moodPowerFactor = 0;
-                    }
                 }
+                
 
                 if (!flagAmIThinking)
                 {
