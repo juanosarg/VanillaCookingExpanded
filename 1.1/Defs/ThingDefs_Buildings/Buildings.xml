@@ -18,6 +18,9 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
@@ -29,6 +32,7 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
+			<Mass>10</Mass>
 			<WorkToBuild>800</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -57,10 +61,10 @@
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<InsertFirstItemDesc>VCE_InsertSoupDesc</InsertFirstItemDesc>
 				<transfersIngredientLists>true</transfersIngredientLists>
-				
+
 				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
 				<resetSemiautomaticIcon>UI/VCE_SoupReset</resetSemiautomaticIcon>
-				
+
 				<chooseIngredientsIcon>UI/VCE_EmptySoupPotIcon</chooseIngredientsIcon>
 
 				<bringIngredientsText>VCE_StartInsertion</bringIngredientsText>
@@ -80,6 +84,7 @@
 			</li>
 
 		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -111,14 +116,17 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
+			<Mass>10</Mass>
 			<WorkToBuild>800</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
-
 		</inspectorTabs>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<sowTag>SupportPlantsOnly</sowTag>
@@ -140,7 +148,6 @@
 			<li>VCE_Grilling</li>
 		</researchPrerequisites>
 		<comps>
-
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
@@ -177,6 +184,7 @@
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -206,14 +214,17 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
+			<Mass>10</Mass>
 			<WorkToBuild>1500</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.5</Flammability>
 		</statBases>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
-
 		</inspectorTabs>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<sowTag>SupportPlantsOnly</sowTag>
@@ -255,6 +266,7 @@
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -284,13 +296,16 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
+			<Mass>10</Mass>
 			<WorkToBuild>1800</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>1</Flammability>
 		</statBases>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
-
 		</inspectorTabs>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
@@ -333,6 +348,7 @@
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -351,9 +367,9 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-    <costList>
-      <Steel>80</Steel>
-    </costList>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
@@ -361,10 +377,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
+			<Mass>10</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>1</Flammability>
 		</statBases>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 
@@ -405,6 +425,7 @@
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -488,7 +509,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-		
+
 
 
 
