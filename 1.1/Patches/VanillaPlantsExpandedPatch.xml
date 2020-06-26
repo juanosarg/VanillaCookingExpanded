@@ -26,7 +26,7 @@
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
 							<statBases>
-								<MarketValue>1.9</MarketValue>
+								<MarketValue>3</MarketValue>
 								<Nutrition>1</Nutrition>
 								<Flammability>1.3</Flammability>
 							</statBases>
@@ -61,7 +61,7 @@
 								<graphicClass>Graphic_StackCount</graphicClass>
 							</graphicData>
 							<statBases>
-								<MarketValue>1.9</MarketValue>
+								<MarketValue>3</MarketValue>
 								<Nutrition>1</Nutrition>
 								<Flammability>1.3</Flammability>
 							</statBases>
