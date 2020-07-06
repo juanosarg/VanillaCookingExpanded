@@ -25,6 +25,7 @@
 		<thingCategories>
 			<li>MeatRaw</li>
 		</thingCategories>
+		<rotatable>false</rotatable>
 		<ingestible>
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
@@ -52,6 +53,7 @@
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
+		<rotatable>false</rotatable>
 		<thingCategories>
 			<li>PlantFoodRaw</li>
 		</thingCategories>
@@ -81,6 +83,7 @@
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
+		<rotatable>false</rotatable>
 		<thingCategories>
 			<li>AnimalProductRaw</li>
 		</thingCategories>
@@ -105,6 +108,7 @@
 		</graphicData>
 		 <tradeability>Buyable</tradeability>
 		  <stackLimit>75</stackLimit>
+		  <rotatable>false</rotatable>
 		<statBases>
 			<MarketValue>2</MarketValue>
 			<WorkToMake>400</WorkToMake>

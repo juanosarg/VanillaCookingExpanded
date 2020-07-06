@@ -100,7 +100,7 @@
 			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>VCE_Flour</harvestedThingDef>
 			<sowMinSkill>6</sowMinSkill>
-			<harvestYield>14</harvestYield>
+			<harvestYield>18</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>

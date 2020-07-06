@@ -5,7 +5,7 @@
 
 
 
-	
+
 
 	<ThingDef ParentName="MealBase">
 		<defName>VCE_DeepFriedBigMeat</defName>
@@ -15,8 +15,8 @@
 			<texPath>Things/Items/Deepfried/VCE_DeepfryedMeat_Big</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		 <tradeability>Buyable</tradeability>
-		  <stackLimit>75</stackLimit>
+		<tradeability>Buyable</tradeability>
+		<stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>2</MarketValue>
 			<WorkToMake>400</WorkToMake>
@@ -27,6 +27,7 @@
 		</thingCategories>
 		<ingestible>
 			<foodType>Meal</foodType>
+			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
 			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
@@ -52,9 +53,9 @@
 			<texPath>Things/Items/Deepfried/VCE_DeepfryedVegetables</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-				  <stackLimit>75</stackLimit>
+		<stackLimit>75</stackLimit>
 
-		 <tradeability>Buyable</tradeability>
+		<tradeability>Buyable</tradeability>
 		<thingCategories>
 			<li>PlantFoodRaw</li>
 		</thingCategories>
@@ -65,6 +66,8 @@
 		</statBases>
 		<ingestible>
 			<foodType>Meal</foodType>
+			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+
 			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
@@ -90,8 +93,8 @@
 			<texPath>Things/Items/Deepfried/VCE_DeepfryedFish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		 <tradeability>Buyable</tradeability>
-		 		  <stackLimit>75</stackLimit>
+		<tradeability>Buyable</tradeability>
+		<stackLimit>75</stackLimit>
 
 		<thingCategories>
 			<li>MeatRaw</li>
@@ -103,6 +106,8 @@
 		</statBases>
 		<ingestible>
 			<foodType>Meal</foodType>
+			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+
 			<preferability>MealSimple</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>

@@ -164,6 +164,7 @@
 		</statBases>
 		<ingestible>
 			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
 			<tasteThought>VCE_AteGourmetGrill</tasteThought>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
@@ -193,6 +194,7 @@
 		</statBases>
 		<ingestible>
 			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 		</ingestible>

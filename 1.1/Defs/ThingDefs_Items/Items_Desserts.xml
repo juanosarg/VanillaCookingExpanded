@@ -24,6 +24,7 @@
 			<Mass>0.44</Mass>
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
+		<tickerType>Rare</tickerType>
 		<thingCategories>
 			<li>FoodMeals</li>
 		</thingCategories>
@@ -40,6 +41,10 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 		</ingestible>
 		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
@@ -71,6 +76,7 @@
 			<Mass>0.44</Mass>
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
+		<tickerType>Rare</tickerType>
 		<thingCategories>
 			<li>FoodMeals</li>
 		</thingCategories>
@@ -88,6 +94,10 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 		</ingestible>
 		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
@@ -119,6 +129,7 @@
 			<Mass>0.44</Mass>
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
+		<tickerType>Rare</tickerType>
 		<thingCategories>
 			<li>FoodMeals</li>
 		</thingCategories>
@@ -136,6 +147,10 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 		</ingestible>
 		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
@@ -156,6 +171,7 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -177,12 +193,16 @@
 			<tasteThought>VCE_AteGourmetDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<chairSearchRadius>9</chairSearchRadius>
-
+			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestEffect>EatVegetarian</ingestEffect>
 		</ingestible>
 		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
