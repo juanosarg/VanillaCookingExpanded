@@ -13,6 +13,7 @@
 		</graphicData>
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
+		 <stackLimit>10</stackLimit>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
@@ -63,6 +64,7 @@
 			<texPath>Things/Meals/VCE_DessertFine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+		 <stackLimit>10</stackLimit>
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -116,6 +118,7 @@
 			<texPath>Things/Meals/VCE_DessertLavish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+		 <stackLimit>10</stackLimit>
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -172,6 +175,7 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<tickerType>Rare</tickerType>
+		 <stackLimit>10</stackLimit>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>1.0</Flammability>

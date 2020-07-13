@@ -37,7 +37,7 @@
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_RuinedSimpleGrill</defName>
 		<label>ruined simple grill</label>
-		<description>A simple grilled meat cooked from a few ingredients. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" debuff.</description>
+		<description>A simple grilled meat cooked from a few ingredients. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" buff.</description>
 		<graphicData>
 			<texPath>Things/Meals/VCE_RuinedGrills/VCE_ColdGrillSimple</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -85,7 +85,7 @@
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_RuinedFineGrill</defName>
 		<label>ruined fine grill</label>
-		<description>A complex grilled meat assembled with care from a wide selection of ingredients. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" debuff.</description>
+		<description>A complex grilled meat assembled with care from a wide selection of ingredients. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" buff.</description>
 		<graphicData>
 			<texPath>Things/Meals/VCE_RuinedGrills/VCE_ColdGrillFine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -133,7 +133,7 @@
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_RuinedLavishGrill</defName>
 		<label>ruined lavish grill</label>
-		<description>A masterpiece of the culinary arts, this grilled meat nourishes the body, mind, and soul. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" debuff.</description>
+		<description>A masterpiece of the culinary arts, this grilled meat nourishes the body, mind, and soul. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" buff.</description>
 		<graphicData>
 			<texPath>Things/Meals/VCE_RuinedGrills/VCE_ColdGrillLavish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -183,7 +183,7 @@
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_RuinedGourmetGrill</defName>
 		<label>ruined gourmet grill</label>
-		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity grilled meat. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" debuff.</description>
+		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity grilled meat. This grill has been frozen, and as such it is still edible but much less filling. It won't provide the "well fed" buff.</description>
 		<graphicData>
 			<texPath>Things/Meals/VCE_RuinedGrills/VCE_ColdGrillGourmet</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
