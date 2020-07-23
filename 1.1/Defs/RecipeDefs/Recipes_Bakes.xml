@@ -69,7 +69,7 @@
 	<RecipeDef ParentName="VCE_CookBakeMealBase">
 		<defName>VCE_CookBakeSimple</defName>
 		<label>cook simple bake x2</label>
-		<description>Cook two simple bakes quickly cooked from a few ingredients and flour.</description>
+		<description>Cook two simple bakes quickly cooked from flour.</description>
 		<jobString>Cooking simple bake x2.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -82,21 +82,14 @@
 		</recipeUsers>
 
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>FoodRaw</li>
-					</categories>
-				</filter>
-				<count>0.5</count>
-			</li>
+			
 			<li>
 				<filter>
 					<thingDefs>
 						<li>VCE_Flour</li>
 					</thingDefs>
 				</filter>
-				<count>0.5</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<products>
@@ -108,7 +101,7 @@
 	<RecipeDef ParentName="VCE_CookBakeMealBase">
 		<defName>VCE_CookBakeSimpleBulk</defName>
 		<label>cook simple bake x8</label>
-		<description>Cook 8 simple bakes quickly cooked from a few ingredients and flour.</description>
+		<description>Cook 8 simple bakes quickly cooked from flour.</description>
 		<jobString>Cooking simple bake x8.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -122,21 +115,14 @@
 		</recipeUsers>
 
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>FoodRaw</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
+			
 			<li>
 				<filter>
 					<thingDefs>
 						<li>VCE_Flour</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 		</ingredients>
 		<products>

@@ -23,6 +23,7 @@
 			<tasteThought>VCE_AteSimpleGrill</tasteThought>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
@@ -33,7 +34,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_RuinedSimpleGrill</defName>
 		<label>ruined simple grill</label>
@@ -71,6 +72,8 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<tasteThought>VCE_AteFineGrill</tasteThought>
 			<ingestSound>RawMeat_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
@@ -81,7 +84,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_RuinedFineGrill</defName>
 		<label>ruined fine grill</label>
@@ -119,6 +122,8 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<tasteThought>VCE_AteLavishGrill</tasteThought>
 			<ingestSound>RawMeat_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
@@ -179,7 +184,7 @@
 			<li Class="VanillaCookingExpanded.CompProperties_StackByIngredients" />
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_RuinedGourmetGrill</defName>
 		<label>ruined gourmet grill</label>
@@ -199,7 +204,7 @@
 			<ingestSound>RawMeat_Eat</ingestSound>
 		</ingestible>
 		<comps>
-			
+
 			<li Class="VanillaCookingExpanded.CompProperties_StackByIngredients" />
 		</comps>
 	</ThingDef>

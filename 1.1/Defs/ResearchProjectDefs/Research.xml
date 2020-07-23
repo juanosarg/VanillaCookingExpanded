@@ -30,7 +30,7 @@
 		<defName>VCE_Grilling</defName>
 		<label>grilling</label>
 		<tab>VCE_Cooking</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<prerequisites>
 			<li>Smithing</li>
 		</prerequisites>

@@ -19,10 +19,13 @@
 	<IP_ChooseIngredientSecond>Choose Second Ingredient</IP_ChooseIngredientSecond>
 	<IP_ChooseIngredientThird>Choose Third Ingredient</IP_ChooseIngredientThird>
 	<IP_IngredientImproperlyDefined>One of the ingredients has been improperly defined to work with the item processor, contact the mod's author</IP_IngredientImproperlyDefined>
-	<IP_NoPowerDestroysMessage>The result has spoiled due to a power failure in the item processor</IP_NoPowerDestroysMessage>
-	<IP_NoFuelDestroysWarning>{0} needs to be fueled to start working</IP_NoFuelDestroysWarning>
-	<IP_NoPowerDestroysInitialWarning>The result is spoiling due to a power failure in the item processor</IP_NoPowerDestroysInitialWarning>
 	<IP_NoPowerDestroysWarning>{0} needs to be powered to start working</IP_NoPowerDestroysWarning>
+	<IP_NoFuelDestroysWarning>{0} needs to be fueled to start working</IP_NoFuelDestroysWarning>
+	<IP_LightDestroysWarning>{0} needs to have an adequate light level to start working</IP_LightDestroysWarning>
+	<IP_RainDestroysWarning>{0} needs to not be raining to start working</IP_RainDestroysWarning>
+	<IP_TemperatureDestroysWarning>{0} needs to have an adequate temperature ({1} - {2}) to start working</IP_TemperatureDestroysWarning>
+	<IP_NoPowerDestroysInitialWarning>The result is spoiling due to a power failure in the item processor</IP_NoPowerDestroysInitialWarning>
+	<IP_NoPowerDestroysMessage>The result has spoiled due to a power failure in the item processor</IP_NoPowerDestroysMessage>
 	<IP_GenericProductFinished>A product has finished processing and is waiting for pickup</IP_GenericProductFinished>
 	<IP_IsEmpty>{0} is empty</IP_IsEmpty>
 	<IP_FilledWith>{0} is filled with {1}</IP_FilledWith>
@@ -45,6 +48,14 @@
 	<IP_ToggleAuto>Auto Ingredient Acquiring</IP_ToggleAuto>
 	<IP_ToggleAutoDesc>If set to active, this building will automatically grab ingredients from adjacent hoppers, and automatically start working again once the product is removed. If not, colonists will haul the ingredients to the building, and it will need to be activated manually once refilled</IP_ToggleAutoDesc>
 	<IP_ProductWaiting>Waiting for pickup</IP_ProductWaiting>
+	<IP_OutsideLightRange>The process in this machine is being interrupted due to an inadequate level of light and will be spoiled soon</IP_OutsideLightRange>
+	<IP_SpoiledDueToLight>The product in this machine has spoiled due to an inadequate level of light</IP_SpoiledDueToLight>
+	<IP_ItRains>The process in this machine is being interrupted due to inclement weather and will be spoiled soon</IP_ItRains>
+	<IP_SpoiledDueToRain>The product in this machine has spoiled due to inclement weather</IP_SpoiledDueToRain>
+	<IP_WrongTemp>The process in this machine is being interrupted due to an unsuitable temperature and will be spoiled soon</IP_WrongTemp>
+	<IP_SpoiledDueToWrongTemp>The product in this machine has spoiled due to an unsuitable temperature</IP_SpoiledDueToWrongTemp>
 
+
+	
 
 </LanguageData>

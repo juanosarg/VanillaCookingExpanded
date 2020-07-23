@@ -15,7 +15,7 @@
 			<texPath>Things/Items/Cans/VCE_CannedMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		 <tradeability>Buyable</tradeability>
+		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>2</MarketValue>
@@ -46,7 +46,7 @@
 			<texPath>Things/Items/Cans/VCE_CannedProduce</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		 <tradeability>Buyable</tradeability>
+		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>2</MarketValue>
@@ -76,7 +76,7 @@
 			<texPath>Things/Items/Cans/VCE_CannedAP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		 <tradeability>Buyable</tradeability>
+		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>2</MarketValue>
@@ -106,7 +106,7 @@
 			<texPath>Things/Items/Cans/VCE_CannedFish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		 <tradeability>Buyable</tradeability>
+		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		  <rotatable>false</rotatable>
 		<statBases>

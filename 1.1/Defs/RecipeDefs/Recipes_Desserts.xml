@@ -29,6 +29,7 @@
 			</categories>		
 			<thingDefs>
 				<li>RawBerries</li>
+				<li>Chocolate</li>
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -40,6 +41,7 @@
 			</categories>			
 			<thingDefs>
 				<li>RawBerries</li>
+				<li>Chocolate</li>
 			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
@@ -56,6 +58,8 @@
 			</categories>
 			<thingDefs>
 				<li>RawBerries</li>
+				<li>Chocolate</li>
+
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -68,6 +72,8 @@
 			</categories>
 			<thingDefs>
 				<li>RawBerries</li>
+				<li>Chocolate</li>
+
 			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
@@ -130,6 +136,7 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
+
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -162,6 +169,8 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
+						<li>Chocolate</li>
+
 					</thingDefs>
 				</filter>
 				<count>0.25</count>
@@ -204,6 +213,8 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
+						<li>Chocolate</li>
+
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -245,6 +256,8 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
+						<li>Chocolate</li>
+
 					</thingDefs>
 				</filter>
 				<count>0.5</count>
@@ -287,6 +300,8 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
+						<li>Chocolate</li>
+
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -331,6 +346,8 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
+						<li>Chocolate</li>
+
 					</thingDefs>
 				</filter>
 				<count>0.5</count>
@@ -351,7 +368,7 @@
 				</filter>
 				<count>1</count>
 			</li>
-			
+
 		</ingredients>
 		<products>
 			<VCE_GourmetDessert>1</VCE_GourmetDessert>
