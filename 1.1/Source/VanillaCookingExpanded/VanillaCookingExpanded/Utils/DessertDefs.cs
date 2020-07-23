@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using RimWorld;
 using Verse;
 
-namespace VanillaCookingExpanded.Utils
+namespace VanillaCookingExpanded
 {
     [DefOf]
     public static class DessertDefs
