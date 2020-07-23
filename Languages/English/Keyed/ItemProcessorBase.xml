@@ -54,7 +54,7 @@
 	<IP_SpoiledDueToRain>The product in this machine has spoiled due to inclement weather</IP_SpoiledDueToRain>
 	<IP_WrongTemp>The process in this machine is being interrupted due to an unsuitable temperature and will be spoiled soon</IP_WrongTemp>
 	<IP_SpoiledDueToWrongTemp>The product in this machine has spoiled due to an unsuitable temperature</IP_SpoiledDueToWrongTemp>
-
+	<IP_TempRangeInThisMachine>This fermenter needs a temperature between {0} and {1} ºC</IP_TempRangeInThisMachine>
 
 	
 
