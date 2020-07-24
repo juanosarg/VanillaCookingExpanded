@@ -68,6 +68,7 @@
     <Compile Include="Extensions\Thought_Hediff_Extension.cs" />
     <Compile Include="Utils\DessertDefs.cs" />
     <Compile Include="Utils\HarmonyUtility.cs" />
+    <Compile Include="Utils\NumberUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

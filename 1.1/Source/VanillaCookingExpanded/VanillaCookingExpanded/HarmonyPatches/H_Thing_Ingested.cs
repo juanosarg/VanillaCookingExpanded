@@ -40,6 +40,12 @@ namespace VanillaCookingExpanded.HarmonyPatches
             if (!__state.IsVCEDesert)
                 return;
 
+            if (__state.PreviousTolerance.EqualsTo(0))
+                __state.PreviousTolerance = 0f;
+
+            if (__state.PreviousTolerance < 0)
+                return;
+
             __state.Tolerances[JoyKindDefOf.Gluttonous] = __state.PreviousTolerance;
 
             if (__state.PreviousTolerance <= 0.5f)
