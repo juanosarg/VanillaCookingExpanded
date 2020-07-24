@@ -60,6 +60,7 @@
     <Compile Include="Comps\CompStackByQuality.cs" />
     <Compile Include="Comps\CompStackByIngredients.cs" />
     <Compile Include="Comps\CompTempTransforms.cs" />
+    <Compile Include="HarmonyPatches\H_FoodUtility_TryFindBestFoodSourceFor.cs" />
     <Compile Include="HarmonyPatches\H_Thing_Ingested.cs" />
     <Compile Include="Hediffs\HediffCompProperties_WhileHavingThoughts.cs" />
     <Compile Include="Hediffs\HediffComp_WhileHavingThoughts.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Extensions\Thought_Hediff_Extension.cs" />
     <Compile Include="Utils\DessertDefs.cs" />
     <Compile Include="Utils\HarmonyUtility.cs" />
+    <Compile Include="Utils\ThoughtDefs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
 using RimWorld;
-using VanillaCookingExpanded.Utils;
 using Verse;
 
 namespace VanillaCookingExpanded.HarmonyPatches
