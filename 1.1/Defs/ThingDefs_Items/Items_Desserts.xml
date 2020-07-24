@@ -207,6 +207,7 @@
 				<daysToRotStart>4</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByIngredients" />
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_FoodPoisonable" />
