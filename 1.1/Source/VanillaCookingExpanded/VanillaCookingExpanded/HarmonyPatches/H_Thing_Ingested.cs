@@ -20,9 +20,9 @@ namespace VanillaCookingExpanded.HarmonyPatches
         private static readonly FieldInfo _bored =
             typeof(JoyToleranceSet).GetField($"bored", BindingFlags.NonPublic | BindingFlags.Instance);
 
-        public static bool Prefix(Pawn ingester, ref JoyState __state)
+        public static bool Prefix(Pawn ingester, Thing __instance, ref JoyState __state)
         {
-            ThingDef ingestThingDef = ingester.CurJob.targetA.Thing?.def;
+            ThingDef ingestThingDef = __instance.def;
             if (ingestThingDef == null || !DessertDefs.AllDeserts.Contains(ingestThingDef))
             {
                 __state = new JoyState(false, 0, null);
