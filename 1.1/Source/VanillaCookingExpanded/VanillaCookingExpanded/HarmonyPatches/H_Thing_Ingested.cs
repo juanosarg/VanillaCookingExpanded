@@ -19,16 +19,17 @@ namespace VanillaCookingExpanded.HarmonyPatches
         private static readonly FieldInfo _bored =
             typeof(JoyToleranceSet).GetField($"bored", BindingFlags.NonPublic | BindingFlags.Instance);
 
-        public static bool Prefix(Pawn ingester, ref JoyState __state)
+        public static bool Prefix(Pawn ingester, Thing __instance, ref JoyState __state)
         {
-            ThingDef ingestThingDef = ingester.CurJob.targetA.Thing?.def;
-            if (ingestThingDef == null || !DessertDefs.AllDeserts.Contains(ingestThingDef))
+            ThingDef ingestThingDef = __instance.def;
+            JoyToleranceSet set = ingester?.needs?.joy?.tolerances;
+            if (ingestThingDef == null || set == null || !DessertDefs.AllDeserts.Contains(ingestThingDef))
             {
                 __state = new JoyState(false, 0, null);
                 return true;
             }
 
-            DefMap<JoyKindDef, float> tolerances = (DefMap<JoyKindDef, float>)_tolerances.GetValue(ingester.needs.joy.tolerances);
+            DefMap<JoyKindDef, float> tolerances = (DefMap<JoyKindDef, float>)_tolerances.GetValue(set);
             __state = new JoyState(true, tolerances[JoyKindDefOf.Gluttonous], tolerances);
             return true;
         }
@@ -36,6 +37,12 @@ namespace VanillaCookingExpanded.HarmonyPatches
         public static void Postfix(Pawn ingester, ref JoyState __state)
         {
             if (!__state.IsVCEDesert)
+                return;
+
+            if (__state.PreviousTolerance.EqualsTo(0))
+                __state.PreviousTolerance = 0f;
+
+            if (__state.PreviousTolerance < 0)
                 return;
 
             __state.Tolerances[JoyKindDefOf.Gluttonous] = __state.PreviousTolerance;

@@ -6,6 +6,14 @@
      
       <li>1.1</li>
 	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
 	<packageId>VanillaExpanded.VCookE</packageId>
 	
 	<description>Vanilla Cooking Expanded is a core module in a brand new mod series “Vanilla Cuisine Expanded” from the Vanilla Expanded team, notably Sarg Bjornson, Oskar Potocki and Chowder. Whilst other mods work very well without it, Vanilla Cooking Expanded makes use of fish from Vanilla Fishing Expanded as well as plants from Vanilla Plants Expanded in order to provide users with a more in-depth cooking experience.
