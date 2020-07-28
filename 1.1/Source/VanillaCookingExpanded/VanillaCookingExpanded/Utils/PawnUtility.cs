@@ -28,8 +28,9 @@ namespace VanillaCookingExpanded
             if (compIngredients == null)
                 return true;
 
-            bool result = !compIngredients.ingredients.Any(
-                i => hasThouthgs.Contains(i.ingestible.specialThoughtAsIngredient));
+            bool result = !compIngredients.ingredients
+                .Where(def => def != null)
+                .Any(i => hasThouthgs.Contains(i.ingestible.specialThoughtAsIngredient));
 
             return result;
         }
