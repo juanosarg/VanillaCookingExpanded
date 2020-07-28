@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Assemblies\VanillaCookingExpanded.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaCookingExpanded\VanillaCookingExpanded\obj\Release\VanillaCookingExpanded.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaCookingExpanded\VanillaCookingExpanded\obj\Release\VanillaCookingExpanded.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.1\Source\VanillaCookingExpanded\VanillaCookingExpanded\obj\Release\VanillaCookingExpanded.dll
