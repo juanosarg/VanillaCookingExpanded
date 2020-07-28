@@ -38,7 +38,7 @@ namespace VanillaCookingExpanded.HarmonyPatches
             new CodeInstruction(OpCodes.Stloc_1),
         };
 
-        [HarmonyDebug]
+      
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> codeInstructions, ILGenerator ilGenerator)
         {
             /***** Before Patch ******/
