@@ -15,7 +15,7 @@ namespace VanillaCookingExpanded.HarmonyPatches
     public static class H_FoodUtility_BestFoodInInventory
     {
         private static MethodInfo _isPawnDesperate =
-            typeof(H_FoodUtility_BestFoodInInventory).GetMethod(nameof(IsPawnDesperate), AccessTools.all);
+            typeof(PawnUtility).GetMethod(nameof(PawnUtility.IsDesperateForFood), AccessTools.all);
 
         private static MethodInfo _checkCondiment =
             typeof(PawnUtility).GetMethod(nameof(PawnUtility.PawnNotHaveActiveCondimentAsFood), AccessTools.all);
@@ -121,9 +121,6 @@ namespace VanillaCookingExpanded.HarmonyPatches
             return true;
         }
 
-        private static bool IsPawnDesperate(Pawn pawn)
-        {
-            return pawn.needs.food.CurCategory == HungerCategory.Starving;
-        }
+        
     }
 }
