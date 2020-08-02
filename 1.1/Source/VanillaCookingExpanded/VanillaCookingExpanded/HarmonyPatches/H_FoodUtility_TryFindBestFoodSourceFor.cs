@@ -20,9 +20,10 @@ namespace VanillaCookingExpanded.HarmonyPatches
         private static readonly MethodInfo _checkCondiment =
             typeof(PawnUtility).GetMethod(nameof(PawnUtility.PawnNotHaveActiveCondimentAsFood), AccessTools.all);
 
-        private static FieldInfo _eater;
+        private static readonly MethodInfo _desperateForFood =
+            typeof(PawnUtility).GetMethod(nameof(PawnUtility.IsDesperateForFood), AccessTools.all);
 
-        private static FieldInfo _desperate;
+        private static FieldInfo _eater;
 
         [HarmonyTargetMethods]
         public static IEnumerable<MethodBase> TargetMethods()
@@ -35,7 +36,6 @@ namespace VanillaCookingExpanded.HarmonyPatches
                 return Enumerable.Empty<MethodBase>();
 
             _eater = targetClass.GetField("eater", AccessTools.all);
-            _desperate = targetClass.GetField("desperate", AccessTools.all);
 
             return targetClass.GetMethods(AccessTools.all).Where(m => m.HasMethodBody());
         }
@@ -60,9 +60,10 @@ namespace VanillaCookingExpanded.HarmonyPatches
             List<Label> labels = code[code.Count - 2].labels;
             code.RemoveAt(code.Count - 2);
             code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Ldarg_1)); // Thing
-            code[code.Count -2].labels.AddRange(labels);
+            code[code.Count - 2].labels.AddRange(labels);
             code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Ldarg_0)); // Target Class
-            code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Ldfld, _desperate));
+            code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Ldfld, _eater));
+            code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Call, _desperateForFood));
             code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Ldarg_0)); // Target Class
             code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Ldfld, _eater));
             code.Insert(code.Count - 1, new CodeInstruction(OpCodes.Call, _checkCondiment));

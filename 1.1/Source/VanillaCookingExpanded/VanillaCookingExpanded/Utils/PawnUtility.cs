@@ -28,11 +28,23 @@ namespace VanillaCookingExpanded
             if (compIngredients == null)
                 return true;
 
-            bool result = !compIngredients.ingredients
-                .Where(def => def != null)
-                .Any(i => hasThouthgs.Contains(i.ingestible.specialThoughtAsIngredient));
+            bool result = false;
+            try
+            {
+                result = !compIngredients.ingredients
+                    .Any(def => def != null && hasThouthgs.Contains(def.ingestible.specialThoughtAsIngredient));
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"Something wonky happens to your meal {t}.\n{e}");
+            }
 
             return result;
+        }
+
+        public static bool IsDesperateForFood(this Pawn pawn)
+        {
+            return pawn.needs.food.CurCategory >= HungerCategory.Hungry;
         }
     }
 }

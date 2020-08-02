@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -15,7 +16,7 @@ namespace VanillaCookingExpanded.HarmonyPatches
     public static class H_FoodUtility_BestFoodInInventory
     {
         private static MethodInfo _isPawnDesperate =
-            typeof(H_FoodUtility_BestFoodInInventory).GetMethod(nameof(IsPawnDesperate), AccessTools.all);
+            typeof(PawnUtility).GetMethod(nameof(PawnUtility.IsDesperateForFood), AccessTools.all);
 
         private static MethodInfo _checkCondiment =
             typeof(PawnUtility).GetMethod(nameof(PawnUtility.PawnNotHaveActiveCondimentAsFood), AccessTools.all);
@@ -38,7 +39,7 @@ namespace VanillaCookingExpanded.HarmonyPatches
             new CodeInstruction(OpCodes.Stloc_1),
         };
 
-      
+
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> codeInstructions, ILGenerator ilGenerator)
         {
             /***** Before Patch ******/
@@ -63,10 +64,10 @@ namespace VanillaCookingExpanded.HarmonyPatches
             //{
             //	Thing thing = innerContainer[i];
 
-                ////**** new code ****////
-                //// if (!CheckCondiment(thing, desperate, eater))
-                ////    continue;
-                ////*** new code end ****////
+            ////**** new code ****////
+            //// if (!CheckCondiment(thing, desperate, eater))
+            ////    continue;
+            ////*** new code end ****////
 
             //	if (thing.def.IsNutritionGivingIngestible && thing.IngestibleNow && eater.WillEat(thing, holder) && (int)thing.def.ingestible.preferability >= (int)minFoodPref && (int)thing.def.ingestible.preferability <= (int)maxFoodPref && (allowDrug || !thing.def.IsDrug) && thing.GetStatValue(StatDefOf.Nutrition) * (float)thing.stackCount >= minStackNutrition)
             //	{
@@ -121,9 +122,8 @@ namespace VanillaCookingExpanded.HarmonyPatches
             return true;
         }
 
-        private static bool IsPawnDesperate(Pawn pawn)
-        {
-            return pawn.needs.food.CurCategory == HungerCategory.Starving;
-        }
+
     }
 }
+
+
