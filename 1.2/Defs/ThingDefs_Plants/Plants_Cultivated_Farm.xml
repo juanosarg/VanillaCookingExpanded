@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================== Food crops ==============================-->
+
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Sugarcane</defName>
+		<label>sugarcane plant</label>
+		<description>A thick, tall, tropical grass with jointed stems. While not exactly the most nutritious thing to eat on its own, this genetically modified sugarcane is easily milled into sugar and then used for a variety of culinary creations - Particularly desserts.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_SugarCane</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>VCE_RawSugar</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+			
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>12</growDays>
+			
+			<visualSizeRange>0.4~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Allspice</defName>
+		<label>allspice plant</label>
+		<description>An anomalous, leafy vine bearing tiny unpalatable green fruits. When ground finely during cooking the fruits release a complex, peppery flavor, perfect for spicing dishes.</description>
+		<statBases>
+			<MaxHitPoints>65</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Allspice</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.50</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawSpices</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6.4</growDays>
+			
+			<visualSizeRange>0.4~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Wheat</defName>
+		<label>wheat plant</label>
+		<description>An amber cereal plant that takes almost an entire growing season to come to fruition. While fragile and time-consuming, this wheat has been genetically engineered to gently break into flour with a mere touch.</description>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Nutrition>0.18</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Wheat</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>40</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>VCE_Flour</harvestedThingDef>
+			<sowMinSkill>6</sowMinSkill>
+			<harvestYield>18</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.2</topWindExposure>
+			<growDays>13</growDays>			
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+
+
+
+
+</Defs>

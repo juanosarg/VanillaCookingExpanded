@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VCE_SimpleDessert</defName>
+		<label>simple dessert</label>
+		<description>A simple dessert quickly made from a few fruits and other ingredients.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_DessertSimple</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		 <stackLimit>10</stackLimit>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<MarketValue>15</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.3</Nutrition>
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<ingestible>
+			<chairSearchRadius>9</chairSearchRadius>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<joy>0.3</joy>
+			<drugCategory>Social</drugCategory>
+			<tasteThought>VCE_AteSimpleDessert</tasteThought>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestEffect>EatVegetarian</ingestEffect>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Ingredients" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VCE_FineDessert</defName>
+		<label>fine dessert</label>
+		<description>A complex dessert assembled with care from a wide selection of ingredients.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_DessertFine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		 <stackLimit>10</stackLimit>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.4</Nutrition>			
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<joy>0.5</joy>
+			<chairSearchRadius>9</chairSearchRadius>
+
+			<drugCategory>Social</drugCategory>
+			<tasteThought>VCE_AteFineDessert</tasteThought>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestEffect>EatVegetarian</ingestEffect>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Ingredients" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VCE_LavishDessert</defName>
+		<label>lavish dessert</label>
+		<description>A masterpiece of the culinary arts, this dessert nourishes the body, mind, and soul.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_DessertLavish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		 <stackLimit>10</stackLimit>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<MarketValue>40</MarketValue>
+			<WorkToMake>800</WorkToMake>
+			<Nutrition>0.7</Nutrition>			
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<joy>0.8</joy>
+			<drugCategory>Social</drugCategory>
+			<tasteThought>VCE_AteLavishDessert</tasteThought>
+			<joyKind>Gluttonous</joyKind>
+			<chairSearchRadius>9</chairSearchRadius>
+
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestEffect>EatVegetarian</ingestEffect>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Ingredients" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>VCE_GourmetDessert</defName>
+		<label>gourmet dessert</label>
+		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity dessert.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_DessertGourmet</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		 <stackLimit>10</stackLimit>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<MarketValue>75</MarketValue>
+			<WorkToMake>1500</WorkToMake>
+			<Nutrition>0.2</Nutrition>			
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<joy>1</joy>
+			<drugCategory>Social</drugCategory>
+			<tasteThought>VCE_AteGourmetDessert</tasteThought>
+			<joyKind>Gluttonous</joyKind>
+			<chairSearchRadius>9</chairSearchRadius>
+			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestEffect>EatVegetarian</ingestEffect>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByIngredients" />
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Ingredients" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

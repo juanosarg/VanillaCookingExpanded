@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+
+	<RecipeDef>
+		<defName>VCE_CanMeats</defName>
+		<label>can meats x20</label>
+		<description>Safely store meat chunks in a steel can. Canning food extends its shelf life almost indefinitely.</description>
+		<jobString>Canning meats.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>VCE_CanningMachine</li>					
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>				
+			</categories>			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>				
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>	
+				<li>VCE_CannedMeat</li>		
+				<li>VCE_CannedFish</li>
+			</disallowedThingDefs>
+			<disallowedCategories>							
+			</disallowedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<VCE_CannedMeat>20</VCE_CannedMeat>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_CanProduce</defName>
+		<label>can produce x20</label>
+		<description>Safely store fruit or vegetables in a steel can. Canning food extends its shelf life almost indefinitely.</description>
+		<jobString>Canning produce.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>VCE_CanningMachine</li>					
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>				
+			</categories>			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>				
+			</categories>
+			<disallowedThingDefs>
+				<li>VCE_CannedProduce</li>
+			
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VCE_CannedProduce>20</VCE_CannedProduce>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_CanEggs</defName>
+		<label>can eggs x20</label>
+		<description>Safely store boiled eggs in a steel can. Canning food extends its shelf life almost indefinitely.</description>
+		<jobString>Canning eggs.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>VCE_CanningMachine</li>					
+		</recipeUsers>	
+		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+						<li>EggsFertilized</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>	
+				<li>EggsFertilized</li>				
+			</categories>			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>	
+				<li>EggsFertilized</li>				
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+
+		</defaultIngredientFilter>
+		<products>
+			<VCE_CannedAP>20</VCE_CannedAP>
+		</products>
+	</RecipeDef>
+
+
+
+
+
+</Defs>

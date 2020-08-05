@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<HediffDef>
+		<defName>VCE_ConsumedMayo</defName>
+		<label>consumed mayo (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Mayo is a thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense. It lowers hunger rate by 15% for 24 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_ConsumedMayo</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<HungerRateMultiplier>-0.15</HungerRateMultiplier>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_ConsumedAgave</defName>
+		<label>consumed agave nectar (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Agave nectar is a thin and semi-sweet nectar, known for its healing and anti-inflammatory properties. Gives a 15% immunity gain speed boost for 24 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_ConsumedAgave</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<ImmunityGainSpeed>1.15</ImmunityGainSpeed>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_ConsumedSpices</defName>
+		<label>consumed spices (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Consumed a variety of aromatic and pungent spices. It increases manipulation stat for 24 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+
+					<li>VCE_ConsumedSpices</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!--This one is unused, I keep it for compat purposes-->
+	<HediffDef>
+		<defName>VCE_WellFed</defName>
+		<label>well fed (from grilled meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_AteSimpleGrill</li>							
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--  -->
+
+	<HediffDef>
+		<defName>VCE_WellFedSimple</defName>
+		<label>well fed (from grilled meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_AteSimpleGrill</li>							
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_WellFedFine</defName>
+		<label>well fed (from grilled meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>					
+					<li>VCE_AteFineGrill</li>						
+				</thoughtDefs>
+				<removeThoughtDefs>					
+					<li>AteFineMeal</li>						
+				</removeThoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_WellFedLavish</defName>
+		<label>well fed (from grilled meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>					
+					<li>VCE_AteLavishGrill</li>						
+				</thoughtDefs>
+				<removeThoughtDefs>					
+					<li>AteLavishMeal</li>						
+				</removeThoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_WellFedGourmet</defName>
+		<label>well fed (from grilled meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>					
+					<li>VCE_AteGourmetGrill</li>						
+				</thoughtDefs>
+				<removeThoughtDefs>		
+					<li>AteLavishMeal</li>	
+					<li>VCE_AteLavishGrill</li>	
+					<li>VCE_AteGourmetMeal</li>						
+				</removeThoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_ConsumedDigestibleResurrectorNanites</defName>
+		<label>consumed resurrector nanites (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Resurrector nanites will resurrect this person as long as they are active. The effect lasts for 12 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+
+					<li>VCE_ConsumedDigestibleResurrectorNanites</li>
+				</thoughtDefs>
+				<resurrectionEffect>true</resurrectionEffect>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.01</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_SugarRush</defName>
+		<label>consumed sugar (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Sugar is easily converted into energy by the body, which may result in a nice burst of energy. It increases moving stat by 15% for 24 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+
+					<li>VCE_ConsumedSugar</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_AteGourmetMeal</defName>
+		<label>consumed gourmet food (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist consumed an incredible food.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+
+				<thoughtDefs>
+
+					<li>VCE_AteGourmetMeal</li>
+				</thoughtDefs>
+				<removeThoughtDefs>		
+					<li>AteLavishMeal</li>	
+
+				</removeThoughtDefs>
+
+			</li>
+		</comps>
+		<stages>
+			<li>   
+
+			</li>
+		</stages>
+	</HediffDef>
+
+
+
+
+
+</Defs>

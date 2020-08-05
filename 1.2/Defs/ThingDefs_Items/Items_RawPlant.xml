@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_Flour</defName>
+		<label>flour</label>
+		<description>Wheat flour, used in baking. Wheat flour takes a very long time to go bad, if stored in a dry environment. It was produced by wheat that has been genetically engineered to gently break into flour with a mere touch.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Flour</texPath>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>0.05</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>100</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>    
+	</ThingDef>
+	
+	
+
+
+
+
+</Defs>

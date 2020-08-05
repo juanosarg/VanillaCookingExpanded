@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookSoupSimple</defName>
+		<label>prepare simple soup</label>
+		<description>Prepare a simple uncooked soup quickly made from a few ingredients.</description>
+		<jobString>Preparing simple soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupSimple>1</VCE_UncookedSoupSimple>
+		</products>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookSoupFine</defName>
+		<label>prepare fine soup</label>
+		<description>Prepare a fine uncooked soup assembled with care from a wide selection of ingredients.</description>
+		<jobString>Preparing fine soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupFine>1</VCE_UncookedSoupFine>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookSoupLavish</defName>
+		<label>prepare lavish soup</label>
+		<description>Prepare a lavish uncooked soup. A masterpiece of the culinary arts, this soup nourishes the body, mind, and soul.</description>
+		<jobString>Preparing lavish soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupLavish>1</VCE_UncookedSoupLavish>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+	
+
+
+	<RecipeDef ParentName="VCE_CookGourmetMealBase">
+		<defName>VCE_CookSoupGourmet</defName>
+		<label>prepare gourmet soup</label>
+		<description>Prepare a gourmet uncooked soup. A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity soup.</description>
+		<jobString>Preparing gourmet soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Condiments</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupGourmet>1</VCE_UncookedSoupGourmet>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+
+
+
+
+
+
+</Defs>
