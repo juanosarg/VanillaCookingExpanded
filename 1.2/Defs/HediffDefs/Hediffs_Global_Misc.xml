@@ -92,7 +92,7 @@
 		<defName>VCE_WellFed</defName>
 		<label>well fed (from grilled meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 35% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -109,7 +109,7 @@
 		<stages>
 			<li>   
 				<statOffsets>
-					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+					<HungerRateMultiplier>-0.35</HungerRateMultiplier>					
 				</statOffsets>
 			</li>
 		</stages>
@@ -120,7 +120,7 @@
 		<defName>VCE_WellFedSimple</defName>
 		<label>well fed (from grilled meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 35% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -137,7 +137,7 @@
 		<stages>
 			<li>   
 				<statOffsets>
-					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+					<HungerRateMultiplier>-0.35</HungerRateMultiplier>					
 				</statOffsets>
 			</li>
 		</stages>
@@ -147,7 +147,7 @@
 		<defName>VCE_WellFedFine</defName>
 		<label>well fed (from grilled meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 35% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -167,7 +167,7 @@
 		<stages>
 			<li>   
 				<statOffsets>
-					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+					<HungerRateMultiplier>-0.35</HungerRateMultiplier>					
 				</statOffsets>
 			</li>
 		</stages>
@@ -177,7 +177,7 @@
 		<defName>VCE_WellFedLavish</defName>
 		<label>well fed (from grilled meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 35% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -197,7 +197,7 @@
 		<stages>
 			<li>   
 				<statOffsets>
-					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+					<HungerRateMultiplier>-0.35</HungerRateMultiplier>					
 				</statOffsets>
 			</li>
 		</stages>
@@ -207,7 +207,7 @@
 		<defName>VCE_WellFedGourmet</defName>
 		<label>well fed (from grilled meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 25% for 12 hours.</description>
+		<description>I have eaten a delicious and filling grilled meat. It lowers hunger rate by 35% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -229,7 +229,7 @@
 		<stages>
 			<li>   
 				<statOffsets>
-					<HungerRateMultiplier>-0.25</HungerRateMultiplier>					
+					<HungerRateMultiplier>-0.35</HungerRateMultiplier>					
 				</statOffsets>
 			</li>
 		</stages>
