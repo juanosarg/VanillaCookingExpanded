@@ -7,6 +7,7 @@
 		<defName>VCE_Cholesterol</defName>
 		<initialSeverity>0.01</initialSeverity>
 		<label>cholesterol</label>
+		<everCurableByItem>false</everCurableByItem>
 		<description>The human body needs cholesterol to build healthy cells, but high levels of cholesterol can increase your risk of heart disease. With high cholesterol, fatty deposits develop inside blood vessels. Eventually, these deposits grow, making it difficult for enough blood to flow through arteries.</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -65,6 +66,7 @@
 		<defName>VCE_Diabetes</defName>
 		<initialSeverity>0.01</initialSeverity>
 		<label>diabetes</label>
+		<everCurableByItem>false</everCurableByItem>
 		<description>Diabetes, is a group of metabolic disorders characterized by a high blood sugar level over a prolonged period of time. Symptoms often include frequent urination, increased thirst, and increased appetite.</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -113,6 +115,7 @@
 		<defName>VCE_HighBloodPressure</defName>
 		<initialSeverity>0.01</initialSeverity>
 		<label>high blood pressure</label>
+		<everCurableByItem>false</everCurableByItem>
 		<description>High blood pressure, also called hypertension, is a common condition in which the long-term force of the blood against your artery walls is high enough that it may eventually cause health problems, such as heart disease.</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
