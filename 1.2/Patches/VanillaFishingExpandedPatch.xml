@@ -27,6 +27,7 @@
 							<effectWorking>Cook</effectWorking>
 							<soundWorking>Recipe_CookMeal</soundWorking>
 							<allowMixingIngredients>true</allowMixingIngredients>
+							<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 
 							<recipeUsers>
 								<li>VCE_DeepFrier</li>					
@@ -39,7 +40,7 @@
 
 										</categories>
 									</filter>
-									<count>20</count>
+									<count>1</count>
 								</li>
 
 							</ingredients>
@@ -55,7 +56,7 @@
 
 							</defaultIngredientFilter>
 							<products>
-								<VCE_DeepFriedFish>20</VCE_DeepFriedFish>
+								<VCE_DeepFriedFish>3</VCE_DeepFriedFish>
 							</products>
 
 						</RecipeDef>
@@ -95,6 +96,8 @@
 							<recipeUsers>
 								<li>VCE_CanningMachine</li>					
 							</recipeUsers>	
+									<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+
 							<ingredients>
 								<li>
 									<filter>
@@ -103,7 +106,7 @@
 
 										</categories>
 									</filter>
-									<count>20</count>
+									<count>1</count>
 								</li>
 								<li>
 									<filter>
@@ -137,6 +140,18 @@
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
 					<xpath>/Defs/RecipeDef[defName="VCE_CanMeats"]/defaultIngredientFilter/disallowedCategories</xpath>
+					<value>
+
+
+						<li>VCEF_RawFishCategory</li>
+
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef[defName="VCE_CanMeats"]/fixedIngredientFilter/disallowedCategories</xpath>
 					<value>
 
 

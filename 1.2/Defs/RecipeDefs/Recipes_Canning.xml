@@ -19,6 +19,7 @@
 		<recipeUsers>
 			<li>VCE_CanningMachine</li>					
 		</recipeUsers>	
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
 		<ingredients>
 			<li>
 				<filter>
@@ -27,7 +28,7 @@
 
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -41,7 +42,14 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>MeatRaw</li>				
-			</categories>			
+			</categories>		
+			<disallowedThingDefs>				
+				<li>VCE_CannedMeat</li>		
+				<li>VCE_CannedFish</li>
+			</disallowedThingDefs>			
+			<disallowedCategories>		
+
+			</disallowedCategories>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -50,10 +58,10 @@
 			<disallowedThingDefs>
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>	
-				<li>VCE_CannedMeat</li>		
-				<li>VCE_CannedFish</li>
+
 			</disallowedThingDefs>
-			<disallowedCategories>							
+			<disallowedCategories>		
+
 			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
@@ -64,12 +72,14 @@
 	<RecipeDef>
 		<defName>VCE_CanProduce</defName>
 		<label>can produce x20</label>
-		<description>Safely store fruit or vegetables in a steel can. Canning food extends its shelf life almost indefinitely.</description>
+		<description>Safely store vegetables in a steel can. Canning food extends its shelf life almost indefinitely.</description>
 		<jobString>Canning produce.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+
 		<recipeUsers>
 			<li>VCE_CanningMachine</li>					
 		</recipeUsers>	
@@ -78,10 +88,9 @@
 				<filter>
 					<categories>
 						<li>PlantFoodRaw</li>
-
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -95,19 +104,87 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>PlantFoodRaw</li>				
-			</categories>			
+			</categories>	
+			<disallowedThingDefs>
+				<li>RawBerries</li>
+				<li>VCE_CannedFruit</li>	
+				<li>VCE_CannedProduce</li>			
+			</disallowedThingDefs>	
+			<disallowedCategories>		
+
+			</disallowedCategories>			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
 				<li>PlantFoodRaw</li>				
 			</categories>
 			<disallowedThingDefs>
+				<li>RawBerries</li>
+				<li>VCE_CannedFruit</li>	
 				<li>VCE_CannedProduce</li>
-			
+
 			</disallowedThingDefs>
+			<disallowedCategories>		
+
+			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
 			<VCE_CannedProduce>20</VCE_CannedProduce>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_CanFruit</defName>
+		<label>can fruit x20</label>
+		<description>Safely store fruit in a steel can. Canning food extends its shelf life almost indefinitely.\n\nPreserved fruit can be used in the production of desserts.</description>
+		<jobString>Canning produce.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VCE_CanningMachine</li>					
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+					<categories>
+						
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<disallowedThingDefs>	
+				<li>VCE_CannedFruit</li>		
+			</disallowedThingDefs>		
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<disallowedThingDefs>						
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VCE_CannedFruit>20</VCE_CannedFruit>
 		</products>
 	</RecipeDef>
 
@@ -120,10 +197,12 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+
 		<recipeUsers>
 			<li>VCE_CanningMachine</li>					
 		</recipeUsers>	
-		
+
 		<ingredients>
 			<li>
 				<filter>
@@ -132,7 +211,7 @@
 						<li>EggsFertilized</li>
 					</categories>
 				</filter>
-				<count>4</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>

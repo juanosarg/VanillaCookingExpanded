@@ -18,7 +18,7 @@
 		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		<statBases>
-			<MarketValue>2</MarketValue>
+			<MarketValue>2.3</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
@@ -30,7 +30,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			
 			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>
@@ -49,7 +49,7 @@
 		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		<statBases>
-			<MarketValue>2</MarketValue>
+			<MarketValue>1.5</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
@@ -61,11 +61,39 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
-			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			
 			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
-		</ingestible>
-		
+		</ingestible>		
+	</ThingDef>
+	
+	<ThingDef ParentName="MealBase">
+		<defName>VCE_CannedFruit</defName>
+		<label>canned fruit</label>
+		<description>Cooked and preserved fruit in a hermetically sealed, durable container. Preserved food lasts indefinitely without refrigeration.\n\nFruit differs from produce in that it is specifically required in the production of desserts.</description>
+		<graphicData>
+			<texPath>Things/Items/Cans/VCE_CannedProduce</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		 <tradeability>Sellable</tradeability>
+		  <stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<WorkToMake>400</WorkToMake>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>MealAwful</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			
+			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
+		</ingestible>		
 	</ThingDef>
 
 	<ThingDef ParentName="MealBase">
@@ -79,7 +107,7 @@
 		 <tradeability>Sellable</tradeability>
 		  <stackLimit>75</stackLimit>
 		<statBases>
-			<MarketValue>2</MarketValue>
+			<MarketValue>3.5</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
@@ -91,7 +119,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			
 			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>

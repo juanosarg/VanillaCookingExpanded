@@ -68,6 +68,59 @@
 
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category" and categoryDef="VCE_Condiments"]</xpath>
+		<value>
+        <excludedThingDefs>
+          <li>VCE_DigestibleResurrectorNanites</li> <!-- Can currently potentially appear when mods that scale trader wealth are in play, as VCE_DigestibleResurrectorNanites are a type of VCE_Condiment. -->
+        </excludedThingDefs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category" and categoryDef="VCE_Condiments"]</xpath>
+		<value>
+        <excludedThingDefs>
+          <li>VCE_DigestibleResurrectorNanites</li> <!-- Can currently potentially appear when mods that scale trader wealth are in play, as VCE_DigestibleResurrectorNanites are a type of VCE_Condiment. -->
+        </excludedThingDefs>
+		</value>
+	</Operation>
+	
+		<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_Category" and categoryDef="VCE_Condiments"]</xpath>
+		<value>
+        <excludedThingDefs>
+          <li>VCE_DigestibleResurrectorNanites</li> <!-- Can currently potentially appear when mods that scale trader wealth are in play, as VCE_DigestibleResurrectorNanites are a type of VCE_Condiment. -->
+        </excludedThingDefs>
+		</value>
+	</Operation>
+	
+	<!-- Traders that carry Foods will not necessarily carry Junk Food -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/TraderKindDef/stockGenerators/li[@Class = "StockGenerator_Category" and categoryDef = "Foods"]</xpath>
+		<value>
+        <excludedTags>
+          <li>VCE_JunkFood</li>
+        </excludedTags>
+		</value>
+	</Operation>
+
+<!-- Orbital traders that carry Foods OR Chocolate OR Beer, will carry Junk Food -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[orbital = "true"]/stockGenerators/li[@Class = "StockGenerator_SingleDef" and thingDef = "Chocolate"]/.. | /Defs/TraderKindDef[orbital = "true"]/stockGenerators/li[@Class = "StockGenerator_SingleDef" and thingDef = "Beer"]/.. | /Defs/TraderKindDef[orbital = "true"]/stockGenerators/li[@Class = "StockGenerator_MultiDef" and thingDefs = "Chocolate"]/.. | /Defs/TraderKindDef[orbital = "true"]/stockGenerators/li[@Class = "StockGenerator_MultiDef" and thingDefs = "Beer"]/..</xpath>
+		<value>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>VCE_JunkFood</tradeTag>
+        <thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>10~30</countRange>
+      </li>
+		</value>
+	</Operation>
+	
 
 
 

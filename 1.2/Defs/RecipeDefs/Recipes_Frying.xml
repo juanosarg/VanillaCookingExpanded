@@ -5,7 +5,7 @@
 
 
 
-	
+
 
 	<RecipeDef>
 		<defName>VCE_DeepFryMeats</defName>
@@ -16,6 +16,7 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 
 		<recipeUsers>
 			<li>VCE_DeepFrier</li>					
@@ -28,14 +29,19 @@
 
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>1</count>
 			</li>
 
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
 				<li>MeatRaw</li>				
-			</categories>			
+			</categories>	
+			<disallowedThingDefs>
+
+				<li>VCE_DeepFriedBigMeat</li>
+				<li>VCE_DeepFriedFish</li>
+			</disallowedThingDefs>			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -48,16 +54,16 @@
 				<li>VCE_DeepFriedFish</li>
 			</disallowedThingDefs>
 			<disallowedCategories>	
-			
+
 			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
-			<VCE_DeepFriedBigMeat>20</VCE_DeepFriedBigMeat>
+			<VCE_DeepFriedBigMeat>3</VCE_DeepFriedBigMeat>
 		</products>
 
 	</RecipeDef>
-	
-		<RecipeDef>
+
+	<RecipeDef>
 		<defName>VCE_DeepFryVegetables</defName>
 		<label>deep fry vegetables x20</label>
 		<description>Deep fry vegetables. Deep fried food is very tasty, but not very good for your health.</description>
@@ -66,6 +72,7 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 
 		<recipeUsers>
 			<li>VCE_DeepFrier</li>					
@@ -78,14 +85,18 @@
 
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>1</count>
 			</li>
 
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
 				<li>PlantFoodRaw</li>				
-			</categories>			
+			</categories>		
+			<disallowedThingDefs>
+				<li>VCE_DeepFriedVegetables</li>
+
+			</disallowedThingDefs>			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -93,11 +104,11 @@
 			</categories>
 			<disallowedThingDefs>
 				<li>VCE_DeepFriedVegetables</li>
-				
+
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<VCE_DeepFriedVegetables>20</VCE_DeepFriedVegetables>
+			<VCE_DeepFriedVegetables>3</VCE_DeepFriedVegetables>
 		</products>
 
 	</RecipeDef>

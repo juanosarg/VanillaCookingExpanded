@@ -14,7 +14,7 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
 			<li>VCE_CondimentPrepTable</li>	
-			
+
 		</recipeUsers>
 
 		<ingredients>
@@ -22,7 +22,7 @@
 				<filter>
 					<categories>
 						<li>VCE_Condiments</li>
-						
+
 					</categories>
 				</filter>
 				<count>50</count>
@@ -32,13 +32,13 @@
 			<categories>
 				<li>VCE_Condiments</li>
 			</categories>
-			
+
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
 				<li>VCE_Condiments</li>
 			</categories>
-			
+
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<products>
@@ -47,6 +47,78 @@
 		<skillRequirements>
 			<Cooking>4</Cooking>
 		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_MakeSalt</defName>
+		<label>make salt</label>
+		<description>Grind and process natural stone to extract edible salts from within stone chunks.\n\nUses the Cooking skill.</description>
+		<jobString>Making salt.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1500</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_Salt>5</VCE_Salt>
+		</products>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_MakeSaltfromBlocks</defName>
+		<label>make salt (blocks)</label>
+		<description>Grind and process natural stone to extract edible salts from within stone blocks.\n\nUses the Cooking skill.</description>
+		<jobString>Making salt from blocks.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1500</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneBlocks</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneBlocks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_Salt>5</VCE_Salt>
+		</products>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef>
@@ -77,7 +149,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<VCE_AgaveNectar>5</VCE_AgaveNectar>
+			<VCE_AgaveNectar>10</VCE_AgaveNectar>
 		</products>
 		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
@@ -110,7 +182,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<VCE_InsectJellyPreserves>5</VCE_InsectJellyPreserves>
+			<VCE_InsectJellyPreserves>10</VCE_InsectJellyPreserves>
 		</products>
 		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
@@ -137,7 +209,7 @@
 						<li>EggsFertilized</li>
 					</categories>
 				</filter>
-				<count>2.5</count>
+				<count>1.25</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -146,12 +218,17 @@
 				<li>EggsFertilized</li>
 			</categories>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+		</defaultIngredientFilter>
 		<products>
-			<VCE_Mayo>5</VCE_Mayo>
+			<VCE_Mayo>10</VCE_Mayo>
 		</products>
 		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>VCE_SmokeleafButter</defName>
 		<label>make smokeleaf butter</label>
@@ -194,7 +271,7 @@
 		</products>
 		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>VCE_ChocolateSyrup</defName>
 		<label>make chocolate syrup</label>

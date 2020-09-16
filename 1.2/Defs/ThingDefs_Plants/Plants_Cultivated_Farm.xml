@@ -25,7 +25,7 @@
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>VCE_RawSugar</harvestedThingDef>
-			<harvestYield>1</harvestYield>
+			<harvestYield>2</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
@@ -62,7 +62,7 @@
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>1</maxMeshCount>
 			<harvestedThingDef>VCE_RawSpices</harvestedThingDef>
-			<harvestYield>1</harvestYield>
+			<harvestYield>2</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
@@ -95,18 +95,18 @@
 		<plant>
 			<fertilityMin>0.7</fertilityMin>
 			<fertilitySensitivity>1</fertilitySensitivity>
-			<dieIfLeafless>true</dieIfLeafless>
+			<dieIfLeafless>false</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>VCE_Flour</harvestedThingDef>
 			<sowMinSkill>6</sowMinSkill>
-			<harvestYield>25</harvestYield>
+			<harvestYield>27</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
 			<topWindExposure>0.2</topWindExposure>
-			<growDays>13</growDays>			
+			<growDays>15</growDays>			
 			<visualSizeRange>0.3~0.8</visualSizeRange>
 			
 			<wildOrder>2</wildOrder>

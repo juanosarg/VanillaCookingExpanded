@@ -15,26 +15,29 @@
 			<texPath>Things/Items/Deepfried/VCE_DeepfryedMeat_Big</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<tradeability>Buyable</tradeability>
+		<tradeability>None</tradeability>
 		<stackLimit>75</stackLimit>
 		<statBases>
-			<MarketValue>2</MarketValue>
+			<MarketValue>7</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<thingCategories>
-			<li>MeatRaw</li>
+			<li>Foods</li>
 		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
 		<ingestible>
-			<foodType>Meal</foodType>
-			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
-			<preferability>MealSimple</preferability>
+		<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
-			<joy>0.03</joy>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<joy>0.15</joy>
 			<joyKind>Gluttonous</joyKind>
 		</ingestible>
 		<comps>
@@ -55,26 +58,28 @@
 		</graphicData>
 		<stackLimit>75</stackLimit>
 
-		<tradeability>Buyable</tradeability>
+		<tradeability>None</tradeability>
 		<thingCategories>
-			<li>PlantFoodRaw</li>
+			<li>Foods</li>
 		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
 		<statBases>
-			<MarketValue>2</MarketValue>
+			<MarketValue>7</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
-			<foodType>Meal</foodType>
-			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
-
-			<preferability>MealSimple</preferability>
+		<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
-			<joy>0.03</joy>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<joy>0.15</joy>
 			<joyKind>Gluttonous</joyKind>
 		</ingestible>
 		<comps>
@@ -97,24 +102,27 @@
 		<stackLimit>75</stackLimit>
 
 		<thingCategories>
-			<li>MeatRaw</li>
+			<li>Foods</li>
 		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
 		<statBases>
-			<MarketValue>2</MarketValue>
+			<MarketValue>7</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
-			<foodType>Meal</foodType>
+			
 			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
-
-			<preferability>MealSimple</preferability>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
 			<tasteThought>VCE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
-			<joy>0.03</joy>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<joy>0.15</joy>
 			<joyKind>Gluttonous</joyKind>
 		</ingestible>
 		<comps>

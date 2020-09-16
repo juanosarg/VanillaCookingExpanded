@@ -300,6 +300,7 @@
 			<WorkToBuild>1800</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>1</Flammability>
+			<WorkTableWorkSpeedFactor>4</WorkTableWorkSpeedFactor>
 		</statBases>
 		<thingCategories>
 			<li>BuildingsProduction</li>
@@ -326,6 +327,7 @@
 		<surfaceType>Item</surfaceType>
 		<researchPrerequisites>
 			<li>VCE_Canning</li>
+			<li>Electricity</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -487,6 +489,8 @@
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<InsertFirstItemDesc>VCE_InsertMilkDesc</InsertFirstItemDesc>
 
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VCE_ResetMilk</resetSemiautomaticIcon>
 				<chooseIngredientsIcon>UI/VCE_EmptyMilkIcon</chooseIngredientsIcon>
 
 				<bringIngredientsText>VCE_StartInsertionMilk</bringIngredientsText>
