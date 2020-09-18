@@ -72,7 +72,7 @@
 		<label>canned fruit</label>
 		<description>Cooked and preserved fruit in a hermetically sealed, durable container. Preserved food lasts indefinitely without refrigeration.\n\nFruit differs from produce in that it is specifically required in the production of desserts.</description>
 		<graphicData>
-			<texPath>Things/Items/Cans/VCE_CannedProduce</texPath>
+			<texPath>Things/Items/Cans/VCE_CannedFruit</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		 <tradeability>Sellable</tradeability>

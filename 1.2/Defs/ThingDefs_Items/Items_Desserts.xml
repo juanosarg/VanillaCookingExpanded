@@ -39,7 +39,7 @@
 			<joy>0.3</joy>
 			<drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteSimpleDessert</tasteThought>
-			<joyKind>Gluttonous</joyKind>
+			<joyKind>VCE_Confectionery</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -96,7 +96,7 @@
 
 			<drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteFineDessert</tasteThought>
-			<joyKind>Gluttonous</joyKind>
+			<joyKind>VCE_Confectionery</joyKind>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -151,7 +151,7 @@
 			<joy>0.8</joy>
 			<drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteLavishDessert</tasteThought>
-			<joyKind>Gluttonous</joyKind>
+			<joyKind>VCE_Confectionery</joyKind>
 			<chairSearchRadius>9</chairSearchRadius>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<ingestSound>Meal_Eat</ingestSound>
@@ -206,7 +206,7 @@
 			<joy>1</joy>
 			<drugCategory>Social</drugCategory>
 			<tasteThought>VCE_AteGourmetDessert</tasteThought>
-			<joyKind>Gluttonous</joyKind>
+			<joyKind>VCE_Confectionery</joyKind>
 			<chairSearchRadius>9</chairSearchRadius>
 			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
