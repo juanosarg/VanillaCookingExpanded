@@ -41,11 +41,15 @@
 			</categories>			
 			<thingDefs>
 				<li>RawBerries</li>
-				<li>Chocolate</li>
+
 			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
-			</disallowedCategories>			
+			</disallowedCategories>	
+			<disallowedThingDefs>
+				<li>Chocolate</li>
+
+			</disallowedThingDefs>			
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
@@ -72,12 +76,15 @@
 			</categories>
 			<thingDefs>
 				<li>RawBerries</li>
-				<li>Chocolate</li>
 
 			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Chocolate</li>
+
+			</disallowedThingDefs>
 
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
@@ -152,7 +159,9 @@
 	<RecipeDef ParentName="VCE_CookComplexDessertMealBase">
 		<defName>VCE_CookDessertFine</defName>
 		<label>cook fine dessert</label>
-		<description>Cook a complex dessert assembled with care from a wide selection of ingredients.</description>
+		
+			<description>Cook a complex dessert assembled with care from a wide selection of ingredients.\n\nNote that because Chocolate has 0.10 nutrition per unit, some of it will be wasted while cooking this recipe. Consider using the bulk (x4) version of this recipe instead to avoid wastage.</description>
+		
 		<jobString>Cooking fine dessert.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -239,7 +248,7 @@
 	<RecipeDef ParentName="VCE_CookComplexDessertMealBase">
 		<defName>VCE_CookDessertLavish</defName>
 		<label>cook lavish dessert</label>
-		<description>Cook a masterpiece of the culinary arts, this dessert nourishes the body, mind, and soul.</description>
+		<description>Cook a masterpiece of the culinary arts, this dessert nourishes the body, mind, and soul.\n\nNote that because Chocolate has 0.10 nutrition per unit, some of it will be wasted while cooking this recipe. Consider using the bulk (x4) version of this recipe instead to avoid wastage.</description>
 		<jobString>Cooking lavish dessert.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>

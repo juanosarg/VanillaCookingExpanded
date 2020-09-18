@@ -178,7 +178,7 @@
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteGourmetMeal</defName>
 		<hediff>VCE_AteGourmetMeal</hediff>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate gourmet meal</label>
@@ -194,7 +194,7 @@
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteSimpleDessert</defName>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate simple dessert</label>
@@ -214,7 +214,7 @@
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteFineDessert</defName>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate fine dessert</label>
@@ -234,7 +234,7 @@
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteLavishDessert</defName>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate lavish dessert</label>
@@ -254,7 +254,7 @@
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteGourmetDessert</defName>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate gourmet dessert</label>
@@ -339,7 +339,7 @@
 	<ThoughtDef>	
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_AteFriedGoods</defName>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate deep fried food</label>
@@ -359,7 +359,7 @@
 	<ThoughtDef>	
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>VCE_ConsumedCannedGoods</defName>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
 				<label>ate canned food</label>

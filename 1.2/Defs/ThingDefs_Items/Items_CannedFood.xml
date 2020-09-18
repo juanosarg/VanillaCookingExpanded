@@ -84,7 +84,7 @@
 		</statBases>
 		<rotatable>false</rotatable>
 		<thingCategories>
-			<li>VCE_Fruit</li>
+			
 		</thingCategories>
 		<ingestible>
 			<preferability>MealAwful</preferability>

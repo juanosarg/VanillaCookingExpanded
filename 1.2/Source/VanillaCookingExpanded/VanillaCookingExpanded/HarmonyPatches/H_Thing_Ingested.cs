@@ -10,7 +10,7 @@ using Verse;
 
 namespace VanillaCookingExpanded.HarmonyPatches
 {
-    [HarmonyPatch(typeof(Thing), nameof(Thing.Ingested))]
+   /* [HarmonyPatch(typeof(Thing), nameof(Thing.Ingested))]
     public static class H_Thing_Ingested
     {
         private static readonly FieldInfo _tolerances =
@@ -70,5 +70,5 @@ namespace VanillaCookingExpanded.HarmonyPatches
                 Tolerances = tolerances;
             }
         }
-    }
+    }*/
 }

@@ -21,7 +21,7 @@
 			<Beauty>0</Beauty>
 			<MarketValue>15</MarketValue>
 			<WorkToMake>300</WorkToMake>
-			<Nutrition>0.3</Nutrition>
+			<Nutrition>0.2</Nutrition>
 			<Mass>0.44</Mass>
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
@@ -29,6 +29,9 @@
 		<thingCategories>
 			<li>FoodMeals</li>
 		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
 		<ingestible>
 			<chairSearchRadius>9</chairSearchRadius>
 			<preferability>DesperateOnly</preferability>
@@ -74,7 +77,7 @@
 			<Beauty>0</Beauty>
 			<MarketValue>20</MarketValue>
 			<WorkToMake>450</WorkToMake>
-			<Nutrition>0.4</Nutrition>			
+			<Nutrition>0.2</Nutrition>			
 			<Mass>0.44</Mass>
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
@@ -82,6 +85,9 @@
 		<thingCategories>
 			<li>FoodMeals</li>
 		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
@@ -128,10 +134,13 @@
 			<Beauty>0</Beauty>
 			<MarketValue>40</MarketValue>
 			<WorkToMake>800</WorkToMake>
-			<Nutrition>0.7</Nutrition>			
+			<Nutrition>0.2</Nutrition>			
 			<Mass>0.44</Mass>
 			<DeteriorationRate>10</DeteriorationRate>
 		</statBases>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
 		<tickerType>Rare</tickerType>
 		<thingCategories>
 			<li>FoodMeals</li>
@@ -144,7 +153,6 @@
 			<tasteThought>VCE_AteLavishDessert</tasteThought>
 			<joyKind>Gluttonous</joyKind>
 			<chairSearchRadius>9</chairSearchRadius>
-
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -189,6 +197,9 @@
 		<thingCategories>
 			<li>FoodMeals</li>
 		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>

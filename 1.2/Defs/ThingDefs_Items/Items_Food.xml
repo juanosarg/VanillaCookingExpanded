@@ -14,8 +14,8 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>75</MarketValue>
-      <WorkToMake>800</WorkToMake>
+      <MarketValue>70</MarketValue>
+      <WorkToMake>1500</WorkToMake>
       <Nutrition>0.5</Nutrition>
     </statBases>
     <ingestible>

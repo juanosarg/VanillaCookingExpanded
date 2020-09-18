@@ -426,6 +426,14 @@
 						
 					</value>
 				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "VCE_CannedFruit"]/thingCategories</xpath>
+					<value>
+						
+							<li>VCE_Fruit</li>
+						
+					</value>
+				</li>
 
 
 			</operations>

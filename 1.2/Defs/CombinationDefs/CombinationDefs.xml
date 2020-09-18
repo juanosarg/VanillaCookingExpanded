@@ -32,9 +32,9 @@
 			<li>1</li>
 		</amount>
 		<result>VCE_CookedSoupSimple</result>	
-		<yield>20</yield>
+		<yield>10</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 	
 	<ItemProcessor.CombinationDef>
@@ -47,9 +47,9 @@
 			<li>1</li>
 		</amount>
 		<result>VCE_CookedSoupFine</result>	
-		<yield>20</yield>
+		<yield>10</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 	
 	<ItemProcessor.CombinationDef>
@@ -62,9 +62,9 @@
 			<li>1</li>
 		</amount>
 		<result>VCE_CookedSoupLavish</result>	
-		<yield>20</yield>
+		<yield>10</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 	
 	<ItemProcessor.CombinationDef>
@@ -77,9 +77,9 @@
 			<li>1</li>
 		</amount>
 		<result>VCE_CookedSoupGourmet</result>	
-		<yield>5</yield>
+		<yield>10</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 
 

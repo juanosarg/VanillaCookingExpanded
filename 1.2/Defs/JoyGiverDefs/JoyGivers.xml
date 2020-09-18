@@ -10,7 +10,7 @@
 	<li>VCE_DeepFriedVegetables</li>
 	<li>VCE_DeepFriedFish</li>
     </thingDefs>
-    <joyKind>VCE_Confectionery</joyKind>
+    <joyKind>Gluttonous</joyKind>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
