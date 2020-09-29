@@ -13,7 +13,7 @@
 	<ThingCategoryDef>
       <defName>VCE_Cheese</defName>
       <label>cheese</label>
-      <parent>Foods</parent>
+      <parent>AnimalProductRaw</parent>
       <resourceReadoutRoot>true</resourceReadoutRoot>
       <iconPath>Things/Items/Cheese/VCE_Cheese/VCE_Cheese_c</iconPath>
     </ThingCategoryDef>
