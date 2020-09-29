@@ -58,7 +58,7 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
-			<VCE_DeepFriedBigMeat>3</VCE_DeepFriedBigMeat>
+			<VCE_DeepFriedBigMeat>4</VCE_DeepFriedBigMeat>
 		</products>
 
 	</RecipeDef>
@@ -108,7 +108,7 @@
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<VCE_DeepFriedVegetables>3</VCE_DeepFriedVegetables>
+			<VCE_DeepFriedVegetables>4</VCE_DeepFriedVegetables>
 		</products>
 
 	</RecipeDef>

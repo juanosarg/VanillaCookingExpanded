@@ -136,7 +136,7 @@
 						
 					</categories>
 				</filter>
-				<count>0.5</count>
+				<count>0.4</count>
 			</li>
 			<li>
 				<filter>
@@ -144,7 +144,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>0.25</count>
+				<count>0.1</count>
 			</li>
 			
 		</ingredients>
@@ -180,7 +180,7 @@
 						
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>1.6</count>
 			</li>
 			<li>
 				<filter>
@@ -188,7 +188,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>0.4</count>
 			</li>
 			
 		</ingredients>
@@ -223,7 +223,7 @@
 						
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>0.8</count>
 			</li>
 			<li>
 				<filter>
@@ -231,7 +231,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>0.25</count>
+				<count>0.2</count>
 			</li>
 			
 		</ingredients>
@@ -267,7 +267,7 @@
 						
 					</categories>
 				</filter>
-				<count>4</count>
+				<count>3.2</count>
 			</li>
 			<li>
 				<filter>
@@ -275,7 +275,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>0.8</count>
 			</li>
 			
 		</ingredients>
@@ -310,7 +310,7 @@
 						
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>0.8</count>
 			</li>
 			<li>
 				<filter>
@@ -318,7 +318,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>0.25</count>
+				<count>0.2</count>
 			</li>
 			<li>
 				<filter>

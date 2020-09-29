@@ -336,12 +336,12 @@
 			<RecipeDef ParentName="VCE_CookGourmetBakeMealBase">
 		<defName>VCE_CookBakeGourmet</defName>
 		<label>cook gourmet bake x2</label>
-		<description>Cook two culinary works of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity bake.</description>
+		<description>Cook two culinary works of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity bake.\n\nThis recipe does not allow mixed ingredients.</description>
 		<jobString>Cooking gourmet bake x2.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
+		<allowMixingIngredients>false</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
 			<li>ElectricStove</li>	
@@ -372,7 +372,7 @@
 						<li>VCE_Condiments</li>
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>

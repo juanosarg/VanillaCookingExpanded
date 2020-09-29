@@ -16,7 +16,7 @@
     <statBases>
       <MarketValue>70</MarketValue>
       <WorkToMake>1500</WorkToMake>
-      <Nutrition>0.5</Nutrition>
+      <Nutrition>0.7</Nutrition>
     </statBases>
     <ingestible>
       <preferability>MealLavish</preferability>

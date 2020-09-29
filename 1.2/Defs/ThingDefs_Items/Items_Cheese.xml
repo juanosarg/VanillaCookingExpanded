@@ -23,7 +23,7 @@
 			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<thingCategories>
-			<li>VCE_Cheese</li>
+			<li>AnimalProductRaw</li>
 		</thingCategories>
 		<ingestible>
 			<preferability>MealSimple</preferability>

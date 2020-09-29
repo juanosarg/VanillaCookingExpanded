@@ -178,8 +178,7 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
-						<li>Chocolate</li>
-
+						
 					</thingDefs>
 				</filter>
 				<count>0.25</count>
@@ -189,6 +188,11 @@
 					<categories>
 						<li>AnimalProductRaw</li>
 					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
 				</filter>
 				<count>0.5</count>
 			</li>
@@ -222,8 +226,7 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
-						<li>Chocolate</li>
-
+						
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -233,6 +236,11 @@
 					<categories>
 						<li>AnimalProductRaw</li>
 					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
 				</filter>
 				<count>2</count>
 			</li>
@@ -265,8 +273,7 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
-						<li>Chocolate</li>
-
+						
 					</thingDefs>
 				</filter>
 				<count>0.5</count>
@@ -276,6 +283,11 @@
 					<categories>
 						<li>AnimalProductRaw</li>
 					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
 				</filter>
 				<count>0.5</count>
 			</li>
@@ -309,8 +321,7 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
-						<li>Chocolate</li>
-
+						
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -320,6 +331,11 @@
 					<categories>
 						<li>AnimalProductRaw</li>
 					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
 				</filter>
 				<count>2</count>
 			</li>
@@ -355,8 +371,7 @@
 				<filter>
 					<thingDefs>
 						<li>RawBerries</li>
-						<li>Chocolate</li>
-
+						
 					</thingDefs>
 				</filter>
 				<count>0.5</count>
@@ -366,6 +381,11 @@
 					<categories>
 						<li>AnimalProductRaw</li>
 					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
 				</filter>
 				<count>0.5</count>
 			</li>

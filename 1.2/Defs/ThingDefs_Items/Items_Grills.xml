@@ -27,7 +27,7 @@
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
-				<minSafeTemperature>5</minSafeTemperature>
+				<minSafeTemperature>10</minSafeTemperature>
 				<maxSafeTemperature>75</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 				<thingToTransformInto>VCE_RuinedSimpleGrill</thingToTransformInto>
@@ -77,7 +77,7 @@
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
-				<minSafeTemperature>5</minSafeTemperature>
+				<minSafeTemperature>10</minSafeTemperature>
 				<maxSafeTemperature>75</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 				<thingToTransformInto>VCE_RuinedFineGrill</thingToTransformInto>
@@ -127,7 +127,7 @@
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
-				<minSafeTemperature>5</minSafeTemperature>
+				<minSafeTemperature>10</minSafeTemperature>
 				<maxSafeTemperature>75</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 				<thingToTransformInto>VCE_RuinedLavishGrill</thingToTransformInto>
@@ -176,7 +176,7 @@
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
-				<minSafeTemperature>5</minSafeTemperature>
+				<minSafeTemperature>10</minSafeTemperature>
 				<maxSafeTemperature>75</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 				<thingToTransformInto>VCE_RuinedGourmetGrill</thingToTransformInto>

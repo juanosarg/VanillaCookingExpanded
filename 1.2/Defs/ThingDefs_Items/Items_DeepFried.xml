@@ -19,7 +19,7 @@
 		<stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>7</MarketValue>
-			<WorkToMake>400</WorkToMake>
+			<WorkToMake>300</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<thingCategories>
@@ -67,7 +67,7 @@
 		</tradeTags>
 		<statBases>
 			<MarketValue>7</MarketValue>
-			<WorkToMake>400</WorkToMake>
+			<WorkToMake>300</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
@@ -109,7 +109,7 @@
 		</tradeTags>
 		<statBases>
 			<MarketValue>7</MarketValue>
-			<WorkToMake>400</WorkToMake>
+			<WorkToMake>300</WorkToMake>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>

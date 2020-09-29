@@ -38,14 +38,14 @@
 		<defName>VCE_CookedSoupSimple</defName>
 		<label>simple soup</label>
 		<description>A simple soup slow cooked from a few ingredients.</description>
-		<stackLimit>20</stackLimit>
+		<stackLimit>10</stackLimit>
 		<graphicData>
 			<texPath>Things/Meals/VCE_SoupSimple</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
 			<MarketValue>12</MarketValue>
-			<Nutrition>0.5</Nutrition>
+			<Nutrition>0.8</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealSimple</preferability>
@@ -90,7 +90,7 @@
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupFine</defName>
 		<label>fine soup</label>
-		<stackLimit>20</stackLimit>
+		<stackLimit>10</stackLimit>
 
 		<description>A complex soup assembled with care from a wide selection of ingredients.</description>
 		<graphicData>
@@ -99,7 +99,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>0.6</Nutrition>
+			<Nutrition>0.9</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealFine</preferability>
@@ -147,7 +147,7 @@
 		<defName>VCE_CookedSoupLavish</defName>
 		<label>lavish soup</label>
 		<description>A masterpiece of the culinary arts, this soup nourishes the body, mind, and soul.</description>
-		<stackLimit>20</stackLimit>
+		<stackLimit>10</stackLimit>
 
 		<graphicData>
 			<texPath>Things/Meals/VCE_SoupLavish</texPath>
@@ -156,7 +156,7 @@
 		<statBases>
 			<MarketValue>40</MarketValue>
 
-			<Nutrition>0.7</Nutrition>
+			<Nutrition>1</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealLavish</preferability>
@@ -209,12 +209,12 @@
 			<texPath>Things/Meals/VCE_SoupGourmet</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<stackLimit>20</stackLimit>
+		<stackLimit>10</stackLimit>
 
 		<statBases>
 			<MarketValue>70</MarketValue>
 
-			<Nutrition>0.5</Nutrition>
+			<Nutrition>0.7</Nutrition>
 		</statBases>
 		<ingestible>
 			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>

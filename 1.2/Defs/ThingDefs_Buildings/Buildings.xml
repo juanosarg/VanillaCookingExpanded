@@ -204,9 +204,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<tickerType>Normal</tickerType>
 		<costList>
 			<Steel>75</Steel>
-			<Chemfuel>15</Chemfuel>
+			<Chemfuel>20</Chemfuel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
@@ -251,6 +252,23 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>16.0</fuelConsumptionRate>
+				<fuelCapacity>20</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPushMaxTemperature>36</heatPushMaxTemperature>
+				<heatPerSecond>6</heatPerSecond>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_AffectedByFacilities">
