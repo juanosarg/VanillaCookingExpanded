@@ -254,7 +254,7 @@
 				<basePowerConsumption>100</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>16.0</fuelConsumptionRate>
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
