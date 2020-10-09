@@ -243,7 +243,7 @@
 		</skillRequirements>
 	</RecipeDef>
 
-	<RecipeDef ParentName="VCE_CookBakeMealBase">
+	<RecipeDef ParentName="VCE_CookGrillMealBase">
 		<defName>VCE_CookGrillLavishhBulk</defName>
 		<label>cook lavish grill x4</label>
 		<description>Cook 4 masterpieces of the culinary arts, these grills nourish the body, mind, and soul.</description>

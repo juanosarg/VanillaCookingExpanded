@@ -96,17 +96,7 @@
 		</value>
 	</Operation>
 	
-	<!-- Traders that carry Foods will not necessarily carry Junk Food -->
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>/Defs/TraderKindDef/stockGenerators/li[@Class = "StockGenerator_Category" and categoryDef = "Foods"]</xpath>
-		<value>
-        <excludedTags>
-          <li>VCE_JunkFood</li>
-        </excludedTags>
-		</value>
-	</Operation>
+	
 
 <!-- Orbital traders that carry Foods OR Chocolate OR Beer, will carry Junk Food -->
 
