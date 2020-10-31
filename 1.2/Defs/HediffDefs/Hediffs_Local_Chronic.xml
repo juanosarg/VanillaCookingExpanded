@@ -16,9 +16,14 @@
 		</comps>
 		<stages>
 			<li>
-				<label>minor</label>
-				<becomeVisible>false</becomeVisible>
+				<label>negligible (no effect)</label>
+				<becomeVisible>true</becomeVisible>
 
+			</li>
+			
+			<li>
+				<label>minor (no effect)</label>
+				<minSeverity>0.25</minSeverity>
 			</li>
 
 			<li>
@@ -75,9 +80,14 @@
 		</comps>
 		<stages>
 			<li>
-				<label>minor</label>
-				<becomeVisible>false</becomeVisible>
+				<label>negligible (no effect)</label>
+				<becomeVisible>true</becomeVisible>
 
+			</li>
+			
+			<li>
+				<label>minor (no effect)</label>
+				<minSeverity>0.25</minSeverity>
 			</li>
 
 			<li>
@@ -124,9 +134,14 @@
 		</comps>
 		<stages>
 			<li>
-				<label>minor</label>
-				<becomeVisible>false</becomeVisible>
+				<label>negligible (no effect)</label>
+				<becomeVisible>true</becomeVisible>
 
+			</li>
+			
+			<li>
+				<label>minor (no effect)</label>
+				<minSeverity>0.25</minSeverity>
 			</li>
 
 			<li>
