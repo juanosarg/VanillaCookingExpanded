@@ -195,7 +195,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>60</MarketValue>
-			<Nutrition>1</Nutrition>
+			<Nutrition>0.7</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealLavish</preferability>
