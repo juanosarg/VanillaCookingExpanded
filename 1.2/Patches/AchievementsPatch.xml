@@ -41,6 +41,21 @@
 							<texPath>Achievements/VCE_AchievementBigBoned</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
+							<defName>VCE_AchievementFiveStarRestaurant</defName>
+							<label>Five Star Restaurant</label>
+							<description>Serve a total of 100 Gourmet meals</description>
+
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
+								<def>VCE_MealGourmet</def>
+								
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/VCE_AchievementFiveStarRestaurant</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>	
 
 						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
 							<defName>VCE_AchievementLannibalHecter</defName>
@@ -54,6 +69,36 @@
 							</tracker>
 
 							<texPath>Achievements/VCE_AchievementLannibalHecter</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>	
+						
+						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
+							<defName>VCE_AchievementRatatouille</defName>
+							<label>Ratatouille</label>
+							<description>Make a Fine grill with rat meat</description>
+
+							<tracker Class="AchievementsExpanded.ItemCraftTrackerWithIngredients">
+								<def>VCE_FineGrill</def>
+								<includeingredient>Meat_Rat</includeingredient>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/VCE_AchievementRatatouille</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>	
+						
+						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
+							<defName>VCE_AchievementQuattroFormaggi</defName>
+							<label>Quattro formaggi</label>
+							<description>Make a Lavish bake using flour and cheese</description>
+
+							<tracker Class="AchievementsExpanded.ItemCraftTrackerWithIngredients">
+								<def>VCE_LavishBake</def>
+								<includeingredient>VCE_Cheese</includeingredient>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/VCE_AchievementQuattroFormaggi</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>	
 
@@ -183,6 +228,21 @@
 						</AchievementsExpanded.AchievementDef>	
 						
 						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
+							<defName>VCE_AchievementSpam</defName>
+							<label>Rim SPAM</label>
+							<description>Stuff some pork in a can and call it a day</description>
+
+							<tracker Class="AchievementsExpanded.ItemCraftTrackerWithIngredients">
+								<def>VCE_CannedMeat</def>
+								<includeingredient>Meat_Pig</includeingredient>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/VCE_AchievementSpam</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>	
+
+						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
 							<defName>VCE_AchievementFreedomFries</defName>
 							<label>Freedom Fries</label>
 							<description>Make 200 deep fried potatoes</description>
@@ -254,6 +314,47 @@
 
 							<texPath>Achievements/VCE_AchievementInsectGourmet</texPath>
 							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
+							<defName>VCE_AchievementTheCheesemaker</defName>
+							<label>The Cheesemaker</label>
+							<description>Craft a total of 200 pieces of cheese</description>
+
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>VCE_Cheese</def>
+								<count>200</count>
+							</tracker>
+
+							<texPath>Achievements/VCE_AchievementTheCheesemaker</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="VCE_AchievementParent">
+							<defName>VCE_AchievementHealthyAsAnOx</defName>
+							<label>Healthy as an Ox</label>
+							<description>Have a pawn with cholesterol, diabetes and high blood pressure</description>
+
+							<tracker Class="AchievementsExpanded.MultiHediffTracker">
+								<defs>
+									<li>
+										<key>VCE_Cholesterol</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>VCE_Diabetes</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>VCE_HighBloodPressure</key>
+										<value>1</value>
+									</li>
+									
+								</defs>
+							</tracker>
+
+							<texPath>Achievements/VCE_AchievementHealthyAsAnOx</texPath>
+							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
 
 
