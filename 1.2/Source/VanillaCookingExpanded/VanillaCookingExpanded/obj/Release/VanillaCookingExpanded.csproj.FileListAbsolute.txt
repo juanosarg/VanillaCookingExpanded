@@ -15,3 +15,4 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.2\Source
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.2\Source\VanillaCookingExpanded\VanillaCookingExpanded\obj\Release\VanillaCookingExpanded.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.2\Source\VanillaCookingExpanded\VanillaCookingExpanded\obj\Release\VanillaCookingExpanded.dll
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.2\Source\VanillaCookingExpanded\VanillaCookingExpanded\obj\Release\VanillaCookingExpanded.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaCookingExpanded\1.2\Source\VanillaCookingExpanded\VanillaCookingExpanded\obj\Release\VanillaCookingExpanded.csproj.CopyComplete

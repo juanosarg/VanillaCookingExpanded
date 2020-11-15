@@ -21,6 +21,8 @@ namespace AchievementsExpanded
         {
         }
 
+        public override (float percent, string text) PercentComplete => count > 1 ? ((float)triggeredCount / count, $"{triggeredCount} / {count}") : base.PercentComplete;
+
         public PlantTracker(PlantTracker reference) : base(reference)
         {
             def = reference.def;
