@@ -14,16 +14,24 @@ namespace AchievementsExpanded
 
         public static void CheckItemCraftedIngredients(Pawn worker, List<Thing> things)
         {
-            foreach (var card in AchievementPointManager.GetCards<ItemCraftTrackerWithIngredients>())
+            if (things != null && worker != null)
             {
-                foreach (Thing thing in things)
+                foreach (var card in AchievementPointManager.GetCards<ItemCraftTrackerWithIngredients>())
                 {
-                    if ((card.tracker as ItemCraftTrackerWithIngredients).Trigger(thing))
+
+                    foreach (Thing thing in things)
                     {
-                        card.UnlockCard();
+                        if (thing != null && card != null)
+                        {
+                            if ((card.tracker as ItemCraftTrackerWithIngredients).Trigger(thing))
+                            {
+                                card.UnlockCard();
+                            }
+                        }
                     }
                 }
             }
+
         }
     }
 }

@@ -102,7 +102,7 @@
 
 							<texPath>Achievements/VCE_AchievementQuattroFormaggi</texPath>
 							<points>10</points>
-						</AchievementsExpanded.AchievementDef>	
+						</AchievementsExpanded.AchievementDef>
 
 						<AchievementsExpanded.AchievementDef>
 							<defName>VCE_AchievementKitchenNightmare</defName>
@@ -172,7 +172,7 @@
 
 							<texPath>Achievements/VCE_AchievementAmysBaking</texPath>
 							<points>15</points>
-						</AchievementsExpanded.AchievementDef>	
+						</AchievementsExpanded.AchievementDef>
 
 						<AchievementsExpanded.AchievementDef>
 							<defName>VCE_AchievementRefrigerationFailure</defName>
@@ -267,7 +267,7 @@
 
 							<texPath>Achievements/VCE_AchievementFreedomFries</texPath>
 							<points>15</points>
-						</AchievementsExpanded.AchievementDef>	
+						</AchievementsExpanded.AchievementDef>
 
 						<AchievementsExpanded.AchievementDef>
 							<defName>VCE_AchievementHarvestWheat</defName>

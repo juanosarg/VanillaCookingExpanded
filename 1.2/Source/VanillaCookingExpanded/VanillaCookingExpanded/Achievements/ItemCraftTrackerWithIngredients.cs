@@ -50,15 +50,21 @@ namespace AchievementsExpanded
         public override bool Trigger(Thing thing)
         {
             base.Trigger(thing);
-            if ((def is null || thing.def == def) && (madeFrom is null || madeFrom == thing.Stuff)
-                && (includeingredient is null || (thing.TryGetComp<CompIngredients>().ingredients.Contains(includeingredient)))
-                )
+            if ((def is null || thing.def == def) && (madeFrom is null || madeFrom == thing.Stuff))
             {
-                if (quality is null || (thing.TryGetQuality(out var qc) && qc >= quality))
-                {
-                    triggeredCount = triggeredCount + thing.stackCount;
 
+                CompIngredients comping = thing.TryGetComp<CompIngredients>();
+
+                if (includeingredient is null || (comping != null && comping.ingredients.Contains(includeingredient)))
+                {
+                    if (quality is null || (thing.TryGetQuality(out var qc) && qc >= quality))
+                    {
+                        triggeredCount = triggeredCount + thing.stackCount;
+
+                    }
                 }
+
+
             }
             return triggeredCount >= count;
         }
