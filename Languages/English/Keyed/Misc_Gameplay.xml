@@ -26,6 +26,7 @@
 	<VCE_Engage>Cook Soup</VCE_Engage>
 	<VCE_EngageDesc>Start cooking soup. This process takes 3 days and can't be interrupted, or the soup will be destroyed.</VCE_EngageDesc>
 	<VCE_SoupFailurePower>The soup has spoiled due to a power failure in the electric pot</VCE_SoupFailurePower>
+	<VCE_SoupFailurePowerWarning>The soup is spoiling fast due to a lack of fuel in the electric pot</VCE_SoupFailurePowerWarning>
 	<VCE_SoupFinished>A soup has finished cooking in the electric pot</VCE_SoupFinished>
 	<VCE_SoupInProgress>An {0} is cooking. It will be ready in {1}</VCE_SoupInProgress>
 	<VCE_SoupReady>A soup has finished cooking and is waiting for pickup</VCE_SoupReady>

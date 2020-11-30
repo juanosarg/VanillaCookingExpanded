@@ -78,6 +78,7 @@
 				<noPowerDestroysProgress>true</noPowerDestroysProgress>
 				<rareTicksToDestroy>10</rareTicksToDestroy>
 				<noPowerDestroysMessage>VCE_SoupFailurePower</noPowerDestroysMessage>
+				<noPowerDestroysInitialWarning>VCE_SoupFailurePowerWarning</noPowerDestroysInitialWarning>
 
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
 
