@@ -27,6 +27,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedAgave</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
 	</ThingDef>
 
@@ -54,6 +55,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedSugar</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
 	</ThingDef>
 
@@ -81,6 +83,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedSpices</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
 	</ThingDef>
 
@@ -106,6 +109,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedSalt</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 
 		</ingestible>
 	</ThingDef>
@@ -135,6 +139,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedMayo</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 
 		</ingestible>
 	</ThingDef>
@@ -159,6 +164,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedInsectJelly</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 
 		</ingestible>
 	</ThingDef>
@@ -188,6 +194,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_SmokeleafButterHigh</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 
 		</ingestible>
 	</ThingDef>
@@ -217,6 +224,7 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedChocolateSyrup</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 
 		</ingestible>
 	</ThingDef>
@@ -256,6 +264,7 @@
 			<foodType>Plant</foodType>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>VCE_ConsumedDigestibleResurrectorNanites</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 
 		</ingestible>
 	</ThingDef>

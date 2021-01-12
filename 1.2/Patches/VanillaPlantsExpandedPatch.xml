@@ -42,6 +42,7 @@
 							<ingestible>
 								<preferability>NeverForNutrition</preferability>
 								<specialThoughtAsIngredient>VCE_ConsumedKetchup</specialThoughtAsIngredient>
+								<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 							</ingestible>
 						</ThingDef>
 
@@ -77,6 +78,7 @@
 							<ingestible>
 								<preferability>NeverForNutrition</preferability>
 								<specialThoughtAsIngredient>VCE_ConsumedHotSauce</specialThoughtAsIngredient>
+								<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 							</ingestible>
 						</ThingDef>
 

@@ -21,6 +21,7 @@
 			<MarketValue>2.3</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<thingCategories>
 			<li>MeatRaw</li>
@@ -30,7 +31,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			
+			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
 			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>
@@ -52,6 +53,7 @@
 			<MarketValue>1.5</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<rotatable>false</rotatable>
 		<thingCategories>
@@ -61,7 +63,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
-			
+			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
 			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>		
@@ -81,6 +83,7 @@
 			<MarketValue>1.5</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<rotatable>false</rotatable>
 		<thingCategories>
@@ -90,7 +93,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
-			
+			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
 			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>		
@@ -110,6 +113,7 @@
 			<MarketValue>3.5</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<rotatable>false</rotatable>
 		<thingCategories>
@@ -119,7 +123,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
-			
+			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
 			<tasteThought>VCE_ConsumedCannedGoods</tasteThought>
 			<specialThoughtAsIngredient>VCE_ConsumedCannedGoods</specialThoughtAsIngredient>
 		</ingestible>
@@ -141,6 +145,7 @@
 			<MarketValue>2</MarketValue>
 			<WorkToMake>400</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<thingCategories>
 			<li>MeatRaw</li>

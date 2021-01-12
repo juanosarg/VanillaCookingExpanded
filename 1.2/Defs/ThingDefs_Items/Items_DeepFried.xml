@@ -21,6 +21,7 @@
 			<MarketValue>7</MarketValue>
 			<WorkToMake>300</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<thingCategories>
 			<li>Foods</li>
@@ -69,6 +70,7 @@
 			<MarketValue>7</MarketValue>
 			<WorkToMake>300</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<ingestible>
 		<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
@@ -111,6 +113,7 @@
 			<MarketValue>7</MarketValue>
 			<WorkToMake>300</WorkToMake>
 			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
 		</statBases>
 		<ingestible>
 			
