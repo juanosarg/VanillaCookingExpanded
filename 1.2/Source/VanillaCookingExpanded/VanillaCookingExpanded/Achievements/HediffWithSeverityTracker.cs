@@ -32,7 +32,7 @@ namespace AchievementsExpanded
            
            
 
-            if (hediff?.pawn != null && hediff.pawn.Faction == Faction.OfPlayer && (def is null || def == hediff.def)
+            if (hediff?.pawn != null && hediff.pawn.Faction == Faction.OfPlayerSilentFail && (def is null || def == hediff.def)
                 && hediff.pawn.health.hediffSet.GetFirstHediffOfDef(hediff.def).Severity >= severity)
             {
                 triggeredCount++;
