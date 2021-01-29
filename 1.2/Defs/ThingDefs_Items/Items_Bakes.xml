@@ -85,7 +85,7 @@
 		</statBases>
 		<ingestible>
 			<preferability>MealLavish</preferability>
-			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
 			<tasteThought>VCE_AteGourmetMeal</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>

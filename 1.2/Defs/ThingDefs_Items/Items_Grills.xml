@@ -23,7 +23,7 @@
 			<tasteThought>VCE_AteSimpleGrill</tasteThought>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
-			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
 		</ingestible>
 		<comps>
 			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
@@ -51,6 +51,7 @@
 			<preferability>MealSimple</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 		</ingestible>
 	</ThingDef>
 
@@ -72,7 +73,7 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<tasteThought>VCE_AteFineGrill</tasteThought>
 			<ingestSound>RawMeat_Eat</ingestSound>
-			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
 
 		</ingestible>
 		<comps>
@@ -101,6 +102,7 @@
 			<preferability>MealFine</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 		</ingestible>
 	</ThingDef>
 
@@ -122,7 +124,7 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<tasteThought>VCE_AteLavishGrill</tasteThought>
 			<ingestSound>RawMeat_Eat</ingestSound>
-			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
 
 		</ingestible>
 		<comps>
@@ -151,6 +153,7 @@
 			<preferability>MealLavish</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 		</ingestible>
 	</ThingDef>
 
@@ -169,7 +172,7 @@
 		</statBases>
 		<ingestible>
 			<preferability>MealLavish</preferability>
-			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<optimalityOffsetHumanlikes>18</optimalityOffsetHumanlikes>
 			<tasteThought>VCE_AteGourmetGrill</tasteThought>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
@@ -199,7 +202,7 @@
 		</statBases>
 		<ingestible>
 			<preferability>MealLavish</preferability>
-			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 		</ingestible>

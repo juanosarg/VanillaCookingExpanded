@@ -223,7 +223,7 @@
 			<Nutrition>0.7</Nutrition>
 		</statBases>
 		<ingestible>
-			<optimalityOffsetHumanlikes>1</optimalityOffsetHumanlikes>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
 			<preferability>MealLavish</preferability>
 			<tasteThought>VCE_AteGourmetMeal</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
