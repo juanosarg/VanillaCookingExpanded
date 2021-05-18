@@ -36,8 +36,8 @@ namespace VanillaCookingExpanded.HarmonyPatches
                 return Enumerable.Empty<MethodBase>();
 
             _eater = targetClass.GetField("eater", AccessTools.all);
-
-            return targetClass.GetMethods(AccessTools.all).Where(m => m.HasMethodBody());
+            
+            return AccessTools.GetDeclaredMethods(targetClass).Where(m => m.HasMethodBody());
         }
 
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> codeInstructions, ILGenerator ilGenerator)
