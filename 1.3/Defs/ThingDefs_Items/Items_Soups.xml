@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_UncookedSoupSimple</defName>
+		<label>uncooked simple soup</label>
+		<description>An uncooked simple soup. This needs to be cooked in an electric pot to be edible.</description>
+		<graphicData>
+			<texPath>Things/Items/Uncookedsoup/VCE_UncookedSoupSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>96.8</MarketValue>
+			<Flammability>1.3</Flammability>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />		
+					
+		</comps>
+		<thingSetMakerTags/>
+		<thingCategories>
+			<li>VCE_UncookedSoups</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>			
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_CookedSoupSimple</defName>
+		<label>simple soup</label>
+		<description>A simple soup slow cooked from a few ingredients.</description>
+		<stackLimit>10</stackLimit>
+		<graphicData>
+			<texPath>Things/Meals/VCE_SoupSimple</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+			<Nutrition>0.8</Nutrition>
+			<Mass>0.4</Mass>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Ingest_Drink</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_UncookedSoupFine</defName>
+		<label>uncooked fine soup</label>
+		<description>An uncooked fine soup. This needs to be cooked in an electric pot to be edible.</description>
+		<graphicData>
+			<texPath>Things/Items/Uncookedsoup/VCE_UncookedSoupFine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>136.4</MarketValue>
+			<Flammability>1.3</Flammability>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<thingSetMakerTags/>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+			
+		</comps>
+		<thingCategories>
+			<li>VCE_UncookedSoups</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>			
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_CookedSoupFine</defName>
+		<label>fine soup</label>
+		<stackLimit>10</stackLimit>
+
+		<description>A complex soup assembled with care from a wide selection of ingredients.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_SoupFine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>0.9</Nutrition>
+			<Mass>0.4</Mass>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<tasteThought>AteFineMeal</tasteThought>
+			<ingestSound>Ingest_Drink</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_UncookedSoupLavish</defName>
+		<label>uncooked lavish soup</label>
+		<description>An uncooked lavish soup. This needs to be cooked in an electric pot to be edible.</description>
+		<graphicData>
+			<texPath>Things/Items/Uncookedsoup/VCE_UncookedSoupLavish</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>272.8</MarketValue>
+			<Flammability>1.3</Flammability>
+			<WorkToMake>3200</WorkToMake>
+			<Mass>4</Mass>
+
+		</statBases>
+		<thingSetMakerTags/>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+			
+		</comps>
+		<thingCategories>
+			<li>VCE_UncookedSoups</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>			
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_CookedSoupLavish</defName>
+		<label>lavish soup</label>
+		<description>A masterpiece of the culinary arts, this soup nourishes the body, mind, and soul.</description>
+		<stackLimit>10</stackLimit>
+
+		<graphicData>
+			<texPath>Things/Meals/VCE_SoupLavish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<Mass>0.4</Mass>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<ingestSound>Ingest_Drink</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_UncookedSoupGourmet</defName>
+		<label>uncooked gourmet soup</label>
+		<description>An uncooked gourmet soup. This needs to be cooked in an electric pot to be edible.</description>
+		<graphicData>
+			<texPath>Things/Items/Uncookedsoup/VCE_UncookedSoupGourmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>443.85</MarketValue>
+			<Flammability>1.3</Flammability>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>4</Mass>
+
+		</statBases>
+		<thingSetMakerTags/>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_UncookedSoups</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>			
+		</ingestible>
+
+	</ThingDef>
+
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_CookedSoupGourmet</defName>
+		<label>gourmet soup</label>
+		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity soup.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_SoupGourmet</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Mass>0.4</Mass>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<ingestible>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<preferability>MealLavish</preferability>
+			<tasteThought>VCE_AteGourmetMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Ingest_Drink</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+
+		</comps>
+	</ThingDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

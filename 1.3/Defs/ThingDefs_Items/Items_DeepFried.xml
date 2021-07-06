@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+
+	<ThingDef ParentName="MealBase">
+		<defName>VCE_DeepFriedBigMeat</defName>
+		<label>deep fried meat</label>
+		<description>Meat tenderized then filleted, then rolled in a thick batter before being submerged in hot oil and fried. The end result is a crunchy, unhealthy yet tasty soul food - Not quite as filling as a meal, but very pleasing to eat. Deep frying meats in this matter reduces shelf life as well unless frozen.</description>
+		<graphicData>
+			<texPath>Things/Items/Deepfried/VCE_DeepfryedMeat_Big</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
+		<ingestible>
+		<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought>VCE_AteFriedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<joy>0.15</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>VCE_DeepFriedVegetables</defName>
+		<label>deep fried vegetables</label>
+		<description>Vegetables julienned then patted dry before being dunked into hot oil until golden brown. As crispy and pleasing as they are, these deep fried treats are not as filling as a normal meal, nor as healthy. Deep frying vegetables in this matter reduces shelf life as well unless frozen.</description>
+		<graphicData>
+			<texPath>Things/Items/Deepfried/VCE_DeepfryedVegetables</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>75</stackLimit>
+
+		<tradeability>None</tradeability>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
+		</statBases>
+		<ingestible>
+		<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought>VCE_AteFriedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<joy>0.15</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>VCE_DeepFriedFish</defName>
+		<label>deep fried fish</label>
+		<description>Fish tenderized then filleted, then rolled in a thick batter before being submerged in hot oil and fried. The end result is a crunchy, unhealthy yet tasty soul food - Not quite as filling as a meal, but very pleasing to eat. Deep frying meats in this matter reduces shelf life as well unless frozen</description>
+		<graphicData>
+			<texPath>Things/Items/Deepfried/VCE_DeepfryedFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tradeability>Buyable</tradeability>
+		<stackLimit>75</stackLimit>
+
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.05</Nutrition>
+			<Mass>0.04</Mass>
+		</statBases>
+		<ingestible>
+			
+			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought>VCE_AteFriedGoods</tasteThought>
+			<specialThoughtAsIngredient>VCE_AteFriedGoods</specialThoughtAsIngredient>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<joy>0.15</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

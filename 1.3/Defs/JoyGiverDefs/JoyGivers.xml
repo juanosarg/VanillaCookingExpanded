@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JoyGiverDef>
+    <defName>VCE_EatFriedFood</defName>
+    <giverClass>JoyGiver_Ingest</giverClass>
+    <baseChance>2.5</baseChance>
+    <thingDefs>
+	<li>VCE_DeepFriedBigMeat</li>
+	<li>VCE_DeepFriedVegetables</li>
+	<li>VCE_DeepFriedFish</li>
+    </thingDefs>
+    <joyKind>Gluttonous</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+</Defs>

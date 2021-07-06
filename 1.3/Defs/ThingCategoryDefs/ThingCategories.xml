@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+    <ThingCategoryDef>
+      <defName>VCE_Condiments</defName>
+      <label>condiments</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Items/Condiments/VCE_Spices</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>VCE_Cheese</defName>
+      <label>cheese</label>
+      <parent>AnimalProductRaw</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Items/Cheese/VCE_Cheese/VCE_Cheese_c</iconPath>
+    </ThingCategoryDef>
+	
+	 <ThingCategoryDef>
+      <defName>VCE_UncookedSoups</defName>
+      <label>uncooked soups</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+     <iconPath>UI/VCE_EmptySoupPotIcon</iconPath> 
+    </ThingCategoryDef>
+
+
+</Defs>

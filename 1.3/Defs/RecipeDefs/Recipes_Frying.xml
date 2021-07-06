@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+
+	<RecipeDef>
+		<defName>VCE_DeepFryMeats</defName>
+		<label>deep fry meats x20</label>
+		<description>Deep fry large meat chunks. Deep fried food is very tasty, but not very good for your health.</description>
+		<jobString>Deep frying meats.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+
+		<recipeUsers>
+			<li>VCE_DeepFrier</li>					
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>				
+			</categories>	
+			<disallowedThingDefs>
+
+				<li>VCE_DeepFriedBigMeat</li>
+				<li>VCE_DeepFriedFish</li>
+			</disallowedThingDefs>			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>				
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>VCE_DeepFriedBigMeat</li>
+				<li>VCE_DeepFriedFish</li>
+			</disallowedThingDefs>
+			<disallowedCategories>	
+
+			</disallowedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<VCE_DeepFriedBigMeat>4</VCE_DeepFriedBigMeat>
+		</products>
+
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_DeepFryVegetables</defName>
+		<label>deep fry vegetables x20</label>
+		<description>Deep fry vegetables. Deep fried food is very tasty, but not very good for your health.</description>
+		<jobString>Deep frying vegetables.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+
+		<recipeUsers>
+			<li>VCE_DeepFrier</li>					
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>				
+			</categories>		
+			<disallowedThingDefs>
+				<li>VCE_DeepFriedVegetables</li>
+
+			</disallowedThingDefs>			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>				
+			</categories>
+			<disallowedThingDefs>
+				<li>VCE_DeepFriedVegetables</li>
+
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VCE_DeepFriedVegetables>4</VCE_DeepFriedVegetables>
+		</products>
+
+	</RecipeDef>
+
+
+
+
+
+
+
+</Defs>

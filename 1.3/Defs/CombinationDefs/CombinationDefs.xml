@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_MilkIntoCheese</defName>
+		<building>VCE_CheesePress</building>
+		<items>
+			<li>Milk</li>
+		</items>	
+		<amount>
+			<li>50</li>
+		</amount>
+		<result>VCE_Cheese</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>true</useQualityIncreasing>
+		<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+		<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+		<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+		<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+		<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+		<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+		<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_SimpleSoupRecipe</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupSimple</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupSimple</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_FineSoupRecipe</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupFine</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupFine</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_LavishSoupRecipe</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupLavish</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupLavish</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_GourmetSoupRecipe</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupGourmet</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupGourmet</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+
+
+
+
+
+
+
+</Defs>

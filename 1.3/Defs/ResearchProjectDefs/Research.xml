@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>VCE_CondimentsResearch</defName>
+		<label>food condiments</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Neolithic</techLevel>
+		<description>A condiment is a spice, sauce, or preparation that is added to food, either after or during cooking, to impart a specific flavor, to enhance the flavor, or to complement the dish. All condiments are created at the condiment prep table.</description>
+		<baseCost>500</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>VCE_SoupCooking</defName>
+		<label>soup cooking</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Soup is a primarily liquid food, generally served warm or hot, that is made by combining ingredients of meat or vegetables with stock, or water. Hot soups are additionally characterized by boiling solid ingredients in liquids in a pot until the flavors are extracted. This research also gives access to the electric pot necessary to cook soups.</description>
+		<baseCost>400</baseCost>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>VCE_Grilling</defName>
+		<label>grilling</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<description>Grilling is a form of cooking that involves dry heat applied to the surface of food, commonly from above, below or from the side. Grilling usually involves a significant amount of direct, radiant heat, and tends to be used for cooking meat and vegetables quickly. This research gives access to the grill.</description>
+		<baseCost>400</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>VCE_DeepFrying</defName>
+		<label>deep frying</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<description>Deep frying (also referred to as deep fat frying) is a cooking method in which food is submerged in hot fat, most commonly oil, as opposed to the shallow oil used in conventional frying done in a frying pan. This research gives access to the deep fryer.</description>
+		<baseCost>600</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+		<ResearchProjectDef>
+		<defName>VCE_Canning</defName>
+		<label>canning</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<description>Canning is a method of preserving food in which the food contents are processed and sealed in an airtight container (jars like Mason jars, and steel and tin cans). Canning provides a shelf life of several years. A freeze-dried canned product, such as canned dried lentils, could last as long as 30 years in an edible state. This research gives access to the canning machine.</description>
+		<baseCost>600</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+		<ResearchProjectDef>
+		<defName>VCE_CheeseMaking</defName>
+		<label>cheese making</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Medieval</techLevel>		
+		<description>Cheesemaking (or caseiculture) is the craft of making cheese. The production of cheese, like many other food preservation processes, allows the nutritional and economic value of milk to be preserved in concentrated form. Cheesemaking allows the production of the cheese with diverse flavors and consistencies. This research gives access to the cheese press.</description>
+		<baseCost>750</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+
+
+
+
+
+</Defs>

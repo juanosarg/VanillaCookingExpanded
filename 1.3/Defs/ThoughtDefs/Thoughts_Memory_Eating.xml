@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======= Ingredient based thoughts ========= -->
+
+
+	<ThoughtDef>	
+		<defName>VCE_ConsumedSugar</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_SugarRush</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>consumed sugar</label>
+				<description>Sugar is not love. But it can feel like it.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.015</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<defName>VCE_ConsumedChocolateSyrup</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>consumed chocolate syrup</label>
+				<description>Chocolate IS love.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.0075</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<defName>VCE_ConsumedInsectJelly</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>consumed insect jelly preserves</label>
+				<description>What an incredibly sweet and rich taste!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VCE_SmokeleafButterHigh</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>SmokeleafHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>high on smokeleaf butter</label>
+				<description>I'm, like, stoned, man.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
+				<partToAffect>Heart</partToAffect>
+				<percentage>0.015</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_ConsumedSalt</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>consumed salt</label>
+				<description>A pinch of salt really enhances the flavours of a meal.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.0075</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedMayo</hediff>
+		<defName>VCE_ConsumedMayo</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>consumed mayo</label>
+				<description>I ate some delicious mayo. Very filling!</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
+				<partToAffect>Heart</partToAffect>
+				<percentage>0.01</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedAgave</hediff>
+		<defName>VCE_ConsumedAgave</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>consumed agave</label>
+				<description>I ate some delicious agave nectar.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.005</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedSpices</hediff>
+		<defName>VCE_ConsumedSpices</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>consumed spices</label>
+				<description>That meal was spicy!</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_ConsumedDigestibleResurrectorNanites</defName>
+		<hediff>VCE_ConsumedDigestibleResurrectorNanites</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>resurrector nanites</label>
+				<description>I feel invincible!</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	
+	<!-- ======= Gourmet based thoughts ========= -->
+	
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteGourmetMeal</defName>
+		<hediff>VCE_AteGourmetMeal</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate gourmet meal</label>
+				<description>A mindbending culinary experience. My palate has been gifted with sensations that are beyond this world.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+	<!-- ======= Dessert based thoughts ========= -->	
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteSimpleDessert</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate simple dessert</label>
+				<description>That dessert was very simple, but certainly tasty.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.005</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFineDessert</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate fine dessert</label>
+				<description>That dessert was really good! I want more!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.015</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteLavishDessert</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate lavish dessert</label>
+				<description>That dessert was unbelievably good, I'm so eager to eat more of it!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.025</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteGourmetDessert</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate gourmet dessert</label>
+				<description>Oh my God! My palate had never experienced such an explosion of orgasmic tastes. That was pure food porn. I need more!</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Diabetes</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.035</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+	
+	<!-- ======= Grill based thoughts ========= -->	
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteSimpleGrill</defName>
+		<hediff>VCE_WellFedSimple</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate simple grill</label>
+				<description>A simple grill. Meh.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFineGrill</defName>
+		<hediff>VCE_WellFedFine</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate fine grill</label>
+				<description>I ate a very fine grilled meat with some vegetables. Super tasty.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteLavishGrill</defName>
+		<hediff>VCE_WellFedLavish</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate lavish grill</label>
+				<description>I ate an incredible dish with expertly cooked grilled meat and some veggies. Delicious!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteGourmetGrill</defName>
+		<hediff>VCE_WellFedGourmet</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate gourmet grill</label>
+				<description>That... that was out of this world. The meat melted in my mouth. Just incredible.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+		<!-- ======= Fried and canned food based thoughts ========= -->	
+
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFriedGoods</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate deep fried food</label>
+				<description>Greasy food. So delicious.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
+				<partToAffect>Heart</partToAffect>
+				<percentage>0.015</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+		
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_ConsumedCannedGoods</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate canned food</label>
+				<description>Eating directly from a can is like eating without a table.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.015</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+
+
+
+</Defs>

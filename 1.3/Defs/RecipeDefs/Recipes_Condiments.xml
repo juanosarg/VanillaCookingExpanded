@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef ParentName="VCE_CookBakeMealBase">
+		<defName>VCE_ChopCondiments</defName>
+		<label>mix condiments into kibble</label>
+		<description>Mix a batch of different condiments into a barely edible organic mass that can be fed to animals. Still better than supermarket pet food.</description>
+		<jobString>Mixing condiments into kibble.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	
+
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Condiments</li>
+
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>			
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>VCE_Condiments</li>
+			</categories>
+
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VCE_Condiments</li>
+			</categories>
+
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<products>
+			<Kibble>25</Kibble>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_MakeSalt</defName>
+		<label>make salt</label>
+		<description>Grind and process natural stone to extract edible salts from within stone chunks.\n\nUses the Cooking skill.</description>
+		<jobString>Making salt.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1500</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_Salt>5</VCE_Salt>
+		</products>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_MakeSaltfromBlocks</defName>
+		<label>make salt (blocks)</label>
+		<description>Grind and process natural stone to extract edible salts from within stone blocks.\n\nUses the Cooking skill.</description>
+		<jobString>Making salt from blocks.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1500</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneBlocks</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneBlocks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_Salt>5</VCE_Salt>
+		</products>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_AgaveNectar</defName>
+		<label>make agave nectar</label>
+		<description>Create agave nectar from agave. Agave nectar is a thin and semi-sweet nectar, known for its healing and anti-inflammatory properties.</description>
+		<jobString>Making agave nectar.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawAgave</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawAgave</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_AgaveNectar>10</VCE_AgaveNectar>
+		</products>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_InsectJellyPreserves</defName>
+		<label>make insect jelly preserves</label>
+		<description>Create insect jelly preserves from insect jelly. Very rich and sweet, while being surprisingly healthy.</description>
+		<jobString>Making insect jelly preserves.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>InsectJelly</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>InsectJelly</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_InsectJellyPreserves>10</VCE_InsectJellyPreserves>
+		</products>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_Mayo</defName>
+		<label>make mayo</label>
+		<description>Create mayo from eggs. A thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense.</description>
+		<jobString>Making mayo.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	  
+		</recipeUsers>	
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+						<li>EggsFertilized</li>
+					</categories>
+				</filter>
+				<count>1.25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+				<li>EggsFertilized</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VCE_Mayo>10</VCE_Mayo>
+		</products>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_SmokeleafButter</defName>
+		<label>make smokeleaf butter</label>
+		<description>Create smokeleaf butter from smokeleaf and milk. A thickened, fatty substance made by churning milk into very thick cream, combining with smokeleaf oil and allowing it to set. Very unhealthy and hits quite a bit harder than a joint.</description>
+		<jobString>Making smokeleaf butter.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	  
+		</recipeUsers>	
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Milk</li>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_SmokeleafButter>5</VCE_SmokeleafButter>
+		</products>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VCE_ChocolateSyrup</defName>
+		<label>make chocolate syrup</label>
+		<description>Create chocolate syrup from genetically modified chocolate. While still not good for you, chocolate syrup is not quite as bad as straight sugar.</description>
+		<jobString>Making chocolate syrup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chocolate</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Chocolate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_ChocolateSyrup>5</VCE_ChocolateSyrup>
+		</products>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+
+
+</Defs>

@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef Name="VCE_CookDessertMealBase" Abstract="True">
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef Name="VCE_CookComplexDessertMealBase" Abstract="True">
+		<fixedIngredientFilter>		
+			<categories>
+				<li>AnimalProductRaw</li>
+			</categories>		
+			<thingDefs>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>	
+			<categories>
+				<li>AnimalProductRaw</li>
+			</categories>			
+			<thingDefs>
+				<li>RawBerries</li>
+
+			</thingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>	
+			<disallowedThingDefs>
+				<li>Chocolate</li>
+
+			</disallowedThingDefs>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef Name="VCE_CookGourmetDessertMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VCE_Condiments</li>
+				<li>AnimalProductRaw</li>
+			</categories>
+			<thingDefs>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>AnimalProductRaw</li>
+				<li>VCE_Condiments</li>
+			</categories>
+			<thingDefs>
+				<li>RawBerries</li>
+
+			</thingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Chocolate</li>
+
+			</disallowedThingDefs>
+
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VCE_CookDessertMealBase">
+		<defName>VCE_CookDessertSimple</defName>
+		<label>cook simple dessert</label>
+		<description>Cook a simple dessert quickly made from a few fruits and other ingredients.</description>
+		<jobString>Cooking simple dessert.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_SimpleDessert>1</VCE_SimpleDessert>
+		</products>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="VCE_CookDessertMealBase">
+		<defName>VCE_CookDessertSimpleBulk</defName>
+		<label>cook simple dessert x4</label>
+		<workAmount>1200</workAmount>
+		<description>Cook 4 simple desserts quickly made from a few fruits and other ingredients.</description>
+		<jobString>Cooking simple dessert x4.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_SimpleDessert>4</VCE_SimpleDessert>
+		</products>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="VCE_CookComplexDessertMealBase">
+		<defName>VCE_CookDessertFine</defName>
+		<label>cook fine dessert</label>
+		
+			<description>Cook a complex dessert assembled with care from a wide selection of ingredients.\n\nNote that because Chocolate has 0.10 nutrition per unit, some of it will be wasted while cooking this recipe. Consider using the bulk (x4) version of this recipe instead to avoid wastage.</description>
+		
+		<jobString>Cooking fine dessert.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li Name="Fruit">
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+						
+					</thingDefs>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_FineDessert>1</VCE_FineDessert>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VCE_CookComplexDessertMealBase">
+		<defName>VCE_CookDessertFineBulk</defName>
+		<label>cook fine dessert x4</label>
+		<workAmount>1800</workAmount>
+		<description>Cook 4 complex desserts assembled with care from a wide selection of ingredients.</description>
+		<jobString>Cooking fine dessert x4.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li Name="Fruit">
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+						
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_FineDessert>4</VCE_FineDessert>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VCE_CookComplexDessertMealBase">
+		<defName>VCE_CookDessertLavish</defName>
+		<label>cook lavish dessert</label>
+		<description>Cook a masterpiece of the culinary arts, this dessert nourishes the body, mind, and soul.\n\nNote that because Chocolate has 0.10 nutrition per unit, some of it will be wasted while cooking this recipe. Consider using the bulk (x4) version of this recipe instead to avoid wastage.</description>
+		<jobString>Cooking lavish dessert.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li Name="Fruit">
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+						
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_LavishDessert>1</VCE_LavishDessert>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VCE_CookComplexDessertMealBase">
+		<defName>VCE_CookDessertLavishBulk</defName>
+		<label>cook lavish dessert x4</label>
+		<description>Cook 4 masterpieces of the culinary arts, this dessert nourishes the body, mind, and soul.</description>
+		<jobString>Cooking lavish dessert x4.</jobString>
+		<workAmount>3200</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li Name="Fruit">
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+						
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_LavishDessert>4</VCE_LavishDessert>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>	
+
+
+
+
+	<RecipeDef ParentName="VCE_CookGourmetDessertMealBase">
+		<defName>VCE_CookDessertGourmet</defName>
+		<label>cook gourmet dessert</label>
+		<description>Cook a culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity dessert.</description>
+		<jobString>Cooking gourmet dessert.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li Name="Fruit">
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+						
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<thingDefs>
+						
+						<li>Chocolate</li>
+
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Condiments</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_GourmetDessert>1</VCE_GourmetDessert>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+
+
+
+
+
+
+</Defs>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_MealGourmet</defName>
+		<label>gourmet meal</label>
+		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity meal.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Gourmet</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<WorkToMake>1500</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<tasteThought>VCE_AteGourmetMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
