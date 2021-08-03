@@ -15,13 +15,13 @@ namespace VanillaCookingExpanded
             if (desperate)
                 return true;
 
-            List<ThoughtDef> hasThouthgs =
+            List<ThoughtDef> hasThoughts =
                 pawn?.needs?.mood?.thoughts?.memories?.Memories
                     .Where(m => ThoughtDefs.AllThoughts.Contains(m.def))
                     .Select(m => m.def)
                     .ToList();
 
-            if (!hasThouthgs?.Any() ?? true)
+            if (!hasThoughts?.Any() ?? true)
                 return true;
 
             CompIngredients compIngredients = t.TryGetComp<CompIngredients>();
@@ -32,7 +32,7 @@ namespace VanillaCookingExpanded
             try
             {
                 result = !compIngredients.ingredients
-                    .Any(def => def != null && hasThouthgs.Contains(def.ingestible.specialThoughtAsIngredient));
+                    .Any(def => def != null && def.ingestible!=null && hasThoughts.Contains(def.ingestible.specialThoughtAsIngredient));
             }
             catch (Exception e)
             {
