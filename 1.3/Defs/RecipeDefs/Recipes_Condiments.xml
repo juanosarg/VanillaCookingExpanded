@@ -10,8 +10,7 @@
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<allowMixingIngredients>true</allowMixingIngredients>		
 		<recipeUsers>
 			<li>VCE_CondimentPrepTable</li>	
 

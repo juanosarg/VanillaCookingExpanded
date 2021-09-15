@@ -31,17 +31,17 @@
 							<yield>25</yield>
 							<useQualityIncreasing>true</useQualityIncreasing>
 							<awfulQualityAgeDaysThreshold>12</awfulQualityAgeDaysThreshold>
-								<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
-								<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
-								<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
-								<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
-								<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
-								<legendaryQualityAgeDaysThreshold>85</legendaryQualityAgeDaysThreshold>
+							<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+							<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+							<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+							<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+							<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+							<legendaryQualityAgeDaysThreshold>85</legendaryQualityAgeDaysThreshold>
 						</ItemProcessor.CombinationDef>
 					</value>
 				</li>
 
-				
+
 
 				<li Class="PatchOperationAdd"> 
 					<success>Always</success>
@@ -91,6 +91,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 

@@ -58,6 +58,7 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
 				<buildingOnGraphic>Things/Buildings/VCE_PotFull</buildingOnGraphic>
+				<buildingFinishedGraphic>Things/Buildings/VCE_PotFull</buildingFinishedGraphic>
 				<numberOfInputs>1</numberOfInputs>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<InsertFirstItemDesc>VCE_InsertSoupDesc</InsertFirstItemDesc>
@@ -506,6 +507,7 @@
 		<comps>
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
 				<buildingOnGraphic>Things/Buildings/VCE_CheesePressFull</buildingOnGraphic>
+				<buildingFinishedGraphic >Things/Buildings/VCE_CheesePressFull</buildingFinishedGraphic >
 				<numberOfInputs>1</numberOfInputs>
 				<qualitySelector>true</qualitySelector>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>

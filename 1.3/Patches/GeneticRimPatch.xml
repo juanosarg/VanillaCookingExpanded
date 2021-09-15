@@ -80,6 +80,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -157,6 +160,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -312,6 +318,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -414,6 +423,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -491,6 +503,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -567,6 +582,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -644,6 +662,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -719,6 +740,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 
@@ -795,6 +819,9 @@
 									<compClass>CompQuality</compClass>
 								</li>
 								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
 							</comps>
 						</ThingDef>
 

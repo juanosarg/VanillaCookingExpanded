@@ -375,6 +375,65 @@
 			</li>
 		</modExtensions>
 	</ThoughtDef>
+	
+	<!-- ======= Cheese quality based thoughts ========= -->	
+		
+	<ThoughtDef>
+        <defName>VCE_Cheese</defName>
+        <!-- <showBubble>true</showBubble>
+        <icon>Things/Mote/ThoughtSymbol/Food</icon> -->
+        <durationDays>1</durationDays>
+        <stages>
+            <!-- Awful cheese -->
+            <li>
+                <label>ate awful cheese</label>
+                <description>I ate some poorly curdled milk with barely any cheese flavour. Disgusting.</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+
+            <!-- Poor cheese -->
+            <li>
+                <label>ate poor cheese</label>
+                <description>That cheese wasn't horrible but wasn't great either. The aftertaste was kinda icky.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+
+            <!-- Normal cheese -->
+            <li>
+                <label>ate normal cheese</label>
+                <description>That was some OK cheese.</description>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+
+            <!-- Good cheese -->
+            <li>
+                <label>ate good cheese</label>
+                <description>I ate some fine cheese. Delicious.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+
+            <!-- Excellent cheese -->
+            <li>
+                <label>ate excellent cheese</label>
+                <description>I ate some fine cheese. You can tell when it has had a good amount of time to mature.</description>
+                <baseMoodEffect>7</baseMoodEffect>
+            </li>
+
+            <!-- Masterwork cheese -->
+            <li>
+                <label>ate masterwork cheese</label>
+                <description>That cheese was simply amazing! It doesn't get much better than this.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+
+            <!-- Legendary cheese -->
+            <li>
+                <label>ate legendary cheese</label>
+                <description>I've eaten quite possibly some of the best cheese I've ever tasted!</description>
+                <baseMoodEffect>15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
 
 
