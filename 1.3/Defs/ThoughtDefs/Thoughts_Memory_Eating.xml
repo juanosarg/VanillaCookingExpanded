@@ -379,7 +379,7 @@
 	<!-- ======= Cheese quality based thoughts ========= -->	
 		
 	<ThoughtDef>
-        <defName>VCE_Cheese</defName>
+        <defName>VCE_AteCheese</defName>
         <!-- <showBubble>true</showBubble>
         <icon>Things/Mote/ThoughtSymbol/Food</icon> -->
         <durationDays>1</durationDays>
