@@ -6,7 +6,7 @@
 		<defName>VCE_ConsumedMayo</defName>
 		<label>consumed mayo (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Mayo is a thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense. It lowers hunger rate by 15% for 24 hours.</description>
+		<description>Mayo is a thick emulsion of egg, oil, and other herbs. Mayonnaise, while terrible for you, adds a pleasing tang and is very calorically dense. It lowers hunger rate by 15% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -33,7 +33,7 @@
 		<defName>VCE_ConsumedAgave</defName>
 		<label>consumed agave nectar (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Agave nectar is a thin and semi-sweet nectar, known for its healing and anti-inflammatory properties. Gives a 15% immunity gain speed boost for 24 hours.</description>
+		<description>Agave nectar is a thin and semi-sweet nectar, known for its healing and anti-inflammatory properties. Gives a 15% immunity gain speed boost for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -60,7 +60,7 @@
 		<defName>VCE_ConsumedSpices</defName>
 		<label>consumed spices (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Consumed a variety of aromatic and pungent spices. It increases manipulation stat for 24 hours.</description>
+		<description>Consumed a variety of aromatic and pungent spices. It increases manipulation stat by 10% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -271,7 +271,7 @@
 		<defName>VCE_SugarRush</defName>
 		<label>consumed sugar (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Sugar is easily converted into energy by the body, which may result in a nice burst of energy. It increases moving stat by 15% for 24 hours.</description>
+		<description>Sugar is easily converted into energy by the body, which may result in a nice burst of energy. It increases moving stat by 15% for 12 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>

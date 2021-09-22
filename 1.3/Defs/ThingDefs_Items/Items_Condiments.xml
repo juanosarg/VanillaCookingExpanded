@@ -34,6 +34,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_DiabetesEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsAgave</li>
+					<li>VCE_DiabetesEffectDescHalfPoint</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RoughPlantBase">
@@ -67,6 +85,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_DiabetesEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsSugar</li>
+					<li>VCE_DiabetesEffectDescOneAndHalfPoint</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RoughPlantBase">
@@ -100,6 +136,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_NoEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsSpices</li>
+					<li>VCE_NoEffectDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RoughPlantBase">
@@ -132,6 +186,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_HighBloodPressureEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsSalt</li>
+					<li>VCE_HighBloodPressureEffectDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RoughPlantBase">
@@ -167,6 +239,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_CholesterolEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsMayo</li>
+					<li>VCE_CholesterolEffectDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RoughPlantBase">
@@ -197,6 +287,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_NoEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsJelly</li>
+					<li>VCE_NoEffectDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RoughPlantBase">
@@ -232,6 +340,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_CholesterolEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsButter</li>
+					<li>VCE_CholesterolEffectDescOneAndHalfPoint</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RoughPlantBase">
@@ -267,6 +393,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_DiabetesEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsSyrup</li>
+					<li>VCE_DiabetesEffectDescThreeQuarterPoint</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="VCE_CondimentArtifactBase">
@@ -312,6 +456,24 @@
 			<li>Condiments</li>
 		  </mergeCompatibilityTags>
 		</ingredient>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>VCE_CondimentEffects</li>
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					<li>VCE_CondimentEffectsTitle</li>
+					<li>VCE_NoEffect</li>				
+				</statValues>
+				<statDescriptions>
+					<li>VCE_CondimentEffectsNanites</li>
+					<li>VCE_NoEffectDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	 <ThingDef ParentName="ResourceBase" Name="VCE_CondimentArtifactBase" Abstract="True">

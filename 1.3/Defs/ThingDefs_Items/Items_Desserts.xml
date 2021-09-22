@@ -57,6 +57,24 @@
 				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					
+					<li>VCE_DiabetesEffect</li>				
+				</statValues>
+				<statDescriptions>
+					
+					<li>VCE_DiabetesDessertSimpleDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -114,6 +132,24 @@
 				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					
+					<li>VCE_DiabetesEffect</li>				
+				</statValues>
+				<statDescriptions>
+					
+					<li>VCE_DiabetesDessertFineDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -170,6 +206,24 @@
 				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					
+					<li>VCE_DiabetesEffect</li>				
+				</statValues>
+				<statDescriptions>
+					
+					<li>VCE_DiabetesDessertLavishDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>VCE_GourmetDessert</defName>
@@ -231,6 +285,24 @@
 				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					
+					<li>VCE_DiabetesEffect</li>				
+				</statValues>
+				<statDescriptions>
+					
+					<li>VCE_DiabetesDessertGourmetDesc</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 

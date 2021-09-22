@@ -42,6 +42,22 @@
 									<li>Condiments</li>
 								</mergeCompatibilityTags>
 							</ingredient>
+							<modExtensions>
+								<li Class="AnimalBehaviours.AnimalStatExtension">
+									<statToAdd>
+										<li>VCE_CondimentEffects</li>
+										<li>VCE_HealthEffects</li>
+									</statToAdd>
+									<statValues>
+										<li>VCE_CondimentEffectsTitle</li>
+										<li>VCE_CholesterolEffect</li>
+									</statValues>
+									<statDescriptions>
+										<li>VCE_CondimentEffectsKetchup</li>
+										<li>VCE_CholesterolEffectDescDouble</li>
+									</statDescriptions>
+								</li>
+							</modExtensions>
 						</ThingDef>
 					</value>
 				</li>
@@ -80,6 +96,22 @@
 									<li>Condiments</li>
 								</mergeCompatibilityTags>
 							</ingredient>
+							<modExtensions>
+								<li Class="AnimalBehaviours.AnimalStatExtension">
+									<statToAdd>
+										<li>VCE_CondimentEffects</li>
+										<li>VCE_HealthEffects</li>
+									</statToAdd>
+									<statValues>
+										<li>VCE_CondimentEffectsTitle</li>
+										<li>VCE_NoEffect</li>
+									</statValues>
+									<statDescriptions>
+										<li>VCE_CondimentEffectsSauce</li>
+										<li>VCE_NoEffectDesc</li>
+									</statDescriptions>
+								</li>
+							</modExtensions>
 						</ThingDef>
 					</value>
 				</li>
@@ -209,7 +241,7 @@
 							<defName>VCE_ConsumedHotSauce</defName>
 							<label>consumed hot sauce (from meal)</label>
 							<makesSickThought>false</makesSickThought>
-							<description>Consumed a potent, spicy sauce made from blending and simmering chilis and other spices. While particularly strong hot sauces hurt at first, they are known to numb pain and work up a warm sweat shortly after consumption. Boosts pain resistance and cold temperature resistance for 24 hours.</description>
+							<description>Consumed a potent, spicy sauce made from blending and simmering chilis and other spices. While particularly strong hot sauces hurt at first, they are known to numb pain and work up a warm sweat shortly after consumption. Boosts pain resistance by 15% and cold temperature resistance by 10ºC for 12 hours.</description>
 							<tendable>false</tendable>
 							<isBad>false</isBad>
 							<defaultLabelColor>(255,95,95)</defaultLabelColor>
