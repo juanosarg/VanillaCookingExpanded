@@ -137,7 +137,7 @@
 		<defName>VCE_CanFruit</defName>
 		<label>can fruit x20</label>
 		<description>Safely store fruit in a steel can. Canning food extends its shelf life almost indefinitely.\n\nPreserved fruit can be used in the production of desserts.</description>
-		<jobString>Canning produce.</jobString>
+		<jobString>Canning fruit.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
