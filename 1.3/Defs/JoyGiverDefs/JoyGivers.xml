@@ -15,5 +15,21 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </JoyGiverDef>
-  
+	
+	<JoyGiverDef>
+		<defName>VCE_EatDessert</defName>
+		<giverClass>JoyGiver_Ingest</giverClass>
+		<baseChance>2.5</baseChance>
+		<thingDefs>
+			<li>VCE_SimpleDessert</li>
+			<li>VCE_FineDessert</li>
+			<li>VCE_LavishDessert</li>
+			<li>VCE_GourmetDessert</li>
+		</thingDefs>
+		<joyKind>VCE_Confectionery</joyKind>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
 </Defs>
